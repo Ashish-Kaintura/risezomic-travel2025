@@ -38,7 +38,7 @@ export default function ImgSwiper() {
         className="mySwiper"
       >
         <SwiperSlide
-          className="w-full sm:h-[700px] h-[400px]  flex justify-center relative"
+          className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
             backgroundImage: `url(${Banner1})`,
             backgroundSize: "cover",
@@ -51,7 +51,7 @@ export default function ImgSwiper() {
           </h2>
         </SwiperSlide>
         <SwiperSlide
-          className="w-full sm:h-[700px] h-[400px]  flex justify-center relative"
+          className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
             backgroundImage: `url(${Banner2})`,
             backgroundSize: "cover",
@@ -64,7 +64,7 @@ export default function ImgSwiper() {
           </h2>
         </SwiperSlide>
         <SwiperSlide
-          className="w-full sm:h-[700px] h-[400px]  flex justify-center relative"
+          className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
             backgroundImage: `url(${Banner3})`,
             backgroundSize: "cover",
@@ -77,7 +77,7 @@ export default function ImgSwiper() {
           </h2>
         </SwiperSlide>
         <SwiperSlide
-          className="w-full sm:h-[700px] h-[400px]  flex justify-center relative"
+          className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
             backgroundImage: `url(${Banner4})`,
             backgroundSize: "cover",
@@ -91,7 +91,7 @@ export default function ImgSwiper() {
           </h2>
         </SwiperSlide>
         <SwiperSlide
-          className="w-full sm:h-[700px] h-[400px]  flex justify-center relative"
+          className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
             backgroundImage: `url(${Banner5})`,
             backgroundSize: "cover",
@@ -104,9 +104,9 @@ export default function ImgSwiper() {
           </h2>
         </SwiperSlide>
         <SwiperSlide
-          className="w-full sm:h-[700px] h-[400px]  flex justify-center relative"
+          className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
-            backgroundImage: `url(${Banner6})`,
+            backgroundImage: `url(https://i.postimg.cc/4yLJ4Jf7/banner-slide-6.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

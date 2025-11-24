@@ -3,301 +3,209 @@ import Logo from "../images/logo/risezoniclogo.png";
 import { useState, useEffect } from "react";
 import { TiThMenu, TiTimes } from "react-icons/ti";
 import { MdNavigateNext } from "react-icons/md";
+import { IoChevronDownOutline } from "react-icons/io5";
+
 export default function HomeNav() {
   const [isScrolled, setIsScrolled] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      if (scrollTop > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setIsScrolled(window.scrollY > 10);
+    });
+  }, []);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const toggleDropdown = (menu) =>
+    setActiveDropdown(activeDropdown === menu ? null : menu);
 
   return (
-    <div>
-      <nav
-        className={`fixed w-full z-20 top-0 start-0 ${
-          isScrolled
-            ? "bg-[#0D0C0C] backdrop-blur-[1.4495413303375244px] bg-opacity-65"
-            : "bg-transparent"
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
+          ? "backdrop-blur-xl bg-black/60 shadow-lg"
+          : "bg-transparent"
         }`}
-      >
-        <div className=" flex flex-wrap items-center justify-between p-4">
-          <a
-            href="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img
-              width="100px"
-              height="60px"
-              src={Logo}
-              className="z-99"
-              alt="Flowbite Logo"
-            />
-          </a>
-          <div className="text-white sm:flex hidden justify-center items-center">
-            <ul className="flex justify-center gap-x-4">
-              <li>
-                <NavLink to={"/AboutUs"} className="">
-                  AboutUs
-                </NavLink>
-              </li>
-              <div className="relative">
-                <li className="group">
-                  <button className="block text-white rounded focus:outline-none">
-                    Packages
-                  </button>
-                  <ul className="absolute hidden group-hover:flex  py-2  px-3 bg-white rounded shadow-lg w-64  justify-start">
-                    <div>
-                      <div className="relative dropdown-container">
-                        <NavLink
-                          to={"/Indian-Tour-Packages"}
-                          className="corporatedropbtn block text-gray-800 dropdown hover:text-white hover:bg-gray-800 rounded py-1 px-2"
-                        >
-                          Indian Holiday
-                        </NavLink>
-                      </div>
+    >
+      <nav className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
 
-                      <div className="relative dropdown-container">
-                        <NavLink
-                          to={"/International-Tour-Packages"}
-                          className="b2cdropbtn block text-gray-800 dropdown hover:text-white hover:bg-gray-800 rounded py-1 px-2"
-                        >
-                          International Holiday
-                        </NavLink>
-                      </div>
-                      <div className="relative dropdown-container">
-                        <NavLink
-                          to={"/International-Honeymoon-packages"}
-                          className="b2cdropbtn block text-gray-800 dropdown hover:text-white hover:bg-gray-800 rounded py-1 px-2"
-                        >
-                          International Honeymoon Packages
-                        </NavLink>
-                      </div>
-                      <div className="relative dropdown-container">
-                        <NavLink
-                          to={"/Indian-honeymoon-packages"}
-                          className="corporatedropbtn block text-gray-800 dropdown hover:text-white hover:bg-gray-800 rounded py-1 px-2"
-                        >
-                          Indian Honeymoon packages
-                        </NavLink>
-                      </div>
-                    </div>
-                  </ul>
-                </li>
-              </div>
-              <li>
-                <NavLink to={"/mice"} className="">
-                  Mice
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to={"/services/Hotel"} className="">
-                  Hotel
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to={"/News-And-Media"} className="">
-                  News
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to={"/Sustainability"} className="">
-                  Sustainability
-                </NavLink>
-              </li>
-              <div className="relative">
-                <li className="group">
-                  <button className="block text-white rounded focus:outline-none">
-                    More
-                  </button>
-                  <ul className="absolute hidden group-hover:flex  py-2  px-3 bg-white rounded shadow-lg w-48  justify-start">
-                    <div>
-                      <NavLink
-                        to={"/flights"}
-                        className="corporatedropbtn block text-gray-800 dropdown hover:text-white hover:bg-gray-800 rounded py-1 px-2"
-                      >
-                        Flight
-                      </NavLink>
+        {/* Logo */}
+        <Link to="/" className="flex items-center">
+          <img
+            src={Logo}
+            alt="RiseZonic Logo"
+            className={`transition-all duration-300 ${isScrolled ? "w-24" : "w-28"
+              }`}
+          />
+        </Link>
 
-                      <NavLink
-                        to={"/Cruise"}
-                        className="b2cdropbtn block text-gray-800 dropdown hover:text-white hover:bg-gray-800 rounded py-1 px-2"
-                      >
-                        Cruise
-                      </NavLink>
-                      <NavLink
-                        to={"/Visa"}
-                        className="b2cdropbtn block text-gray-800 dropdown hover:text-white hover:bg-gray-800 rounded py-1 px-2"
-                      >
-                        Visa
-                      </NavLink>
-                      <NavLink
-                        to={"/Meeting-And-Event"}
-                        className="b2cdropbtn block text-gray-800 dropdown hover:text-white hover:bg-gray-800 rounded py-1 px-2"
-                      >
-                        Meeting And Events
-                      </NavLink>
-                      <NavLink
-                        to={"/Insurance"}
-                        className="b2cdropbtn block text-gray-800 dropdown hover:text-white hover:bg-gray-800 rounded py-1 px-2"
-                      >
-                        Insurance
-                      </NavLink>
-                    </div>
-                  </ul>
-                </li>
-              </div>
-            </ul>
-          </div>
+        {/* Desktop Menu */}
+        <ul className="hidden lg:flex space-x-8 text-white items-center font-medium">
+          <li>
+            <NavLink to="/AboutUs" className="hover:text-yellow-400 transition">
+              About Us
+            </NavLink>
+          </li>
 
-          <div className="flex md:order-2 space-x-2 md:space-x-0 rtl:space-x-reverse">
-            <Link to={"/Contact-us"}>
-              <button
-                type="button"
-                className="text-white bg-blue-700 hover:bg-blue-800  font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:flex md:flex hidden"
-              >
-                Contact Us
-              </button>
-            </Link>
-          </div>
-          <div className="sm:hidden flex md:order-2 space-x-2 md:space-x-0 rtl:space-x-reverse">
-            <button onClick={toggleMenu} className="cursor-pointer">
-              {isMenuOpen ? (
-                <TiTimes className="text-3xl text-gray-400" />
-              ) : (
-                <TiThMenu className="text-3xl text-gray-400" />
-              )}
+          {/* PACKAGES DROPDOWN */}
+          <li className="relative group">
+            <button className="flex items-center gap-1 hover:text-yellow-400">
+              Packages <IoChevronDownOutline />
             </button>
-          </div>
-        </div>
-      </nav>
-      <nav
-        className={`phonenav ${
-          isMenuOpen ? "open" : ""
-        } block justify-center p-4 px-8 
-        `}
-      >
-        <div className="">
-          <a
-            href="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img
-              width="100px"
-              height="60px"
-              src={Logo}
-              className="z-99"
-              alt="Flowbite Logo"
-            />
-          </a>
-        </div>
-        <ul className="text-gray-200 mt-4 text-lg font-thin gap-y-4">
-          <li className="flex gap-x-1 items-center ">
-            <MdNavigateNext />{" "}
-            <NavLink to={"/"} className="">
-              Home
-            </NavLink>
-          </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/AboutUs"} className="">
-              AboutUs
-            </NavLink>
-          </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/Indian-Tour-Packages"} className="">
-              Indian Holiday
-            </NavLink>
-          </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/International-Tour-Packages"} className="">
-              International Holiday
-            </NavLink>
-          </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/mice"} className="">
-              Mice
-            </NavLink>
-          </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/News-And-Media"} className="">
-              News
-            </NavLink>
-          </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
 
-            <NavLink to={"/services/Hotel"} className="">
-              Hotel
+            <div className="absolute top-8 left-0 hidden group-hover:block bg-white text-black shadow-xl rounded-xl py-4 w-60">
+              <NavLink
+                to="/Indian-Tour-Packages"
+                className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md"
+              >
+                Indian Holiday
+              </NavLink>
+              <NavLink
+                to="/International-Tour-Packages"
+                className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md"
+              >
+                International Holiday
+              </NavLink>
+              <NavLink
+                to="/International-Honeymoon-packages"
+                className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md"
+              >
+                International Honeymoon
+              </NavLink>
+              <NavLink
+                to="/Indian-honeymoon-packages"
+                className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md"
+              >
+                Indian Honeymoon
+              </NavLink>
+            </div>
+          </li>
+
+          <li>
+            <NavLink to="/flights" className="hover:text-yellow-400 transition">
+              Flights
             </NavLink>
           </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/Sustainability"} className="">
-              Sustainability
-            </NavLink>
-          </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/flights"} className="">
-              Flight
-            </NavLink>
-          </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/Cruise"} className="">
+          <li>
+            <NavLink to="/cruise" className="hover:text-yellow-400 transition">
               Cruise
             </NavLink>
           </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/Visa"} className="">
-              Visa
+          <li>
+            <NavLink to="/services/Hotel" className="hover:text-yellow-400 transition">
+              Hotel Booking
             </NavLink>
           </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/Meeting-And-Even"} className="">
-              Meeting And Events
-            </NavLink>
+
+          {/* MORE DROPDOWN */}
+          <li className="relative group">
+            <button className="flex items-center gap-1 hover:text-yellow-400">
+              More <IoChevronDownOutline />
+            </button>
+
+            <div className="absolute top-8 left-0 hidden group-hover:block bg-white text-black shadow-xl rounded-xl py-4 w-52">
+              <NavLink to="/mice" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
+                MICE
+              </NavLink>
+              <NavLink to="/Visa" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
+                Visa
+              </NavLink>
+              <NavLink to="/Meeting-And-Event" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
+                Events
+              </NavLink>
+              <NavLink to="/Insurance" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
+                Insurance
+              </NavLink>
+            </div>
           </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/Insurance"} className="">
-              Insurance
-            </NavLink>
-          </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/Privacy-Policy"} className="">
-              Privacy Policy
-            </NavLink>
-          </li>
-          <li className="flex gap-x-1 items-center">
-            <MdNavigateNext />
-            <NavLink to={"/ContactUs"} className="">
+
+          {/* Contact Button */}
+          <Link to="/Contact-us">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-5 py-2 rounded-lg shadow-md transition font-semibold">
               Contact Us
-            </NavLink>
+            </button>
+          </Link>
+        </ul>
+
+        {/* MOBILE MENU BUTTON */}
+        <button className="lg:hidden" onClick={toggleMenu}>
+          {isMenuOpen ? (
+            <TiTimes className="text-4xl text-white" />
+          ) : (
+            <TiThMenu className="text-4xl text-white" />
+          )}
+        </button>
+      </nav>
+
+      {/* MOBILE MENU */}
+      <div
+        className={`lg:hidden bg-black/95 backdrop-blur-md text-white transition-all duration-300 ${isMenuOpen ? "max-h-screen py-5 px-6" : "max-h-0 overflow-hidden"
+          }`}
+      >
+        <ul className="space-y-4 text-lg font-light">
+          <li onClick={toggleMenu}>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li onClick={toggleMenu}>
+            <NavLink to="/AboutUs">About Us</NavLink>
+          </li>
+
+          {/* MOBILE DROPDOWN 1 */}
+          <li>
+            <button
+              onClick={() => toggleDropdown("packages")}
+              className="flex items-center gap-2"
+            >
+              <MdNavigateNext /> Packages
+            </button>
+
+            {activeDropdown === "packages" && (
+              <div className="ml-7 mt-2 space-y-2 text-gray-300"> 
+                <NavLink to="/Indian-Tour-Packages">Indian Holiday</NavLink>  <br />
+                <NavLink to="/International-Tour-Packages">International Holiday</NavLink> <br />
+                <NavLink to="/International-Honeymoon-packages">Int. Honeymoon</NavLink> <br />
+                <NavLink to="/Indian-honeymoon-packages">Indian Honeymoon</NavLink> <br />
+              </div>
+            )}
+          </li>
+
+          <li onClick={toggleMenu}>
+            <NavLink to="/flights">Flights</NavLink>
+          </li>
+
+          <li onClick={toggleMenu}>
+            <NavLink to="/Cruise">Cruise</NavLink>
+          </li>
+
+          <li onClick={toggleMenu}>
+            <NavLink to="/services/Hotel">Hotel Booking</NavLink>
+          </li>
+
+          {/* DROPDOWN 2 */}
+          <li>
+            <button
+              onClick={() => toggleDropdown("more")}
+              className="flex items-center gap-2"
+            >
+              <MdNavigateNext /> More
+            </button>
+
+            {activeDropdown === "more" && (
+              <div className="ml-7 mt-2 space-y-2 text-gray-300">
+                <NavLink to="/mice">MICE</NavLink> <br />
+                <NavLink to="/Visa">Visa</NavLink> <br />
+                <NavLink to="/Meeting-And-Event">Events</NavLink> <br/>
+                <NavLink to="/Insurance">Insurance</NavLink> <br/>
+              </div>
+            )}
+          </li>
+
+          <li onClick={toggleMenu}>
+            <NavLink to="/ContactUs">Contact Us</NavLink>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </header>
   );
 }

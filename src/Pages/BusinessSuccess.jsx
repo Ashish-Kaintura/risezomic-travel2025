@@ -179,7 +179,7 @@ export default function BusinessSuccess() {
           </div>
         </section>
       </section>
-      <Footer />
+      
     </div>
   );
 }

@@ -99,7 +99,7 @@ const Insurance = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

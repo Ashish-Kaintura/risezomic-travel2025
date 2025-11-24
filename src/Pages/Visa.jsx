@@ -115,7 +115,7 @@ const VIsa = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

@@ -84,7 +84,7 @@ const DealsDetail = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

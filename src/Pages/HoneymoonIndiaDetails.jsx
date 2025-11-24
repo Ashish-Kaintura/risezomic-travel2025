@@ -96,7 +96,7 @@ const HoneymoonIndiaDetails = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

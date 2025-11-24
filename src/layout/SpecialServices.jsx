@@ -43,10 +43,10 @@ const SpecialServices = () => {
   return (
     <section className="py-12 px-12">
       <div className="py-5 text-white">
-        <h1 className="italic sm:text-5xl text-3xl uppercase font-semibold underline decoration-yellow-500 underline-offset-8 pb-4">
+        <h1 className="italic sm:text-5xl text-3xl uppercase text-blue-600 font-heading font-semibold underline decoration-yellow-500 underline-offset-8 pb-4">
           Special Services
         </h1>
-        <h2 className="italic sm:text-5xl text-3xl uppercase font-semibold underline decoration-yellow-500 underline-offset-8 pb-4">
+        <h2 className="italic sm:text-5xl text-3xl uppercase text-blue-600 font-heading font-semibold underline decoration-yellow-500 underline-offset-8 pb-4">
           We Provide
         </h2>
       </div>

@@ -102,7 +102,7 @@ const TrendingInternationalTourDetails = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

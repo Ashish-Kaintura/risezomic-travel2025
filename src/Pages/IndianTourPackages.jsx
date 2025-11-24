@@ -216,7 +216,7 @@ export default function IndianTourPackages() {
       >
         <IndianHolidayTips />
       </section>
-      <Footer />
+      
     </div>
   );
 }

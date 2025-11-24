@@ -101,7 +101,7 @@ const MeetingAndEvent = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

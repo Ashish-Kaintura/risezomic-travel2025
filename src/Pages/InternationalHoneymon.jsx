@@ -228,7 +228,7 @@ export default function InternationalHoneymon() {
       >
         <Fantasticloaction />
       </section>
-      <Footer />
+      
     </div>
   );
 }

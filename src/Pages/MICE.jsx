@@ -274,7 +274,7 @@ const MICE = () => {
         </div>
       </div>
 
-      <Footer />
+      
     </div>
   );
 };

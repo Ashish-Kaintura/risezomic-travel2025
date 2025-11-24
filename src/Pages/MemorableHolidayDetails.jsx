@@ -48,7 +48,7 @@ const MemorableHolidayDetails = () => {
       </Helmet>
       <HomeNav />
       <div className="">
-        <div className=" sm:w-full sm:h-[500px] w-full overflow-hidden flex justify-center">
+        <div className=" sm:w-full h-screen w-full overflow-hidden flex justify-center">
           <img
             className="w-full h-full object-cover object-center"
             src={service.bannerImage}
@@ -102,7 +102,7 @@ const MemorableHolidayDetails = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

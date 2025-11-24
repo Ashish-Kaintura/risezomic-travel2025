@@ -44,7 +44,7 @@ const Career = () => {
         </p>
         <HomeForm />
       </div>
-      <Footer />
+      
     </div>
   );
 };

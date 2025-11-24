@@ -101,7 +101,7 @@ const Cruise = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

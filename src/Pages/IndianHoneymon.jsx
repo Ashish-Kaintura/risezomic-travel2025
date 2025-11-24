@@ -223,7 +223,7 @@ linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255))
       >
         <Honeymoonpacages />
       </section>
-      <Footer />
+      
     </div>
   );
 }

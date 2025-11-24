@@ -189,7 +189,7 @@ export default function InternationalTourPakages() {
         <InternationalHolidayTips />
       </section>
       <section>
-        <Footer />
+        
       </section>
     </div>
   );

@@ -120,7 +120,7 @@ export default function Contact() {
         </div>
       </div>
       <section>
-        <Footer />
+        
       </section>
     </div>
   );

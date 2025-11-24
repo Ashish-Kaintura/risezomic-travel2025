@@ -19,6 +19,9 @@ import SpecialServices from "../layout/SpecialServices";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import YoutubeShortsGallery from "../layout/YouTubeShortsGallery";
+import StatsSection from "../components/StatsSection";
+import YouTubeSlider from "../components/YouTubeSlider";
+import PremiumVideoSlider from "../components/PremiumVideoSlider";
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,7 +50,7 @@ function Home() {
       </div>
       <section>
         <video
-          className="w-full"
+          className="w-full h-screen object-cover"
           poster={Poster1}
           autoPlay
           loop
@@ -67,17 +70,14 @@ function Home() {
   `,
         }}
       >
-        <h1 className=" sm:text-4xl  text-center sm:py-12 py-4 text-normal uppercase underline decoration-yellow-500 underline-offset-8 text-blue-700 font-poppins">
+        <h1 className=" sm:text-4xl  text-center sm:py-12 py-4 text-normal uppercase underline font-semibold decoration-yellow-500 underline-offset-8 text-blue-700 font-Heading">
           Best Corporate Tour and Travel Agency- Risezonic Travel.
         </h1>
       </section>
       <section className="">
-        <ServicesBlock />
-      </section>
-      <section className="">
         {/* not responsive */}
         <div
-          className="flex justify-center py-20 items-center"
+          className=" flex justify-center py-20 items-center p-4"
           style={{
             backgroundImage: `
       linear-gradient(135deg, transparent 0%, transparent 6%, rgba(71, 71, 71, 0.04) 6%, rgba(71, 71, 71, 0.04) 22%, transparent 22%, transparent 100%),
@@ -88,7 +88,9 @@ function Home() {
     `,
           }}
         >
+          
           <div className="flex flex-wrap  sm:space-x-4">
+            
             <div className="relative  p-8 overflow-hidden h-[550px] sm:w-[540px] w-full  ">
               <div className=" absolute z-10 top-0 left-0 sm:w-[300px] w-[200px]">
                 <img
@@ -138,11 +140,17 @@ function Home() {
                   interface, we ensure effortless bookings and streamlined
                   management of corporate travel arrangements.
                 </p>
+               <Link to="" > <button>Call US</button></Link>
               </div>
             </div>
           </div>
+          
         </div>
       </section>
+      <section className="">
+        <ServicesBlock />
+      </section>
+     
       <section>
         <ImgSwiper />
       </section>
@@ -150,58 +158,11 @@ function Home() {
       <section>
         <HomeForm />
       </section>
-      <section
-        className=" py-5 px-8 "
-        style={{
-          backgroundImage: `
-      linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%, rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%, rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),
-      linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%, rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%, rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
-      linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%, rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%, rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
-      linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
-    `,
-        }}
-      >
-        <div className="bg-gray-200 py-[1px] "></div>
-        <div className="sm:flex block justify-center py-12 sm:space-x-7 space-y-7 sm:space-y-0">
-          <div className="sm:w-64 h-40 shadow-sm rounded-lg shadow-yellow-500  bg-yellow-500">
-            <div className="flex flex-col justify-center items-center h-40">
-              <h2 className="text-3xl text-white font-bold">30+</h2>
-              <h2 className="text-2xl font-semibold text-black ">Packages</h2>
-            </div>
-          </div>
-          <div className="sm:w-64 h-40 shadow-sm rounded-lg shadow-yellow-500  bg-yellow-500">
-            <div className="flex flex-col justify-center items-center h-40">
-              <h2 className="text-2xl text-white font-bold">Best Travel</h2>
-              <h2 className="text-2xl font-semibold text-black ">Agency</h2>
-            </div>
-          </div>
-          <div className="sm:w-64 h-40 shadow-sm rounded-lg shadow-yellow-500  bg-yellow-500">
-            <div className="flex flex-col justify-center items-center h-40">
-              <h2 className="text-3xl text-white font-bold">5+</h2>
-              <h2 className="text-2xl font-semibold text-black ">Award</h2>
-            </div>
-          </div>
-          <div className="sm:w-64 h-40 shadow-sm rounded-lg shadow-yellow-500  bg-yellow-500">
-            <div className="flex flex-col justify-center items-center h-40">
-              <h2 className="text-3xl text-white font-bold">1000+</h2>
-              <h2 className="text-2xl font-semibold text-black ">
-                Happy Coustomer
-              </h2>
-            </div>
-          </div>
-          <div className="sm:w-64 h-40 shadow-sm rounded-lg shadow-yellow-500  bg-yellow-500">
-            <div className="flex flex-col justify-center items-center h-40">
-              <h2 className="text-3xl text-white font-bold">24/7</h2>
-              <h2 className="text-2xl font-semibold text-black ">Available</h2>
-            </div>
-          </div>
-        </div>
-        <div className="bg-gray-200 py-[1px] "></div>
-      </section>
+      <StatsSection/>
       <section className="">
         <div className="w-full  bg-black">
           <video
-            className=" object-cover"
+            className=" w-full"
             autoPlay
             loop
             muted
@@ -211,14 +172,14 @@ function Home() {
       </section>
 
       <section
-        style={{
-          backgroundImage: `
-linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%, rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%, rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),
-linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%, rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%, rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
-linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%, rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%, rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
-linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
-`,
-        }}
+//         style={{
+//           backgroundImage: `
+// linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%, rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%, rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),
+// linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%, rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%, rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
+// linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%, rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%, rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
+// linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
+// `,
+//         }}
       >
         <SpecialServices />
       </section>
@@ -236,7 +197,7 @@ linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
           </h2>
         </div>
         <div className="py-[1px] bg-gray-100 mb-8"></div>
-        <div className="flex flex-wrap sm:justify-evenly justify-center gap-y-4">
+        {/* <div className="flex flex-wrap sm:justify-evenly justify-center gap-y-4">
           <div className=" border border-white   bg-white rounded-lg outline-offset-4 relative hover:scale-105  overflow-hidden transition-all ease-in duration-150">
             <iframe
               src="https://www.youtube.com/embed/Scv_A7n9A5I?si=cmnHqr0e9ff4FYsa"
@@ -300,7 +261,9 @@ linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
               allowFullScreen
             ></iframe>
           </div>
-        </div>
+        </div> */}
+        {/* <YouTubeSlider /> */}
+        <PremiumVideoSlider/>
         <YoutubeShortsGallery />
         <div className="flex justify-center mt-4">
           <Link to="https://www.youtube.com/@risezonictravel/featured">
@@ -313,11 +276,11 @@ linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
 
       {/* <Chatbot /> */}
       <footer>
-        <Footer />
+        
       </footer>
-      <section>
+      {/* <section>
         <SideLinks />
-      </section>
+      </section> */}
     </>
   );
 }

@@ -104,7 +104,7 @@ const InternationalHoneymoonDetails = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

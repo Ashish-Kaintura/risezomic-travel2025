@@ -128,7 +128,7 @@ const Sustainability = () => {
           travel and environmental stewardship coexist in perfect harmony.
         </p>
       </div>
-      <Footer />
+      
     </div>
   );
 };

@@ -204,7 +204,7 @@ linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
       <section>
         <SideLinks />
       </section>
-      <Footer />
+      
     </>
   );
 }

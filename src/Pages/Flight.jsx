@@ -98,7 +98,7 @@ const Flight = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

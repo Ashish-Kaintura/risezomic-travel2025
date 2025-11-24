@@ -46,9 +46,9 @@ const ServiceDetail = () => {
       </Helmet>
       <Homenav />
       <div className="">
-        <div className=" object-center object-contain">
+        <div className="object-center object-contain">
           <img
-            className="sm:w-full sm:h-[500px] h-[250px]  w-full "
+            className=""
             src={service.bannerImage}
             alt={service.title}
           />
@@ -108,7 +108,7 @@ const ServiceDetail = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 };

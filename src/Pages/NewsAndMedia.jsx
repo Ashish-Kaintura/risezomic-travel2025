@@ -126,7 +126,7 @@ export default function NewsAndMedia() {
           </section>
         </div>
       </section>
-      <Footer />
+      
     </div>
   );
 }

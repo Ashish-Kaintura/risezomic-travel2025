@@ -90,7 +90,7 @@ export default function Honeymoonpacages() {
           {honeymoonPackages.conclusion}
         </p>
       </section>
-      {/* <Footer /> */}
+      {/*  */}
     </div>
   );
 }

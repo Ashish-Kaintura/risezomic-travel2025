@@ -28,6 +28,8 @@ import IndianHoneymon from "./Pages/IndianHoneymon";
 import NewsAndMedia from "./Pages/NewsAndMedia";
 import BusinessGrowth from "./Pages/BusinessGrowth";
 import BusinessSuccess from "./Pages/BusinessSuccess";
+import SideLinks from "./layout/SideLinks";
+import Footer from "./layout/Footer";
 
 export default function App() {
   return (
@@ -83,7 +85,10 @@ export default function App() {
           <Route path="/Business-Growth" element={<BusinessGrowth />} />
           <Route path="/Business-success" element={<BusinessSuccess />} />
           <Route path="*" element={<h1>Error</h1>} />
+        
         </Routes>
+        <SideLinks />
+        <Footer/>
       </BrowserRouter>
     </>
   );

@@ -77,7 +77,7 @@ const PrivacyPolicy = () => {
           effort to address them. We appreciate you using Risezonic Travel.
         </p>
       </div>
-      <Footer />
+      
     </div>
   );
 };

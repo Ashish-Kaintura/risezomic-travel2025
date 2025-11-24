@@ -180,7 +180,7 @@ export default function BusinessGrowth() {
           </div>
         </section>
       </section>
-      <Footer />
+      
     </div>
   );
 }

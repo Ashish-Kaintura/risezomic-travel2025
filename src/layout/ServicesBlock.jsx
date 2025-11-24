@@ -51,19 +51,19 @@ export default function ServicesBlock() {
       <section>
         <div
           className=" p-12 text-gray-200"
-          style={{
-            backgroundImage: `
-      linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%, rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%, rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),
-      linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%, rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%, rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
-      linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%, rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%, rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
-      linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
-    `,
-          }}
+    //       style={{
+    //         backgroundImage: `
+    //   linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%, rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%, rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),
+    //   linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%, rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%, rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
+    //   linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%, rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%, rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
+    //   linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
+    // `,
+    //       }}
         >
           <div>
             <div className="flex justify-between items-center">
               <div className="py-2">
-                <h2 className="italic sm:text-5xl text-3xl uppercase font-semibold underline decoration-yellow-500 underline-offset-8 pb-4">
+                <h2 className="italic sm:text-5xl font-heading text-blue-600 text-3xl uppercase font-semibold underline decoration-yellow-500 underline-offset-8 pb-4">
                   Services
                 </h2>
               </div>
