@@ -17,9 +17,9 @@ import "swiper/css/autoplay";
 import "swiper/css/pagination";
 // import "swiper/css/navigation";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import { useAirlineCursor } from "../hooks/useAirlineCursor";
+
 export default function ServicesBlock() {
-  const cursor = useAirlineCursor();
+
   const swiperRef = React.useRef(null);
 
   const goNext = () => {
@@ -126,9 +126,7 @@ export default function ServicesBlock() {
                           backgroundSize: "cover",
                           backgroundPosition: "center",
                         }}
-                        onMouseEnter={cursor.handleHoverStart}
-                        onMouseLeave={cursor.handleHoverEnd}
-                        onClick={(e) => cursor.triggerPlaneToElement(e.currentTarget)}
+                     
                       >
                         <div className="z-10 absolute w-full h-full peer"></div>
                         <div className="absolute peer-hover:-top-20  peer-hover:-left-16 peer-hover:w-[140%] peer-hover:h-[140%] -top-32 -left-16 w-32 h-44 rounded-full  bg-[#0D0C0C] bg-opacity-75 transition-all duration-500"></div>

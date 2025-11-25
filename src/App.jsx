@@ -30,18 +30,18 @@ import BusinessGrowth from "./Pages/BusinessGrowth";
 import BusinessSuccess from "./Pages/BusinessSuccess";
 import SideLinks from "./layout/SideLinks";
 import Footer from "./layout/Footer";
-import { AirlineCursor, useAirlineCursor } from "./hooks/useAirlineCursor";
+// import { AirlineCursor, useAirlineCursor } from "./hooks/useAirlineCursor";
 
 export default function App() {
-  const cursor = useAirlineCursor({
-    trailLength: 20,
-    cursorSize: 28,
-    cursorColor: '#3b82f6'
-  });
+  // const cursor = useAirlineCursor({
+  //   trailLength: 20,
+  //   cursorSize: 28,
+  //   cursorColor: '#3b82f6'
+  // });
   return (
     <>
       <BrowserRouter>
-        <AirlineCursor {...cursor} />
+        {/* <AirlineCursor {...cursor} /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
