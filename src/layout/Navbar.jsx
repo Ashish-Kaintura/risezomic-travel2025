@@ -85,7 +85,7 @@ export default function Navbar() {
               </li>
               <li>
                 <NavLink
-                  to={"/AboutUs"}
+                  to={"/about-us"}
                   className="block py-2 px-3 text-white rounded
                   hover:bg-gray-800 md:hover:bg-transparent
                   md:hover:text-yellow-400 md:p-0 md:dark:hover:text-blue-500

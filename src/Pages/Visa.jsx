@@ -16,7 +16,7 @@ const VIsa = () => {
           name="description"
           content="We specialize in Assistance and travel packages to other countries including Singapore, Dubai, Canada, Thailand, Europe, and the US."
         />
-        <link rel="canonical" href="https://www.risezonictravel.com/Visa" />
+        <link rel="canonical" href="https://www.risezonictravel.com/visa" />
       </Helmet>
       <HomeNav />
       <div className="">
@@ -26,9 +26,9 @@ const VIsa = () => {
             src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
           />
         </div>
-        <h2 className="text-center text-6xl uppercase py-8 font-semibold underline underline-offset-8">
+        <h1 className="text-center text-6xl uppercase py-8 font-semibold underline underline-offset-8">
           Visa Assistance
-        </h2>
+        </h1>
         <div className="flex justify-start gap-x-5 sm: mt-12">
           <div className=" flex ps-5 object-contain w-[500px] ">
             <img

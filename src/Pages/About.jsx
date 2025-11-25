@@ -1,210 +1,180 @@
-import Footer from "../layout/Footer";
-import ImgSwiper from "../layout/ImgSwiper";
+import { useEffect } from "react";
+import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
+
+import HomeNav from "../layout/HomeNav";
+import Aboutimgslider from "../components/Aboutimgslider";
+import Testimonials from "../layout/Testimonial";
+import ServicesBlock from "../layout/ServicesBlock";
+import SideLinks from "../layout/SideLinks";
+import AboutSpecialServices from "../layout/AboutSpecialServices";
+
 import Aboutus1 from "../images/AboutUs/aboutstory-1.webp";
 import vision from "../images/AboutUs/vision.webp";
 import mission from "../images/AboutUs/mission.webp";
-import ServicesBlock from "../layout/ServicesBlock";
-import SideLinks from "../layout/SideLinks";
-import { useEffect } from "react";
-import HomeNav from "../layout/HomeNav";
-import { Helmet } from "react-helmet";
-import Testimonials from "../layout/Testimonial";
-import AboutSpecialServices from "../layout/AboutSpecialServices";
+
+// Motion presets
+const fadeUp = {
+  hidden: { opacity: 0, y: 40 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
+
+const fade = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { duration: 0.7 } }
+};
+
 export default function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <>
+      {/* SEO */}
       <Helmet>
-        <title>About us | Risezonic Travels</title>
-        <link rel="canonical" href="https://www.risezonictravel.com/AboutUs" />
+        <title>Risezonic Travel | Trusted Travel Agency for Holidays & Tours</title>
+        <link rel="canonical" href="https://www.risezonictravel.com/about-us" />
         <meta
           name="description"
-          content="India's leading B2B travel Agency | Corporate Travel Management Company in Delhi "
+          content="Risezonic Travel is a trusted travel agency offering customized holiday packages, flights, hotels, group tours, and 24/7 assistance to make every business or leisure journey smooth."
         />
-        <link rel="canonical" href="https://www.risezonictravel.com/AboutUs" />
       </Helmet>
+
       <HomeNav />
-      <section className="">
-        <ImgSwiper />
+
+      {/* HERO SECTION – Premium Slider */}
+      <section className="relative">
+        <motion.div variants={fade} initial="hidden" animate="show">
+          <Aboutimgslider />
+        </motion.div>
       </section>
-      <section>
-        <div
-          className="sm:flex block justify-center py-12 gap-x-8 p-4"
-          style={{
-            backgroundImage: `
-      linear-gradient(135deg, transparent 0%, transparent 6%, rgba(71, 71, 71, 0.04) 6%, rgba(71, 71, 71, 0.04) 22%, transparent 22%, transparent 100%),
-      linear-gradient(45deg, transparent 0%, transparent 20%, rgba(71, 71, 71, 0.04) 20%, rgba(71, 71, 71, 0.04) 47%, transparent 47%, transparent 100%),
-      linear-gradient(135deg, transparent 0%, transparent 24%, rgba(71, 71, 71, 0.04) 24%, rgba(71, 71, 71, 0.04) 62%, transparent 62%, transparent 100%),
-      linear-gradient(45deg, transparent 0%, transparent 73%, rgba(71, 71, 71, 0.04) 73%, rgba(71, 71, 71, 0.04) 75%, transparent 75%, transparent 100%),
-      linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255))
-    `,
-          }}
-        >
-          <div className="sm:h-[650px] overflow-hidden sm:w-[550px] ">
+
+      {/* ABOUT STORY SECTION */}
+      <section className="py-16 bg-gradient-to-b from-white to-gray-50/40">
+        <div className="container mx-auto px-5 lg:flex gap-10 items-start">
+          {/* Left Image */}
+          <motion.div
+            className="w-full lg:w-[550px] h-[650px] overflow-hidden rounded-2xl shadow-lg"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
             <img
-              className=" object-cover "
               src={Aboutus1}
+              className="w-full h-full object-cover scale-105 hover:scale-100 transition-transform duration-700"
               alt="About"
-              loading="lazy"
             />
-          </div>
-          <div>
-            <div>
-              <h2 className="sm:text-6xl text-3xl font-bold pb-6 sm:pt-0 pt-4">
-                Leaders In Corporate <br /> Travel & Hospitality
-              </h2>
-            </div>
-            <p className="text-gray-600">
-              R isezonic Travel is one of the leading business travel agencies,{" "}
-              <br />
-              that has changed the future of corporate travel. Our amazing{" "}
-              <br />
-              corporate travel experts provides world-class corporate travel{" "}
-              <br />
-              management, full fillled by years of experience and backed by{" "}
-              <br />
-              award-winning technology. Business Travel that just....works. Tha{" "}
-              <br />t is business travel with Risezonic Travel – in a nutshell!!
-              Using <br />
-              best-in market technology available through one globally <br />
-              consistent interface, we make bookings and managing corporate{" "}
-              <br />
-              travel as smooth as your favourite cocktail!! <br />
+          </motion.div>
+
+          {/* Right Text */}
+          <motion.div
+            className="flex-1 mt-10 lg:mt-0"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+              About Risezonic Travel
+            </h1>
+
+            <p className="text-gray-600 leading-7 text-lg mb-8">
+              Risezonic Travel is one of the leading business travel agencies,
+              that has changed the future of corporate travel. Our amazing
+              corporate travel experts provide world-class corporate travel
+              management backed by award-winning technology. Business travel
+              that just... works.
             </p>
-            <h3 className="text-4xl font-bold pb-6 pt-6">What we do..</h3>
-            <p className="text-gray-600">
-              You don’t just need to get from A to B. You need an effortless{" "}
-              <br />
-              experience with built-in support and seamless technology to help{" "}
-              <br />
-              you along the journey. We are here to take you places – just point{" "}
-              <br />
-              the way!!
+
+            <h3 className="text-3xl lg:text-4xl font-bold mb-4">What we do..</h3>
+            <p className="text-gray-600 leading-7 text-lg mb-8">
+              You don’t just need to get from A to B. You need an effortless
+              experience with seamless technology. We are here to take you
+              places – just point the way!!
             </p>
-            <h3 className="text-4xl font-bold pb-6 pt-6">What we Believe In</h3>
-            <p className="text-gray-600">
-              You don’t just need to get from A to B. You need an effortless{" "}
-              <br />
-              experience with built-in support and seamless technology to help{" "}
-              <br />
-              you along the journey. We are here to take you places – just point{" "}
-              <br />
-              the way!!
+
+            <h3 className="text-3xl lg:text-4xl font-bold mb-4">What we Believe In</h3>
+            <p className="text-gray-600 leading-7 text-lg">
+              Exceptional journeys require exceptional support. We deliver a
+              streamlined, smooth, and premium travel experience at every step.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
-      <section>
-        <div
-          className="sm:flex block justify-center py-12  text-white gap-x-8"
-          style={{
-            backgroundImage: `
-linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%, rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%, rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),
-linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%, rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%, rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
-linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%, rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%, rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
-linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
-`,
-          }}
-        >
-          <div>
-            <div className="sm:w-[450px] h-[580px] overflow-hidden">
+
+      {/* VISION / MISSION SECTION */}
+      <section className="py-20 bg-black text-white">
+        <div className="container mx-auto px-5 grid lg:grid-cols-2 gap-12">
+          {/* Vision */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            <div className="overflow-hidden rounded-2xl shadow-xl mb-6 h-[580px]">
               <img
-                className="object-contain h-full w-full"
                 src={vision}
-                alt="Aboutus"
-                loading="lazy"
+                className="w-full h-full object-cover transform hover:scale-105 transition duration-700"
+                alt="Vision"
               />
             </div>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4">Our Vision</h2>
+            <p className="text-gray-300 leading-7 text-lg">
+              To become India’s most preferred Corporate Travel Management
+              company for all Travel & Hospitality requirements, including
+              events. Our goal is to set new benchmarks and achieve 5X growth in
+              3 years & 15X in 5 years.
+            </p>
+          </motion.div>
 
-            <div>
-              <h1 className="sm:py-5 py-2 sm:px-0 px-4 font-bold sm:text-5xl text-3xl">
-                Our Vision
-              </h1>
-            </div>
-            <div>
-              <p className="text-gray-200 sm:p-0 p-4">
-                To become Indias most preferred Corporate Travel Management{" "}
-                <br />
-                company for all Travel & Hospitality requirements, including{" "}
-                <br />
-                events. With an unwavering commitment to unparalleled service{" "}
-                <br />
-                excellence and a relentless focus on innovation, our goal is to{" "}
-                <br />
-                set new benchmarks and establish ourselves as the unrivaled{" "}
-                <br />
-                market leader. We aim to achieve remarkable growth, expanding{" "}
-                <br />
-                our business by 5X in the next 3 years and 15X in the next 5{" "}
-                <br />
-                years, solidifying our position as the epitome of the industry.{" "}
-                <br />
-              </p>
-            </div>
-          </div>
-          <div>
-            <div className="sm:w-[650px] h-[750px] overflow-hidden">
+          {/* Mission */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            <div className="overflow-hidden rounded-2xl shadow-xl mb-6 h-[650px]">
               <img
-                className="object-contain h-full w-full"
                 src={mission}
-                alt="Aboutus"
-                loading="lazy"
+                className="w-full h-full object-cover transform hover:scale-105 transition duration-700"
+                alt="Mission"
               />
             </div>
-
-            <div>
-              <h1 className="sm:py-5 py-2 sm:px-0 px-4 font-bold sm:text-5xl text-3xl">
-                Our Mission
-              </h1>
-            </div>
-            <div>
-              <p className="text-gray-200 sm:p-0 p-4">
-                To revolutionize Corporate Travel Management in India by <br />
-                empowering businesses with seamless, sustainable, and <br />
-                tech-driven travel solutions. We combine peoples expertise,{" "}
-                <br />
-                streamlined processes, cutting-edge technology, and relentless{" "}
-                <br />
-                innovation to deliver service excellence. With a deep commitment{" "}
-                <br />
-                to exceptional experiences, our mission is to redefine the{" "}
-                <br />
-                industry landscape, exceeding client expectations and setting{" "}
-                <br />
-                new standards for Corporate Travel Management in India. <br />
-              </p>
-            </div>
-          </div>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4">Our Mission</h2>
+            <p className="text-gray-300 leading-7 text-lg">
+              To revolutionize Corporate Travel Management in India by providing
+              seamless, tech-driven, and sustainable travel solutions powered by
+              innovation and exceptional service excellence.
+            </p>
+          </motion.div>
         </div>
       </section>
-      <section>
-        <section className=" ">
+
+      {/* Testimonials */}
+      <section className="py-20 bg-white">
+        <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <Testimonials />
-        </section>
-      </section>
-      <section>
-        <ServicesBlock />
+        </motion.div>
       </section>
 
-      <section
-        style={{
-          backgroundImage: `
-            linear-gradient(135deg, transparent 0%, transparent 6%, rgba(71, 71, 71, 0.04) 6%, rgba(71, 71, 71, 0.04) 22%, transparent 22%, transparent 100%),
-            linear-gradient(45deg, transparent 0%, transparent 20%, rgba(71, 71, 71, 0.04) 20%, rgba(71, 71, 71, 0.04) 47%, transparent 47%, transparent 100%),
-            linear-gradient(135deg, transparent 0%, transparent 24%, rgba(71, 71, 71, 0.04) 24%, rgba(71, 71, 71, 0.04) 62%, transparent 62%, transparent 100%),
-            linear-gradient(45deg, transparent 0%, transparent 73%, rgba(71, 71, 71, 0.04) 73%, rgba(71, 71, 71, 0.04) 75%, transparent 75%, transparent 100%),
-            linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255))
-          `,
-        }}
-      >
+      {/* Services */}
+      <section className="py-20 bg-gradient-to-r from-black via-black/80 to-black">
+        <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
+          <ServicesBlock />
+        </motion.div>
+      </section>
+
+      {/* Special Services */}
+      <section className="py-20 bg-white">
         <AboutSpecialServices />
       </section>
-      <section>
-        <SideLinks />
-      </section>
-      
+
+      {/* Fixed Side Links */}
+      <SideLinks />
     </>
   );
 }

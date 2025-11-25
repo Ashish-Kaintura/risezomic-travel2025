@@ -12,7 +12,7 @@ export default function Blogs() {
           name="description"
           content="Risezonic Travel is Top Rated  corporate travel agency in India, providing innovative solutions for business travel "
         />
-        <link rel="canonical" href="https://www.risezonictravel.com/Blogs" />
+        <link rel="canonical" href="https://www.risezonictravel.com/blogs" />
       </Helmet>
     </div>
   );

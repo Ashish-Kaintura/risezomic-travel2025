@@ -18,10 +18,10 @@ export default function IndianTourPackages() {
   return (
     <div>
       <Helmet>
-        <title>We Provide Best Holiday Indian Tour Packages </title>
+        <title>Affordable Indian Holiday Packages | Risezonic Travel</title>
         <meta
           name="description"
-          content="The best deals on holiday tour packages in India are at Risezonic Travel. Click to book your India travel packages and enjoy exciting offers on your Vacation. "
+          content="Explore affordable Indian holiday packages with Risezonic Travel. Enjoy customized itineraries, group tours, flights, hotels, and seamless support for your perfect India trip."
         />
         <link
           rel="canonical"
@@ -29,8 +29,14 @@ export default function IndianTourPackages() {
         />
       </Helmet>
       <HomeNav />
-      <section>
+      <section className="relative">
         <InidanHolidayBanner />
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          {/* Gradient Overlays */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+        </div>
       </section>
       <section
         className="sm:h-[80vh] items-center flex justify-center"
@@ -46,7 +52,7 @@ export default function IndianTourPackages() {
       >
         <div className="py-6">
           <h1 className="text-center text-3xl italic uppercase font-bold text-blue-700 underline decoration-yellow-500 underline-offset-8">
-            Indian Tour Packages
+            Affordable Indian Holiday Tour Packages
           </h1>
           <br />
           <div className="block justify-center px-4 text-gray-800 text-[15px] font-serif">

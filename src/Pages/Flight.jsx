@@ -16,7 +16,7 @@ const Flight = () => {
           name="description"
           content="Book your flight tickets online through Risezonic Travel to secure the Cheapest fares and the best deals on domestic and international flights. "
         />
-        <link rel="canonical" href="https://www.risezonictravel.com/flights" />
+        <link rel="canonical" href="https://www.risezonictravel.com/flights-booking" />
       </Helmet>
       <HomeNav />
       <div className="">
@@ -27,9 +27,9 @@ const Flight = () => {
             alt="flight booking"
           />
         </div>
-        <h2 className="text-center sm:text-6xl text-3xl uppercase py-8 font-semibold underline underline-offset-8">
+        <h1 className="text-center sm:text-6xl text-3xl uppercase py-8 font-semibold underline underline-offset-8">
           Flight Tickets by Risezonic Travel
-        </h2>
+        </h1>
         <div className="sm:flex block justify-start gap-x-5 sm:mt-12 px-4">
           <div className="flex sm:ps-5 object-contain  h-96 ">
             <img

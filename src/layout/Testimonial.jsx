@@ -43,9 +43,9 @@ export default function Testimonials() {
           `,
           }}
         >
-          <h1 className="sm:text-6xl text-3xl uppercase font-bold text-center pt-12">
+          <h2 className="sm:text-6xl text-3xl uppercase font-bold text-center pt-12">
             Testimonials
-          </h1>
+          </h2>
           <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 b">
             <figure className="max-w-screen-md mx-auto">
               <svg
@@ -98,9 +98,9 @@ export default function Testimonials() {
           `,
           }}
         >
-          <h1 className="sm:text-6xl text-3xl uppercase font-bold text-center pt-12">
+          <h2 className="sm:text-6xl text-3xl uppercase font-bold text-center pt-12">
             Testimonials
-          </h1>
+          </h2>
           <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 b">
             <figure className="max-w-screen-md mx-auto">
               <svg
@@ -154,9 +154,9 @@ export default function Testimonials() {
           `,
           }}
         >
-          <h1 className="sm:text-6xl text-3xl uppercase font-bold text-center pt-12">
+          <h2 className="sm:text-6xl text-3xl uppercase font-bold text-center pt-12">
             Testimonials
-          </h1>
+          </h2>
           <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 b">
             <figure className="max-w-screen-md mx-auto">
               <svg

@@ -34,7 +34,7 @@ const InternationalHoneymoonDetails = () => {
   if (!service) {
     return <div>Loading...</div>;
   }
-  const canonicalUrl = `https://www.risezonictravel.com/International-Honeymoon-packages/${UrlTitle}`;
+  const canonicalUrl = `https://www.risezonictravel.com/international-honeymoon-tour-packages/${UrlTitle}`;
   return (
     <div>
       <Helmet>
@@ -50,9 +50,9 @@ const InternationalHoneymoonDetails = () => {
             alt={service.title}
           />
         </div>
-        <h2 className="text-center text-6xl uppercase py-8 font-semibold underline underline-offset-8">
+        <h1 className="text-center text-6xl uppercase py-8 font-semibold underline underline-offset-8">
           {service.title}
-        </h2>
+        </h1>
         <div className="flex justify-start gap-x-5 sm: mt-12">
           <div className=" flex ps-5 object-contain w-[500px] ">
             <img src={service.image} alt={service.title} loading="lazy" />

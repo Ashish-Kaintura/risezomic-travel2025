@@ -43,7 +43,7 @@ export default function HomeNav() {
         {/* Desktop Menu */}
         <ul className="hidden lg:flex space-x-8 text-white items-center font-medium">
           <li>
-            <NavLink to="/AboutUs" className="hover:text-yellow-400 transition">
+            <NavLink to="/about-us" className="hover:text-yellow-400 transition">
               About Us
             </NavLink>
           </li>
@@ -62,19 +62,19 @@ export default function HomeNav() {
                 Indian Holiday
               </NavLink>
               <NavLink
-                to="/International-Tour-Packages"
+                to="/international-holiday-packages"
                 className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md"
               >
                 International Holiday
               </NavLink>
               <NavLink
-                to="/International-Honeymoon-packages"
+                to="/international-honeymoon-tour-packages"
                 className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md"
               >
                 International Honeymoon
               </NavLink>
               <NavLink
-                to="/Indian-honeymoon-packages"
+                to="/indian-honeymoon-tour-packages"
                 className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md"
               >
                 Indian Honeymoon
@@ -83,17 +83,17 @@ export default function HomeNav() {
           </li>
 
           <li>
-            <NavLink to="/flights" className="hover:text-yellow-400 transition">
+            <NavLink to="/flights-booking" className="hover:text-yellow-400 transition">
               Flights
             </NavLink>
           </li>
           <li>
-            <NavLink to="/cruise" className="hover:text-yellow-400 transition">
+            <NavLink to="/cruise-booking" className="hover:text-yellow-400 transition">
               Cruise
             </NavLink>
           </li>
           <li>
-            <NavLink to="/services/Hotel" className="hover:text-yellow-400 transition">
+            <NavLink to="/services/hotels-booking" className="hover:text-yellow-400 transition">
               Hotel Booking
             </NavLink>
           </li>
@@ -108,7 +108,7 @@ export default function HomeNav() {
               <NavLink to="/mice" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
                 MICE
               </NavLink>
-              <NavLink to="/Visa" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
+              <NavLink to="/visa" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
                 Visa
               </NavLink>
               <NavLink to="/Meeting-And-Event" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
@@ -121,7 +121,7 @@ export default function HomeNav() {
           </li>
 
           {/* Contact Button */}
-          <Link to="/Contact-us">
+          <Link to="/contect-us">
             <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-5 py-2 rounded-lg shadow-md transition font-semibold">
               Contact Us
             </button>
@@ -148,7 +148,7 @@ export default function HomeNav() {
             <NavLink to="/">Home</NavLink>
           </li>
           <li onClick={toggleMenu}>
-            <NavLink to="/AboutUs">About Us</NavLink>
+            <NavLink to="/about-us">About Us</NavLink>
           </li>
 
           {/* MOBILE DROPDOWN 1 */}
@@ -163,23 +163,23 @@ export default function HomeNav() {
             {activeDropdown === "packages" && (
               <div className="ml-7 mt-2 space-y-2 text-gray-300"> 
                 <NavLink to="/Indian-Tour-Packages">Indian Holiday</NavLink>  <br />
-                <NavLink to="/International-Tour-Packages">International Holiday</NavLink> <br />
-                <NavLink to="/International-Honeymoon-packages">Int. Honeymoon</NavLink> <br />
-                <NavLink to="/Indian-honeymoon-packages">Indian Honeymoon</NavLink> <br />
+                <NavLink to="/international-holiday-packages">International Holiday</NavLink> <br />
+                <NavLink to="/international-honeymoon-tour-packages">Int. Honeymoon</NavLink> <br />
+                <NavLink to="/indian-honeymoon-tour-packages">Indian Honeymoon</NavLink> <br />
               </div>
             )}
           </li>
 
           <li onClick={toggleMenu}>
-            <NavLink to="/flights">Flights</NavLink>
+            <NavLink to="/flights-booking">Flights</NavLink>
           </li>
 
           <li onClick={toggleMenu}>
-            <NavLink to="/Cruise">Cruise</NavLink>
+            <NavLink to="/cruise-booking">Cruise</NavLink>
           </li>
 
           <li onClick={toggleMenu}>
-            <NavLink to="/services/Hotel">Hotel Booking</NavLink>
+            <NavLink to="/services/hotels-booking">Hotel Booking</NavLink>
           </li>
 
           {/* DROPDOWN 2 */}
@@ -194,7 +194,7 @@ export default function HomeNav() {
             {activeDropdown === "more" && (
               <div className="ml-7 mt-2 space-y-2 text-gray-300">
                 <NavLink to="/mice">MICE</NavLink> <br />
-                <NavLink to="/Visa">Visa</NavLink> <br />
+                <NavLink to="/visa">Visa</NavLink> <br />
                 <NavLink to="/Meeting-And-Event">Events</NavLink> <br/>
                 <NavLink to="/Insurance">Insurance</NavLink> <br/>
               </div>

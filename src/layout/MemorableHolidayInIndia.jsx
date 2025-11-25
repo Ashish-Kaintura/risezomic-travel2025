@@ -113,7 +113,7 @@ export default function MemorableHolidayInIndia() {
                 {services.map((B2Cservice, index) => (
                   <SwiperSlide key={index}>
                     <Link
-                      to={`/holiday/${encodeURIComponent(B2Cservice.UrlTitle)}`}
+                      to={`/indian-holiday-packages/${encodeURIComponent(B2Cservice.UrlTitle)}`}
                     >
                       <div
                         className="relative overflow-hidden sm:w-96 h-[450px] rounded-3xl cursor-pointer "

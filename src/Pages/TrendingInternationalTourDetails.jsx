@@ -33,7 +33,7 @@ const TrendingInternationalTourDetails = () => {
   if (!service) {
     return <div>Loading...</div>;
   }
-  const canonicalUrl = `https://www.risezonictravel.com/International-Holiday/${UrlTitle}`;
+  const canonicalUrl = `https://www.risezonictravel.com/international-holiday-packages/${UrlTitle}`;
   const pageTitle = ` ${service.metatitle}`;
   const pagedes = ` ${service.metades}`;
   return (
@@ -55,9 +55,9 @@ const TrendingInternationalTourDetails = () => {
             alt={service.title}
           />
         </div>
-        <h2 className="text-center sm:text-6xl text-3xl uppercase py-8 font-semibold underline underline-offset-8">
+        <h1 className="text-center sm:text-6xl text-3xl uppercase py-8 font-semibold underline underline-offset-8">
           {service.title}
-        </h2>
+        </h1>
         <div className="sm:flex block justify-start gap-x-5 sm: sm:mt-12 px-4">
           <div className=" flex sm:ps-5 object-contain  h-96 ">
             <img src={service.image} alt={service.title} />

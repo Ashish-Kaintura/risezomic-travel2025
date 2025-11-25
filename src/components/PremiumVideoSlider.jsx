@@ -87,12 +87,12 @@ export default function PremiumVideoSlider() {
             >
                 {/* Text Content with Animation */}
                 <div className="max-w-3xl space-y-4 mb-8">
-                    <h1
+                    <h4
                         key={`title-${current}`}
                         className="text-5xl md:text-7xl font-bold text-white tracking-tight animate-fade-in"
                     >
                         {videos[current].title}
-                    </h1>
+                    </h4>
                     <p
                         key={`subtitle-${current}`}
                         className="text-xl md:text-2xl text-gray-200 animate-fade-in-delay"

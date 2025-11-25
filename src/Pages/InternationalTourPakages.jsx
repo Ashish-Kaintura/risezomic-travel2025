@@ -23,7 +23,7 @@ export default function InternationalTourPakages() {
         />
         <link
           rel="canonical"
-          href="https://www.risezonictravel.com/International-Tour-Packages"
+          href="https://www.risezonictravel.com/international-holiday-packages"
         />
       </Helmet>
       <HomeNav />

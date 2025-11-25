@@ -46,9 +46,9 @@ const DealsDetail = () => {
             alt={service.title}
           />
         </div>
-        <h2 className="text-center text-6xl uppercase py-8 font-semibold underline underline-offset-8">
+        <h1 className="text-center text-6xl uppercase py-8 font-semibold underline underline-offset-8">
           {service.title}
-        </h2>
+        </h1>
         <div className="flex justify-start gap-x-5 sm: mt-12">
           <div className=" flex ps-5 object-contain  h-96 ">
             <img src={service.bannerImage} alt={service.title} />

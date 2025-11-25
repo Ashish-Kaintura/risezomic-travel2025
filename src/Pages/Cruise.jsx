@@ -16,7 +16,7 @@ const Cruise = () => {
           name="description"
           content="Plan your Luxury cruise and make your reservations early to access exclusive deals on  packages and onboard activities with Risezonic Travel. "
         />
-        <link rel="canonical" href="https://www.risezonictravel.com/Cruise" />
+        <link rel="canonical" href="https://www.risezonictravel.com/cruise-booking" />
       </Helmet>
       <HomeNav />
       <div className="">
@@ -27,9 +27,9 @@ const Cruise = () => {
             alt="flight booking"
           />
         </div>
-        <h2 className="text-center sm:text-6xl text-3xl uppercase py-8 font-semibold underline underline-offset-8">
+        <h1 className="text-center sm:text-6xl text-3xl uppercase py-8 font-semibold underline underline-offset-8">
           Cruise by Risezonic Travel
-        </h2>
+        </h1>
         <div className="sm:flex block justify-start gap-x-5  sm:mt-12 px-4">
           <div className="flex sm:ps-5 object-contain h-96">
             <img

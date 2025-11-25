@@ -29,7 +29,7 @@ export default function Contact() {
           name="description"
           content="Risezonic Travels is the leading tour and travel agency in Delhi. We are providing premium India tour packages at affordable prices."
         />
-        <link rel="canonical" href="https://www.risezonictravel.com/Contact-us" />
+        <link rel="canonical" href="https://www.risezonictravel.com/contect-us" />
       </Helmet>
       <div>
      <HomeNav/>
@@ -98,9 +98,9 @@ export default function Contact() {
           className="sm:w-[600px] w-[410px] sm:h-[450px] h-[450px]"
         ></iframe>
         <div className="text-start flex flex-col justify-start">
-          <h2 className="text-start sm:text-2xl text-lg font-semibold pb-4 uppercase sm:pt-0 pt-4">
+          <h1 className="text-start sm:text-2xl text-lg font-semibold pb-4 uppercase sm:pt-0 pt-4">
             Connecting You to Global brCorporate <br /> Destinations
-          </h2>
+          </h1>
           <p>
             In our commitment to providing unparalleled corporate travel <br />
             experiences, SKIL Travel ensures that your corporate journeys are{" "}

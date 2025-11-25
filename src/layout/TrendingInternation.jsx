@@ -112,7 +112,7 @@ export default function TrendingInternation() {
                 {services.map((item, index) => (
                   <SwiperSlide key={index}>
                     <Link
-                      to={`/International-Holiday/${encodeURIComponent(item.UrlTitle)}`}
+                      to={`/international-holiday-packages/${encodeURIComponent(item.UrlTitle)}`}
                     >
                       <div
                         className="relative overflow-hidden w-96 h-[450px] rounded-3xl cursor-pointer "

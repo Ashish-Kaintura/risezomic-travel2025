@@ -51,9 +51,9 @@ const VisaFreeIternational = () => {
     <section className="py-12 sm:px-12 px-5">
       <div className="py-5 ">
         <div className="py-6">
-          <h1 className="text-start sm:text-3xl text-2xl italic uppercase font-bold text-gray-200 underline decoration-yellow-500 underline-offset-8">
+          <h2 className="text-start sm:text-3xl text-2xl italic uppercase font-bold text-gray-200 underline decoration-yellow-500 underline-offset-8">
             Hassle-Free Visa International Destinations
-          </h1>
+          </h2>
           <br />
           <div className="block justify-center  text-gray-200 text-[15px] font-serif">
             <p className="text-start">

@@ -25,9 +25,9 @@ const Career = () => {
             src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
           />
         </div>
-        <h2 className="text-center text-6xl decoration-yellow-500 text-blue-700 uppercase py-8 font-semibold  underline underline-offset-8">
+        <h1 className="text-center text-6xl decoration-yellow-500 text-blue-700 uppercase py-8 font-semibold  underline underline-offset-8">
           Risezonic Travel - Career
-        </h2>
+        </h1>
         <p className="px-4 py-6 font-serif">
           At Risezonic Travels, we are an equal opportunity employer committed
           to providing equal opportunities for all applicants and employees. We

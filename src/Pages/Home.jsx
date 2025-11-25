@@ -5,14 +5,10 @@ import ImgSwiper from "../layout/ImgSwiper";
 import ServicesBlock from "../layout/ServicesBlock";
 import HomeForm from "../layout/HomeForm";
 import FAQ from "../layout/FAQ";
-import Footer from "../layout/Footer";
 import banner from "../video/Risezonic Travel website video.mp4";
 import banner2 from "../video/Risezonic Travel website video 2.mp4";
 import About1 from "../images/Corporate travel image 2.jpg";
 import About2 from "../images/Corporate travel image 1.jpg";
-// import feature1 from "../images/SpecialServices/feature-1.webp";
-// import feature2 from "../images/SpecialServices/feature-4.webp";
-import SideLinks from "../layout/SideLinks";
 import HomeNav from "../layout/HomeNav";
 import SpecialServices from "../layout/SpecialServices";
 // import Chatbot from "../layout/Chatbot";
@@ -20,8 +16,11 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import YoutubeShortsGallery from "../layout/YouTubeShortsGallery";
 import StatsSection from "../components/StatsSection";
-import YouTubeSlider from "../components/YouTubeSlider";
 import PremiumVideoSlider from "../components/PremiumVideoSlider";
+import UniversalButton from "../components/UniversalButton";
+import useButton from "../hooks/useButton";
+import { FaYoutube } from "react-icons/fa";
+
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,7 +28,7 @@ function Home() {
 
   const Poster1 =
     "https://gskworldtravels.com/wp-content/uploads/2023/07/maldives.jpg";
-
+  const { handleButtonClick } = useButton();
   return (
     <>
       <Helmet>
@@ -37,20 +36,20 @@ function Home() {
           name="description"
           content="Risezonic Travel is the leading Corporate travel agency in India. provide world-class Corporate Flight and hotels deals, Mice events, and corporate fears."
         />
-        <title> Best Tours and Travel Agency in India</title>
+        <title> Corporate Travel & Holiday Tour Packages | Risezonic Travel</title>
         <link rel="canonical" href="https://www.risezonictravel.com/" />
         <meta
           name="description"
-          content="Risezonic Travel is the Best Corporate Travel Agency in Delhi NCR, India. We provide the Cheapest  Corporate flights, Hotel Deals and Mice."
+          content="Risezonic Travel offers corporate travel management, MICE services, group tours, flights, hotels, and customized holiday tour packages for seamless domestic and international travel Deals."
         />
         <link rel="canonical" href="https://www.risezonictravel.com/" />
       </Helmet>
       <div>
         <HomeNav />
       </div>
-      <section>
+      <section className="relative">
         <video
-          className="w-full h-screen object-cover"
+          className="w-full h-screen object-cover "
           poster={Poster1}
           autoPlay
           loop
@@ -58,6 +57,12 @@ function Home() {
           preload="metadata"
           src={banner}
         ></video>
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0">
+          {/* Gradient Overlays */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+        </div>
       </section>
       <section
         style={{
@@ -70,8 +75,8 @@ function Home() {
   `,
         }}
       >
-        <h1 className=" sm:text-4xl  text-center sm:py-12 py-4 text-normal uppercase underline font-semibold decoration-yellow-500 underline-offset-8 text-blue-700 font-Heading">
-          Best Corporate Tour and Travel Agency- Risezonic Travel.
+        <h1 className=" sm:text-3xl  text-center sm:py-12 py-4 text-normal uppercase underline font-semibold decoration-yellow-500 underline-offset-8 text-blue-700 font-Heading">
+          Trusted Agency for Corporate Travel Deals & Holiday Tour Packages
         </h1>
       </section>
       <section className="">
@@ -88,9 +93,9 @@ function Home() {
     `,
           }}
         >
-          
+
           <div className="flex flex-wrap  sm:space-x-4">
-            
+
             <div className="relative  p-8 overflow-hidden h-[550px] sm:w-[540px] w-full  ">
               <div className=" absolute z-10 top-0 left-0 sm:w-[300px] w-[200px]">
                 <img
@@ -140,17 +145,24 @@ function Home() {
                   interface, we ensure effortless bookings and streamlined
                   management of corporate travel arrangements.
                 </p>
-               <Link to="" > <button>Call US</button></Link>
+                <UniversalButton
+                  // icon={<IoCall />}
+                  label="Kow More"
+                  variant="primary"
+                  onClick={() =>
+                    handleButtonClick({ type: "link", value: "/about-us" })
+                  }
+                />
               </div>
             </div>
           </div>
-          
+
         </div>
       </section>
       <section className="">
         <ServicesBlock />
       </section>
-     
+
       <section>
         <ImgSwiper />
       </section>
@@ -158,7 +170,7 @@ function Home() {
       <section>
         <HomeForm />
       </section>
-      <StatsSection/>
+      <StatsSection />
       <section className="">
         <div className="w-full  bg-black">
           <video
@@ -172,14 +184,14 @@ function Home() {
       </section>
 
       <section
-//         style={{
-//           backgroundImage: `
-// linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%, rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%, rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),
-// linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%, rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%, rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
-// linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%, rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%, rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
-// linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
-// `,
-//         }}
+      //         style={{
+      //           backgroundImage: `
+      // linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%, rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%, rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),
+      // linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%, rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%, rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
+      // linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%, rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%, rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
+      // linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
+      // `,
+      //         }}
       >
         <SpecialServices />
       </section>
@@ -263,20 +275,22 @@ function Home() {
           </div>
         </div> */}
         {/* <YouTubeSlider /> */}
-        <PremiumVideoSlider/>
+        <PremiumVideoSlider />
         <YoutubeShortsGallery />
         <div className="flex justify-center mt-4">
-          <Link to="https://www.youtube.com/@risezonictravel/featured">
-            <button className="bg-red-600 hover:bg-red-500 rounded-lg text-white text-xl font-bold py-2 px-4  focus:ring-4 focus:outline-none focus:ring-blue-300 border-2 shadow-inner ">
-              More
-            </button>
-          </Link>
+          <UniversalButton
+            label={"More video"}
+            variant="secondary"
+            icon={<FaYoutube />}
+            onClick={() => handleButtonClick({ type: "link", value: "https://www.youtube.com/@risezonictravel/featured" })}
+          />
+
         </div>
       </section>
 
       {/* <Chatbot /> */}
       <footer>
-        
+
       </footer>
       {/* <section>
         <SideLinks />

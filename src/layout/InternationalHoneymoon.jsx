@@ -121,7 +121,7 @@ export default function InternationalHoneymoon() {
                 {services.map((B2Cservice, index) => (
                   <SwiperSlide key={index}>
                     <Link
-                      to={`/International-Honeymoon-packages/${encodeURIComponent(
+                      to={`/international-honeymoon-tour-packages/${encodeURIComponent(
                         B2Cservice.UrlTitle
                       )}`}
                     >
@@ -167,7 +167,7 @@ export default function InternationalHoneymoon() {
               </div>
             </div>
             <div className="flex justify-center mt-8">
-              <Link to={"/International-Honeymoon-packages"}>
+              <Link to={"/international-honeymoon-tour-packages"}>
                 {" "}
                 <button className="bg-blue-500 hover:bg-blue-600 text-white text-xl font-bold py-2 px-4 transform -skew-x-12 focus:ring-4 focus:outline-none focus:ring-blue-300 border-2 shadow-inner ">
                   Know More

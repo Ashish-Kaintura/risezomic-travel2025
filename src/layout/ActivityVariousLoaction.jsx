@@ -66,9 +66,9 @@ const ActivityVariousLoaction = () => {
     <section className="sm:p-12 p-4">
       <div className="py-5 ">
         <div className="py-6">
-          <h1 className="text-start text-3xl italic uppercase font-bold text-blue-700 underline decoration-yellow-500 underline-offset-8">
+          <h2 className="text-start text-3xl italic uppercase font-bold text-blue-700 underline decoration-yellow-500 underline-offset-8">
             Activities in Various Locations In the Indian
-          </h1>
+          </h2>
           <br />
           <div className="block justify-center  text-gray-800 text-[15px] font-serif">
             <p className="text-start">

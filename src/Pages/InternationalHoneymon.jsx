@@ -88,7 +88,7 @@ export default function InternationalHoneymon() {
         />
         <link
           rel="canonical"
-          href="https://www.risezonictravel.com/International-Honeymoon-packages"
+          href="https://www.risezonictravel.com/international-honeymoon-tour-packages"
         />
       </Helmet>
       <HomeNav />

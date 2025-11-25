@@ -30,35 +30,42 @@ import BusinessGrowth from "./Pages/BusinessGrowth";
 import BusinessSuccess from "./Pages/BusinessSuccess";
 import SideLinks from "./layout/SideLinks";
 import Footer from "./layout/Footer";
+import { AirlineCursor, useAirlineCursor } from "./hooks/useAirlineCursor";
 
 export default function App() {
+  const cursor = useAirlineCursor({
+    trailLength: 20,
+    cursorSize: 28,
+    cursorColor: '#3b82f6'
+  });
   return (
     <>
       <BrowserRouter>
+        <AirlineCursor {...cursor} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/AboutUs" element={<About />} />
-          <Route path="/Contact-us" element={<Contact />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/contect-us" element={<Contact />} />
           <Route path="/services/:UrlTitle" element={<ServiceDetail />} />
-          <Route path="/holiday/:UrlTitle" element={<MemorableHolidayDetails />} />
+          <Route path="/indian-holiday-packages/:UrlTitle" element={<MemorableHolidayDetails />} />
           <Route
-            path="/Indian-honeymoon-packages/:UrlTitle"
+            path="/indian-honeymoon-tour-packages/:UrlTitle"
             element={<HoneymoonIndiaDetails />}
           />
           <Route
-            path="/Indian-honeymoon-packages"
+            path="/indian-honeymoon-tour-packages"
             element={<IndianHoneymon/> }
           />
           <Route
-            path="/International-Honeymoon-packages/:UrlTitle"
+            path="/international-honeymoon-tour-packages/:UrlTitle"
             element={<InternationalHoneymoonDetails />}
           />
           <Route
-            path="/International-Honeymoon-packages"
+            path="/international-honeymoon-tour-packages"
             element={<InternationalHoneymon/> }
           />
           <Route
-            path="/International-Holiday/:UrlTitle"
+            path="/international-holiday-packages/:UrlTitle"
             element={<TrendingInternationalTourDetails />}
           />
           <Route path="/Deals/:UrlTitle" element={<DealsDetail />} />
@@ -67,20 +74,20 @@ export default function App() {
             element={<IndianTourPackages />}
           />
           <Route
-            path="/International-Tour-Packages"
+            path="/international-holiday-packages"
             element={<InternationalTourPakages />}
           />
           <Route path="/mice" element={<MICE />} />
           <Route path="/Sustainability" element={<Sustainability />} />
-          <Route path="/flights" element={<Flight />} />
-          <Route path="/Cruise" element={<Cruise />} />
+          <Route path="/flights-booking" element={<Flight />} />
+          <Route path="/cruise-booking" element={<Cruise />} />
           <Route path="/Insurance" element={<Insurance />} />
           <Route path="/Meeting-And-Event" element={<MeetingAndEvent />} />
-          <Route path="/Visa" element={<VIsa />} />
+          <Route path="/visa" element={<VIsa />} />
           <Route path="/Career" element={<Career />} />
-          <Route path="/Blogs" element={<Blogs />} />
+          <Route path="/blogs" element={<Blogs />} />
           <Route path="/News-And-Media" element={<NewsAndMedia />} />
-          <Route path="/Privacy-Policy" element={<PrivacyPolicy />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/offers" element={<TravelOffers />} />
           <Route path="/Business-Growth" element={<BusinessGrowth />} />
           <Route path="/Business-success" element={<BusinessSuccess />} />

@@ -5,106 +5,113 @@ import { IoCall } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 import HomeNav from "../layout/HomeNav";
-const MemorableHolidayDetails = () => {
+
+export default function MemorableHolidayDetails() {
   const { UrlTitle } = useParams();
   const [service, setService] = useState(null);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   useEffect(() => {
     fetch("/Services/MemorableHoliday.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
-        // console.log("Fetched data:", data);
-        const selectedService = data.find(
-          (service) => service.UrlTitle === decodeURIComponent(UrlTitle)
+        const selected = data.find(
+          (item) => item.UrlTitle === decodeURIComponent(UrlTitle)
         );
-        // console.log("Selected service:", selectedService);
-        setService(selectedService);
-      })
-      .catch((error) => console.error("Error fetching data:", error));
+        setService(selected);
+      });
   }, [UrlTitle]);
 
-  if (!service) {
-    return <div>Loading...</div>;
-  }
-  const canonicalUrl = `https://www.risezonictravel.com/holiday/${UrlTitle}`;
-  const pageTitle = `${service.metatitle}`;
-  const pagedes = `${service.metades}`;
+  if (!service) return <div className="text-center p-20">Loading...</div>;
+
+  const canonicalUrl = `https://www.risezonictravel.com/indian-holiday-packages/${UrlTitle}`;
+
   return (
-    <div>
+    <>
       <Helmet>
-        <title>{pageTitle}</title>
-        <meta
-          name="description"
-          content={pagedes}
-        />
+        <title>{service.metatitle}</title>
+        <meta name="description" content={service.metades} />
         <link rel="canonical" href={canonicalUrl} />
       </Helmet>
+
       <HomeNav />
-      <div className="">
-        <div className=" sm:w-full h-screen w-full overflow-hidden flex justify-center">
-          <img
-            className="w-full h-full object-cover object-center"
-            src={service.bannerImage}
-            alt={service.title}
-          />
-        </div>
-        <h1 className="text-center sm:text-6xl text-3xl uppercase py-8 font-semibold underline underline-offset-8">
-          {service.title}
-        </h1>
-        <div className="sm:flex block justify-start gap-x-5 sm:mt-12 px-4">
-          <div className=" flex sm:ps-5 object-contain  h-96 ">
-            <img src={service.image} alt={service.title} />
-          </div>
-          <div>
-            <p className="flex sm:w-[850px]  p-5 px-0 text-gray-600">
-              {service.desc}
-            </p>
-            <div className="flex gap-x-5">
-              <button className="px-6 py-2 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 flex items-center gap-x-2 ">
-                Call Now <IoCall />
-              </button>
-              <button className="px-6 py-2 rounded-full bg-green-600 text-white font-semibold hover:bg-green-700 flex items-center gap-x-2  ">
-                Book Now <FaWhatsapp />
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="mt-4 py-8">
-          <div className="flex justify-evenly bg-white">
-            <div className="sm:w-96 w-28 bg-black rounded-2xl overflow-hidden hover:scale-95 transition-transform duration-150 ease-in  shadow-xl">
-              <img
-                className="objct-cover w-full h-full"
-                src={service.subImage}
-                alt={service.title}
-              />
-            </div>
-            <div className="sm:w-96 w-28 bg-black rounded-2xl overflow-hidden hover:scale-95 transition-transform duration-150 ease-in  shadow-xl">
-              <img
-                className="objct-cover w-full h-full"
-                src={service.subImage1}
-                alt={service.title}
-              />
-            </div>
-            <div className="sm:w-96 w-28 bg-black rounded-2xl overflow-hidden hover:scale-95 transition-transform duration-150 ease-in  shadow-xl">
-              <img
-                className="objct-cover w-full h-full"
-                src={service.subImage2}
-                alt={service.title}
-              />
-            </div>
-          </div>
+
+      {/* HERO SECTION */}
+      <div className="relative h-[70vh] w-full overflow-hidden">
+        <img
+          src={service.bannerImage}
+          alt={service.title}
+          className="w-full h-full object-cover"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <h1 className="text-white text-4xl sm:text-6xl font-extrabold uppercase drop-shadow-xl tracking-wide">
+            {service.title}
+          </h1>
         </div>
       </div>
-      
-    </div>
-  );
-};
 
-export default MemorableHolidayDetails;
+      {/* MAIN DETAILS */}
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid sm:grid-cols-2 gap-10 items-start">
+
+          {/* Left Image */}
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img src={service.image} alt={service.title} className="w-full" />
+          </div>
+
+          {/* Right Content */}
+          <div>
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              {service.desc}
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex gap-4 mt-5">
+              <a
+                href="tel:+91XXXXXXXXXX"
+                className="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 flex items-center gap-2 shadow-lg transition"
+              >
+                <IoCall /> Call Now
+              </a>
+
+              <a
+                href={`https://wa.me/91XXXXXXXXXX?text=Hi, I'm interested in ${service.title} package`}
+                target="_blank"
+                className="px-6 py-3 rounded-full bg-green-600 text-white font-semibold hover:bg-green-700 flex items-center gap-2 shadow-lg transition"
+              >
+                <FaWhatsapp /> WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* IMAGE GALLERY */}
+        <div className="mt-16">
+          <h2 className="text-2xl font-bold mb-6 text-gray-800">
+            Experience {service.title}
+          </h2>
+
+          <div className="grid sm:grid-cols-3 gap-6">
+            {[service.subImage, service.subImage1, service.subImage2].map(
+              (img, index) => (
+                <div
+                  key={index}
+                  className="rounded-xl overflow-hidden shadow-xl hover:scale-95 transition duration-200 cursor-pointer"
+                >
+                  <img src={img} alt="Gallery" className="w-full h-full object-cover" />
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+}

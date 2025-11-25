@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
           name="description"
           content="Risezonic Travel is the Most trusted travel agency in Delhi Ncr . Unlock exclusive holiday package offers."
         />
-        <link rel="canonical" href="https://www.risezonictravel.com/Privacy-Policy" />
+        <link rel="canonical" href="https://www.risezonictravel.com/privacy-policy" />
       </Helmet>
       <HomeNav />
       <div className="">
