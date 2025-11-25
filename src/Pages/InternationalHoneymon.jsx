@@ -81,10 +81,10 @@ export default function InternationalHoneymon() {
   return (
     <div>
       <Helmet>
-        <title>Cheapest International Honeymoon Packages</title>
+        <title>Best Deals on International Honeymoon Packages | Risezonic Travel</title>
         <meta
           name="description"
-          content="Risezonic Travel is a top-rated travel Agency | that Provides the Cheapest International Honeymoon Packages. "
+          content="Find the best deals on international honeymoon packages with Risezonic Travel. Enjoy romantic stays, smooth planning, flights, and memorable trips to top destinations."
         />
         <link
           rel="canonical"
@@ -106,8 +106,7 @@ export default function InternationalHoneymon() {
         }}
       >
         <h1>
-          International Honeymoon Tour Packages: Exploring Earths Most Romantic
-          Destinations
+          International Honeymoon Packages
         </h1>
       </div>
       <section

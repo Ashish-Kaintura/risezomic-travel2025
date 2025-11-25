@@ -16,10 +16,10 @@ export default function InternationalTourPakages() {
   return (
     <div>
       <Helmet>
-        <title>Book International Holiday Packages at Best Price</title>
+        <title> International Holiday Tour Packages  | Risezonic Travel</title>
         <meta
           name="description"
-          content="Book  International Holiday Packages Flights and Hotels at the Best Prices with Risezonic Travel."
+          content="Explore international holiday packages with Risezonic Travel—exciting deals on flights, hotels, and world tour packages at the best prices across top global destinations."
         />
         <link
           rel="canonical"
@@ -44,7 +44,7 @@ export default function InternationalTourPakages() {
       >
         <div className="py-6 ">
           <h1 className="text-center text-3xl italic sm:pb-12 uppercase font-bold text-blue-700 underline decoration-yellow-500 underline-offset-8">
-            International Holiday - International Tour Packages
+            International Holiday Packages
           </h1>
           <br />
           <div className="block justify-center px-4 text-gray-800 text-[15px] font-serif">

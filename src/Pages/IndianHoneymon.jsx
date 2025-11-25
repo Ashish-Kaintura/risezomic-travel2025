@@ -86,10 +86,10 @@ export default function IndianHoneymon() {
   return (
     <div>
       <Helmet>
-        <title>Exclusive Honeymoon Packages in India</title>
+        <title>Book Honeymoon Packages in India | Risezonic Travel</title>
         <meta
           name="description"
-          content="Book your honeymoon holiday tour packages online at the best prices with Risezonic Travel. Enjoy exclusive deals on honeymoon packages. "
+          content="Book the best honeymoon packages in India with Risezonic Travel. Enjoy romantic stays, smooth planning, and great prices at top destinations like Goa, Kerala, Manali, and more."
         />
         <link
           rel="canonical"
@@ -110,7 +110,7 @@ export default function IndianHoneymon() {
   `,
         }}
       >
-        <h1>Indian Honeymoon Package: A Romantic Journey Through Paradise</h1>
+        <h1>Book Honeymoon Packages in India</h1>
       </div>
       <section>
         <div>

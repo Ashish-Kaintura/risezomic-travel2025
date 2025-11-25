@@ -11,10 +11,10 @@ const Flight = () => {
   return (
     <div>
       <Helmet>
-        <title>Cheap Flights & Air Tickets | Risezonic Travel</title>
+        <title>Flight Deals & Lowest Airfare on Tickets | Risezonic Travel</title>
         <meta
           name="description"
-          content="Book your flight tickets online through Risezonic Travel to secure the Cheapest fares and the best deals on domestic and international flights. "
+          content="Find the best flight deals and lowest airfare on domestic and international tickets with Risezonic Travel. Compare prices, book easily, and enjoy smooth travel planning."
         />
         <link rel="canonical" href="https://www.risezonictravel.com/flights-booking" />
       </Helmet>
@@ -28,7 +28,7 @@ const Flight = () => {
           />
         </div>
         <h1 className="text-center sm:text-6xl text-3xl uppercase py-8 font-semibold underline underline-offset-8">
-          Flight Tickets by Risezonic Travel
+          Flight Booking & Deals
         </h1>
         <div className="sm:flex block justify-start gap-x-5 sm:mt-12 px-4">
           <div className="flex sm:ps-5 object-contain  h-96 ">

@@ -11,10 +11,10 @@ const Cruise = () => {
   return (
     <div>
       <Helmet>
-        <title>Luxury Cruise Deals | Risezonic Travel</title>
+        <title>Best Cruise Booking Deals | Risezonic Travel</title>
         <meta
           name="description"
-          content="Plan your Luxury cruise and make your reservations early to access exclusive deals on  packages and onboard activities with Risezonic Travel. "
+          content="Book unforgettable cruise vacations with Risezonic Travel. Get great deals on ocean cruises, luxury liners, and group cruises with easy reservations and expert support."
         />
         <link rel="canonical" href="https://www.risezonictravel.com/cruise-booking" />
       </Helmet>
@@ -28,7 +28,7 @@ const Cruise = () => {
           />
         </div>
         <h1 className="text-center sm:text-6xl text-3xl uppercase py-8 font-semibold underline underline-offset-8">
-          Cruise by Risezonic Travel
+          Cruise Booking Services
         </h1>
         <div className="sm:flex block justify-start gap-x-5  sm:mt-12 px-4">
           <div className="flex sm:ps-5 object-contain h-96">
