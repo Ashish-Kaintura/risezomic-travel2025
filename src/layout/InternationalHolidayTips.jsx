@@ -1,297 +1,135 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, MapPin, Calendar, Star } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { FaPhone, FaPhoneAlt } from 'react-icons/fa';
+// src/layout/SpecialServices.jsx
+import { useState } from "react";
 
-const destinations = [
+import Modal from "../layout/Modal"; // Ensure the correct import path
+
+const services = [
   {
-    image: "https://images.unsplash.com/photo-1597074866923-dc0589150358?q=80&w=2070&auto=format&fit=crop",
-    location: "Kerala",
-    tagline: "God's Own Country",
-    description: "Serene backwaters, lush greenery, and pristine beaches",
-    highlights: ["Houseboat Cruises", "Ayurvedic Spas", "Tea Plantations"],
-    rating: "4.9"
+    id: 1,
+    image: "https://miro.medium.com/v2/resize:fit:696/0*X5Yx8FuCfe0muXee.jpg",
+    title: "Choose your trip destination",
+    description:
+      "Choosing your destination is perhaps one of the most crucial steps because it will determine what to do next. Half of the issues can be resolved if you know which location you wish to visit. Therefore, you must first pick where you wish to travel before selecting from the India tour packages.",
   },
   {
-    image: "https://img.veenaworld.com/wp-content/uploads/2023/05/Explore-the-Most-Important-Places-to-Visit-near-Shimla.jpg",
-    location: "Shimla",
-    tagline: "Queen of Hills",
-    description: "Colonial charm meets Himalayan beauty",
-    highlights: ["Mall Road", "Kufri Adventures", "Ridge Views"],
-    rating: "4.8"
+    id: 2,
+    image:
+      "https://assets.cntraveller.in/photos/632d67a767d00ef33fe822d9/3:2/w_3600,h_2400,c_limit/144462145",
+    title: " Make sure your passport is valid",
+    description:
+      "Having a valid passport is essential, regardless of the necessity for a visa. When booking international tour packages, check sure your passport is valid for at least six months after the date of travel.",
   },
   {
-    image: "https://travelotouch.com/wp-content/uploads/2019/02/UttrakhandDE.jpg",
-    location: "Uttarakhand",
-    tagline: "Land of Gods",
-    description: "Sacred temples, yoga capital, and mountain majesty",
-    highlights: ["Rishikesh Rafting", "Valley of Flowers", "Spiritual Retreats"],
-    rating: "4.9"
+    id: 3,
+    image:
+      "https://www.globotreks.com/wp-content/uploads/2020/05/Visa-requirements-for-United-States-citizens.png",
+    title: "Determine whether your destination needs a visa before you go",
+    description:
+      "Many nations do not require one. Make sure the destination you want to visit does not require a visa before selecting from the international trip packages.",
   },
   {
-    image: "https://img.veenaworld.com/wp-content/uploads/2023/06/Natures-Paradise-Discover-the-Best-Places-To-Visit-in-North-East-India.jpg",
-    location: "North East India",
-    tagline: "Nature's Paradise",
-    description: "Untouched beauty, diverse cultures, and pristine landscapes",
-    highlights: ["Living Root Bridges", "Kaziranga Safari", "Tawang Monastery"],
-    rating: "4.7"
+    id: 4,
+    image:
+      "https://lh6.googleusercontent.com/proxy/bQPphHJjG49IIZP9FuyFMt6crdAQslCR7qGoqI1q1xAQcNsz2bx6m0oQMkbxsNvIWaQhvC0eJcmBjbn9d-RXzXNQQY5oW6to-3ff6taMC1gk",
+    title:
+      "Identify the best international travel agency that provides the best international tour packages",
+    description:
+      "Whether you're looking for an international tour package for couples or a family holiday package, you must first identify the best travel agency for international trips. Additionally, Risezonic Travel offers unmatched international holiday packages.It is crucial to confirm that your credit card is accepted in the nation you are visiting. To do this, check if it is accepted abroad. When you need money in a foreign country, this can be helpful at times.",
   },
   {
-    image: "https://www.andbeyond.com/wp-content/uploads/sites/5/rajasthan-thar-desert-jaiselmer.jpg",
-    location: "Rajasthan",
-    tagline: "Land of Royals",
-    description: "Majestic forts, golden deserts, and royal heritage",
-    highlights: ["Desert Safari", "Palace Hotels", "Cultural Shows"],
-    rating: "4.8"
-  }
+    id: 5,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL9ogyrXdGPF9WOkDDZCTgubKECspbA4nNEA&s",
+    title: "Make an effort to carry local currency",
+    description:
+      "Not all places will accept your credit card. For this reason, you have to have local currency from the nation you are going.",
+  },
+  {
+    id: 6,
+    image:
+      "https://cms-attachments.storage.googleapis.com/blog/uploads/2021/05/pasted-image-01-e1620631543298.jpg",
+    title: "Prior to leaving for your destination, find out the exchange rate",
+    description:
+      "You may get a fair sense of the kind of money you would need for international travel by checking the conversion rate.",
+  },
+  {
+    id: 7,
+    image: "https://cdn01.buxtonco.com/news/2661/istock-665028882__large.jpg",
+    title:
+      "Make sure you know everything there is to know about the destination",
+    description:
+      "every place is unique and has things to discover. You must therefore do your homework on the destination you intend to visit in order to make your trip worthwhile. This will enable you to visit every attraction.",
+  },
 ];
 
-export default function PremiumIndianHolidayBanner() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [imageLoaded, setImageLoaded] = useState(false);
+const InternationalHolidayTips = () => {
+  const [selectedService, setSelectedService] = useState(null);
 
-  useEffect(() => {
-    if (!isAutoPlaying) return;
-
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % destinations.length);
-      setImageLoaded(false);
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, [isAutoPlaying]);
-
-  useEffect(() => {
-    setImageLoaded(false);
-    const timer = setTimeout(() => setImageLoaded(true), 100);
-    return () => clearTimeout(timer);
-  }, [currentSlide]);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % destinations.length);
-    setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 10000);
+  const openModal = (service) => {
+    setSelectedService(service);
   };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + destinations.length) % destinations.length);
-    setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 10000);
+  const closeModal = () => {
+    setSelectedService(null);
   };
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-    setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 10000);
-  };
-
-  const current = destinations[currentSlide];
 
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-gray-900">
-      {/* Background Image with Ken Burns Effect */}
-      <div className="absolute inset-0">
-        {destinations.map((dest, index) => (
+    <section className="py-12 px-12">
+      <div className="py-5 ">
+        <div className="py-6">
+          <h2 className="text-start text-3xl italic uppercase font-bold text-blue-700 underline decoration-yellow-500 underline-offset-8">
+            Travel Tips For First International Tour
+          </h2>
+          <br />
+          <div className="block justify-center  text-gray-800 text-[15px] font-serif">
+            <p className="text-start">
+              An international trip seems like a fantastic plan. We become
+              excited the instant we learn about it, dont we? However, if this
+              is your first time, you could feel a bit anxious. Here are some
+              helpful international travel recommendations for you.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="sm:flex block sm:justify-evenly justify-center  flex-wrap gap-4">
+        {services.map((service) => (
           <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
-              }`}
+            key={service.id}
+            style={{
+              backgroundImage: `url(${service.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            className="h-[350px] sm:mt-0 mt-4 cursor-pointer sm:w-80 bg-slate-400 rounded-lg outline-offset-4 relative hover:scale-105 overflow-hidden transition-all ease-in duration-150"
+            onClick={() => openModal(service)}
           >
-            <div
-              className={`w-full h-full transition-transform duration-[8000ms] ease-out ${index === currentSlide && imageLoaded ? 'scale-110' : 'scale-100'
-                }`}
-            >
-              <img
-                src={dest.image}
-                alt={dest.location}
-                className="w-full h-full object-cover"
-              />
+            <div className="absolute bottom-0 left-0 p-5 bg-[#0D0C0C] text-white backdrop-blur-[1.4495413303375244px] bg-opacity-65 w-full">
+              <h2 className="text-yellow-500 line-clamp-1">{service.title}</h2>
+              <h3 className="line-clamp-2">{service.description}</h3>
             </div>
           </div>
         ))}
-
-        {/* Multi-layer Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/40" />
-        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40" /> */}
       </div>
-
-      {/* Content Container */}
-      <div className="relative h-full flex items-center justify-between px-6 sm:px-12 lg:px-20 max-w-7xl mx-auto">
-        {/* Left Content */}
-        <div className="flex-1 max-w-2xl">
-          {/* Rating Badge */}
-          <div
-            className={`inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-6 transition-all duration-700 ${imageLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}
-            style={{ transitionDelay: '200ms' }}
-          >
-            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-            <span className="text-white font-semibold">{current.rating}</span>
-            <span className="text-white/70 text-sm">Rated Destination</span>
-          </div>
-
-          {/* Location with Icon */}
-          <div
-            className={`flex items-center gap-3 mb-4 transition-all duration-700 ${imageLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
-              }`}
-            style={{ transitionDelay: '400ms' }}
-          >
-            <MapPin className="w-8 h-8 text-yellow-500" />
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold text-white tracking-tight">
-              {current.location}
-            </h1>
-          </div>
-
-          {/* Tagline */}
-          <p
-            className={`text-2xl sm:text-3xl lg:text-4xl text-yellow-400 font-light mb-6 transition-all duration-700 ${imageLoaded ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-8'
-              }`}
-            style={{ transitionDelay: '600ms' }}
-          >
-            {current.tagline}
+      <div className="py-12">
+        <h2 className="text-center text-3xl italic uppercase font-bold text-blue-700 underline decoration-yellow-500 underline-offset-8">
+          Examine Popular International Travel Packages
+        </h2>
+        <br />
+        <div className="block justify-center  text-gray-800 text-[15px] font-serif">
+          <p className="text-start">
+            At Risezonic Travel, we guarantee to provide the best international
+            tour packages at affordable costs. Before deciding which package is
+            best for you to include in your tour package, you can look through
+            the list of packages available for the destination you wish to
+            visit. These are a some of the international tour packages available
+            for trensing.
           </p>
-
-          {/* Description */}
-          <p
-            className={`text-lg sm:text-xl text-white/80 mb-8 max-w-xl leading-relaxed transition-all duration-700 ${imageLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}
-            style={{ transitionDelay: '800ms' }}
-          >
-            {current.description}
-          </p>
-
-          {/* Highlights */}
-          <div
-            className={`flex flex-wrap gap-3 mb-10 transition-all duration-700 ${imageLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}
-            style={{ transitionDelay: '1000ms' }}
-          >
-            {current.highlights.map((highlight, index) => (
-              <span
-                key={index}
-                className="px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/20 rounded-full text-white/90 text-sm hover:bg-white/10 transition-colors"
-              >
-                {highlight}
-              </span>
-            ))}
-          </div>
-
-          {/* CTA Buttons */}
-          <div
-            className={`flex flex-wrap gap-4 transition-all duration-700 ${imageLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-              }`}
-            style={{ transitionDelay: '1200ms' }}
-          >
-            <button className="group relative px-8 py-4 bg-yellow-500 text-white font-semibold rounded-full overflow-hidden hover:bg-yellow-600 transition-all hover:scale-105">
-              <span className="relative z-10 flex items-center gap-2">
-                <FaPhoneAlt className="w-5 h-5" />
-                <Link to="tel:+ 8178857250" >Book Your Trip </Link>
-
-              </span>
-            </button>
-            <Link to="mailto:info.risezonic.com">   <button className="px-8 py-4 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all hover:scale-105">
-              Explore More
-            </button>
-
-
-            </Link>
-          </div>
-        </div>
-
-        {/* Right Side - Thumbnail Preview (Hidden on Mobile) */}
-        <div className="hidden lg:flex flex-col gap-4">
-          {destinations.map((dest, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`relative w-20 h-20 rounded-lg overflow-hidden transition-all duration-300 ${index === currentSlide
-                ? 'ring-4 ring-yellow-500 scale-110'
-                : 'opacity-50 hover:opacity-100'
-                }`}
-            >
-              <img
-                src={dest.image}
-                alt={dest.location}
-                className="w-full h-full object-cover"
-              />
-              {index === currentSlide && (
-                <div className="absolute inset-0 border-2 border-white/50" />
-              )}
-            </button>
-          ))}
         </div>
       </div>
-
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 transition-all duration-300 group"
-        aria-label="Previous destination"
-      >
-        <ChevronLeft className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
-      </button>
-
-      <button
-        onClick={nextSlide}
-        className="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center hover:bg-white/20 transition-all duration-300 group"
-        aria-label="Next destination"
-      >
-        <ChevronRight className="w-6 h-6 text-white group-hover:scale-110 transition-transform" />
-      </button>
-
-      {/* Bottom Navigation Bar */}
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent pt-12 pb-6 px-6 sm:px-12">
-        <div className="max-w-7xl mx-auto">
-          {/* Progress Bar */}
-          <div className="mb-6">
-            <div className="h-1 bg-white/20 rounded-full overflow-hidden">
-              <div
-                className="h-full bg-yellow-500 transition-all duration-300 rounded-full"
-                style={{
-                  width: `${((currentSlide + 1) / destinations.length) * 100}%`
-                }}
-              />
-            </div>
-          </div>
-
-          {/* Dots Navigation */}
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              {destinations.map((dest, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToSlide(index)}
-                  className="group relative"
-                  aria-label={`Go to ${dest.location}`}
-                >
-                  <div
-                    className={`transition-all duration-300 rounded-full ${index === currentSlide
-                      ? 'w-16 h-3 bg-yellow-500'
-                      : 'w-3 h-3 bg-white/40 hover:bg-white/60'
-                      }`}
-                  />
-                  {index !== currentSlide && (
-                    <span className="absolute -top-8 left-1/2 -translate-x-1/2 px-2 py-1 bg-black/80 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                      {dest.location}
-                    </span>
-                  )}
-                </button>
-              ))}
-            </div>
-
-            {/* Counter */}
-            <div className="text-white/80 font-light text-sm">
-              <span className="text-2xl font-bold text-white">{String(currentSlide + 1).padStart(2, '0')}</span>
-              <span className="mx-2">/</span>
-              <span>{String(destinations.length).padStart(2, '0')}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Decorative Elements */}
-      <div className="absolute top-8 right-6 sm:right-12 w-px h-24 bg-gradient-to-b from-yellow-500 to-transparent" />
-    </div>
+      <Modal service={selectedService} onClose={closeModal} />
+    </section>
   );
-}
+};
+
+export default InternationalHolidayTips;
