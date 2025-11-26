@@ -65,7 +65,7 @@ export default function ServicesBlock() {
           <div>
             <div className="flex justify-between items-center">
               <div className="py-2">
-                <h2 className="italic sm:text-5xl font-heading text-blue-600 text-3xl uppercase font-semibold underline decoration-yellow-500 underline-offset-8 pb-4">
+                <h2 className="italic sm:text-5xl font-heading text-white text-3xl uppercase font-semibold underline decoration-yellow-500 underline-offset-8 pb-4">
                   Services
                 </h2>
               </div>

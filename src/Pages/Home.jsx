@@ -55,13 +55,13 @@ function Home() {
           loop
           muted
           preload="metadata"
-          src={banner}
+          src="https://raw.githubusercontent.com/Ashish-Kaintura/risezomic-travel2025/main/src/video/Risezonic%20Travel%20website%20video.mp4"
         ></video>
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           {/* Gradient Overlays */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" /> */}
         </div>
       </section>
       <section
@@ -147,7 +147,7 @@ function Home() {
                 </p>
                 <UniversalButton
                   // icon={<IoCall />}
-                  label="Kow More"
+                  label="Know More"
                   variant="primary"
                   onClick={() =>
                     handleButtonClick({ type: "link", value: "/about-us" })
@@ -159,7 +159,7 @@ function Home() {
 
         </div>
       </section>
-      <section className="">
+      <section className="py-20 bg-gradient-to-r from-black via-black/80 to-black">
         <ServicesBlock />
       </section>
 

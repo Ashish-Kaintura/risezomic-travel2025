@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Circle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const slides = [
     {
@@ -17,14 +18,16 @@ const slides = [
         description: "Professional transportation services tailored for modern businesses"
     },
     {
-        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80",
+        // image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80",
+        image: "https://i.postimg.cc/ydCLjtvc/corporate_comfort_image_big.jpg",
         title: "Indulge in Opulence",
         highlight: "Corporate Comfort",
         subtitle: "Premium Travel Experience",
         description: "Luxury meets efficiency in every journey we provide"
     },
     {
-        image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80",
+        // image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920&q=80",
+        image: "https://i.postimg.cc/15vYSW3R/visa_solutions_images_big_size.jpg",
         title: "Visa Solutions",
         highlight: "Tailored",
         subtitle: "To Your Needs",
@@ -38,7 +41,8 @@ const slides = [
         description: "From planning to execution, we handle every detail"
     },
     {
-        image: "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=1920&q=80",
+        image: "https://i.postimg.cc/XvC2w4c8/travel_insurance_(1).jpg",
+        // image: "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=1920&q=80",
         title: "Travel Insurance",
         highlight: "Comprehensive Coverage",
         subtitle: "Peace of Mind",
@@ -91,8 +95,8 @@ export default function PremiumSlider() {
                     <div
                         key={index}
                         className={`absolute inset-0 transition-all duration-1000 ease-out ${index === currentSlide
-                                ? 'opacity-100 scale-100'
-                                : 'opacity-0 scale-105'
+                            ? 'opacity-100 scale-100'
+                            : 'opacity-0 scale-105'
                             }`}
                     >
                         {/* Background Image with Overlay */}
@@ -113,8 +117,8 @@ export default function PremiumSlider() {
                                 {/* Animated Number */}
                                 <div
                                     className={`text-yellow-500/20 font-bold text-8xl sm:text-9xl mb-4 transition-all duration-1000 ${index === currentSlide
-                                            ? 'opacity-100 translate-y-0'
-                                            : 'opacity-0 translate-y-8'
+                                        ? 'opacity-100 translate-y-0'
+                                        : 'opacity-0 translate-y-8'
                                         }`}
                                     style={{ transitionDelay: '200ms' }}
                                 >
@@ -124,8 +128,8 @@ export default function PremiumSlider() {
                                 {/* Title */}
                                 <h2
                                     className={`text-4xl sm:text-6xl lg:text-7xl font-bold mb-4 transition-all duration-1000 ${index === currentSlide
-                                            ? 'opacity-100 translate-x-0'
-                                            : 'opacity-0 -translate-x-12'
+                                        ? 'opacity-100 translate-x-0'
+                                        : 'opacity-0 -translate-x-12'
                                         }`}
                                     style={{ transitionDelay: '400ms' }}
                                 >
@@ -135,8 +139,8 @@ export default function PremiumSlider() {
                                 {/* Highlight */}
                                 <h3
                                     className={`text-3xl sm:text-5xl lg:text-6xl font-bold text-yellow-500 mb-2 transition-all duration-1000 ${index === currentSlide
-                                            ? 'opacity-100 translate-x-0'
-                                            : 'opacity-0 -translate-x-12'
+                                        ? 'opacity-100 translate-x-0'
+                                        : 'opacity-0 -translate-x-12'
                                         }`}
                                     style={{ transitionDelay: '600ms' }}
                                 >
@@ -146,8 +150,8 @@ export default function PremiumSlider() {
                                 {/* Subtitle */}
                                 <p
                                     className={`text-2xl sm:text-3xl lg:text-4xl text-white/90 mb-6 transition-all duration-1000 ${index === currentSlide
-                                            ? 'opacity-100 translate-x-0'
-                                            : 'opacity-0 -translate-x-12'
+                                        ? 'opacity-100 translate-x-0'
+                                        : 'opacity-0 -translate-x-12'
                                         }`}
                                     style={{ transitionDelay: '800ms' }}
                                 >
@@ -157,8 +161,8 @@ export default function PremiumSlider() {
                                 {/* Description */}
                                 <p
                                     className={`text-lg sm:text-xl text-white/70 max-w-xl mb-8 transition-all duration-1000 ${index === currentSlide
-                                            ? 'opacity-100 translate-y-0'
-                                            : 'opacity-0 translate-y-8'
+                                        ? 'opacity-100 translate-y-0'
+                                        : 'opacity-0 translate-y-8'
                                         }`}
                                     style={{ transitionDelay: '1000ms' }}
                                 >
@@ -168,12 +172,12 @@ export default function PremiumSlider() {
                                 {/* CTA Button */}
                                 <button
                                     className={`group relative px-8 py-4 bg-yellow-500 text-black font-semibold rounded-full overflow-hidden transition-all duration-1000 hover:bg-yellow-400 hover:scale-105 ${index === currentSlide
-                                            ? 'opacity-100 translate-y-0'
-                                            : 'opacity-0 translate-y-8'
+                                        ? 'opacity-100 translate-y-0'
+                                        : 'opacity-0 translate-y-8'
                                         }`}
                                     style={{ transitionDelay: '1200ms' }}
                                 >
-                                    <span className="relative z-10">Discover More</span>
+                                    <Link to="tel:8178857250"  >   <span className="relative z-10">Discover More</span> </Link>
                                     <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
                                 </button>
                             </div>

@@ -11,14 +11,14 @@ const MeetingAndEvent = () => {
   return (
     <div>
       <Helmet>
-        <title>Best Meeting Planners | Event Organisers In Delhi , India</title>
+        <title>Corporate Event Booking | Risezonic Travel</title>
         <meta
           name="description"
-          content="Risezonic Travel is the Best Meeting, convention, and event planner to arrange all aspects of events and professional gatherings "
+          content="Plan your corporate events with Risezonic Travel — from meetings to incentives and conferences. We handle venue, travel and group bookings with expert support."
         />
         <link
           rel="canonical"
-          href="https://www.risezonictravel.com/Meeting-And-Event"
+          href="https://www.risezonictravel.com/corporate-event-booking"
         />
       </Helmet>
       <HomeNav />
@@ -30,7 +30,7 @@ const MeetingAndEvent = () => {
           />
         </div>
         <h1 className="text-center text-6xl uppercase py-8 font-semibold underline underline-offset-8">
-          Meeting/Event Services
+          Corporate Event Booking & Planning
         </h1>
         <div className="flex justify-start gap-x-5 sm: mt-12">
           <div className=" flex ps-5 object-contain w-[500px] ">

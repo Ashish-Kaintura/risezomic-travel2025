@@ -12,10 +12,10 @@ const MICE = () => {
   return (
     <div className="">
       <Helmet>
-        <title>Book you MICE Travel Packages with Risezonic Travel</title>
+        <title>Mice Travel Deals | Risezonic Travel</title>
         <meta
           name="description"
-          content="Unforgettable travel with MICE Tourism from Risezonic Travel India for all your business needs, including meetings, conferences, events etc."
+          content="Get the best deals on MICE travel with Risezonic Travel. We organize meetings, incentive trips, conferences, and corporate events with smooth planning and complete support."
         />
         <link rel="canonical" href="https://www.risezonictravel.com/mice" />
       </Helmet>
@@ -36,7 +36,7 @@ const MICE = () => {
       >
         <div>
           <h1 className="text-3xl font-bold mb-4 text-center  text-blue-700 underline decoration-yellow-500 underline-offset-8">
-            Best Corporate Events with Risezonic Travels MICE Services
+            MICE Travel Deals & Corporate Event Services
           </h1>
 
           <p className="text-lg mb-6">

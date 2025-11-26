@@ -40,12 +40,18 @@ export default function ImgSwiper() {
         <SwiperSlide
           className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
-            backgroundImage: `url(${Banner1})`,
+            // backgroundImage: `url(${Banner1})`,
+            backgroundImage: `url(https://i.postimg.cc/pdC4sLMK/Corpotate_images_1.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl  ... sm:top-[60%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
+
+          <div className="absolute inset-0">
+            {/* Gradient Overlays */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
+          </div>
+          <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
             <span className="text-white"> Corpotate</span> Travel{" "}
             <span className="text-white"> Redefined </span> Beyond Limits
           </h2>
@@ -53,12 +59,18 @@ export default function ImgSwiper() {
         <SwiperSlide
           className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
-            backgroundImage: `url(${Banner2})`,
+            // backgroundImage: `url(${Banner1})`,
+            backgroundImage: `url(https://i.postimg.cc/FRKq8Xhk/Corpotate_images_2.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <h2 className="absolute inset-y-0  sm:w-[850px] w-[350px] text-3xl sm:text-7xl ... top-[50%] sm:top-[60%] left-[10%] text-yellow-500 font-semibold font-sans">
+
+          <div className="absolute inset-0">
+            {/* Gradient Overlays */}
+            {/* <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" /> */}
+          </div>
+          <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
             <span className="text-white"> Efficincy</span> Comfort Reliabilty{" "}
             <span className="text-white"> Your </span> Corporate Transport
           </h2>
@@ -66,12 +78,18 @@ export default function ImgSwiper() {
         <SwiperSlide
           className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
-            backgroundImage: `url(${Banner3})`,
+            // backgroundImage: `url(${Banner1})`,
+            backgroundImage: `url(https://i.postimg.cc/K8VqkRL4/Corpotate_images_3.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl  ... sm:top-[60%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
+
+          <div className="absolute inset-0">
+            {/* Gradient Overlays */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
+          </div>
+          <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
             <span className="text-white"> Include in Opulence</span> Corporate
             Confort
           </h2>
@@ -79,12 +97,18 @@ export default function ImgSwiper() {
         <SwiperSlide
           className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
-            backgroundImage: `url(${Banner4})`,
+            // backgroundImage: `url(${Banner1})`,
+            backgroundImage: `url(https://i.postimg.cc/y8B1DWVh/Corpotate_images_4.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl  ... sm:top-[60%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
+
+          <div className="absolute inset-0">
+            {/* Gradient Overlays */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
+          </div>
+          <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
             <span className="text-white"> Visa Solution :</span> Tailored{" "}
             <span className="text-white"> To</span> Your{" "}
             <span className="text-white">Need</span>
@@ -93,12 +117,18 @@ export default function ImgSwiper() {
         <SwiperSlide
           className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
-            backgroundImage: `url(${Banner5})`,
+            // backgroundImage: `url(${Banner1})`,
+            backgroundImage: `url(https://i.postimg.cc/pLxWmy2Y/Corpotate_event_images_5.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <h2 className="absolute inset-y-0  sm:w-[820px] w-[350px] text-4xl sm:text-7xl ... top-[50%] sm:top-[60%] left-[10%] text-yellow-500 font-semibold font-sans">
+
+          <div className="absolute inset-0">
+            {/* Gradient Overlays */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
+          </div>
+          <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
             <span className="text-white"> Seamless Corporate </span> Event
             Execution
           </h2>
@@ -106,16 +136,23 @@ export default function ImgSwiper() {
         <SwiperSlide
           className="w-full h-[50vh] object-contain  flex justify-center relative"
           style={{
-            backgroundImage: `url(https://i.postimg.cc/4yLJ4Jf7/banner-slide-6.jpg)`,
+            // backgroundImage: `url(${Banner1})`,
+            backgroundImage: `url(https://i.postimg.cc/Pr1ff1k6/corpotate_travel_insurance_image_6.jpg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <h2 className="absolute inset-y-0  sm:w-[820px] w-[350px] text-4xl sm:text-7xl ... top-[50%] sm:top-[60%] left-[10%] text-yellow-500 font-semibold font-sans">
+
+          <div className="absolute inset-0">
+            {/* Gradient Overlays */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
+          </div>
+          <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
             <span className="text-white"> Provide </span>
             <br /> Travel Insurance
           </h2>
         </SwiperSlide>
+
       </Swiper>
     </>
   );

@@ -82,7 +82,7 @@ export default function App() {
           <Route path="/flights-booking" element={<Flight />} />
           <Route path="/cruise-booking" element={<Cruise />} />
           <Route path="/Insurance" element={<Insurance />} />
-          <Route path="/Meeting-And-Event" element={<MeetingAndEvent />} />
+          <Route path="/corporate-event-booking" element={<MeetingAndEvent />} />
           <Route path="/visa" element={<VIsa />} />
           <Route path="/Career" element={<Career />} />
           <Route path="/blogs" element={<Blogs />} />

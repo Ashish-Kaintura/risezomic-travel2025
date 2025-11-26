@@ -28,7 +28,7 @@ export default function HomeNav() {
           : "bg-transparent"
         }`}
     >
-      <nav className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <nav className=" mx-auto px-6 py-3 flex items-center justify-between">
 
         {/* Logo */}
         <Link to="/" className="flex items-center">
@@ -54,7 +54,7 @@ export default function HomeNav() {
               Packages <IoChevronDownOutline />
             </button>
 
-            <div className="absolute top-8 left-0 hidden group-hover:block bg-white text-black shadow-xl rounded-xl py-4 w-60">
+            <div className="absolute top-6 left-0 hidden group-hover:block bg-white text-black shadow-xl rounded-xl py-4 w-60">
               <NavLink
                 to="/Indian-Tour-Packages"
                 className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md"
@@ -111,7 +111,7 @@ export default function HomeNav() {
               <NavLink to="/visa" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
                 Visa
               </NavLink>
-              <NavLink to="/Meeting-And-Event" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
+              <NavLink to="/corporate-event-booking" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
                 Events
               </NavLink>
               <NavLink to="/Insurance" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
@@ -195,7 +195,7 @@ export default function HomeNav() {
               <div className="ml-7 mt-2 space-y-2 text-gray-300">
                 <NavLink to="/mice">MICE</NavLink> <br />
                 <NavLink to="/visa">Visa</NavLink> <br />
-                <NavLink to="/Meeting-And-Event">Events</NavLink> <br/>
+                <NavLink to="/corporate-event-booking">Events</NavLink> <br/>
                 <NavLink to="/Insurance">Insurance</NavLink> <br/>
               </div>
             )}

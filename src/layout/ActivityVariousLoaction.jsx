@@ -63,7 +63,7 @@ const ActivityVariousLoaction = () => {
   };
 
   return (
-    <section className="sm:p-12 p-4">
+    <section className="sm:p-12 p-4 max-w-7xl mx-auto">
       <div className="py-5 ">
         <div className="py-6">
           <h2 className="text-start text-3xl italic uppercase font-bold text-blue-700 underline decoration-yellow-500 underline-offset-8">
@@ -104,6 +104,9 @@ const ActivityVariousLoaction = () => {
       </div>
 
       <Modal service={selectedService} onClose={closeModal} />
+
+
+      
     </section>
   );
 };

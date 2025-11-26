@@ -5,21 +5,21 @@ const FAQ = () => {
   const faqs = [
     {
       question:
-        " Is Risezonic experienced in managing large corporate travel programs? ",
+        " Is Risezonic Travel experienced in managing large corporate travel programs? ",
       answer:
-        "Risezonic excels in managing travel programs for all company sizes, including large corporations. They handle complex arrangements and group bookings and provide customized solutions for large-scale corporate travel. ",
+        "Risezonic Travel excels in managing travel programs for all company sizes, including large corporations. They handle complex arrangements and group bookings and provide customized solutions for large-scale corporate travel. ",
     },
     {
       question:
-        " What makes Risezonic different from other corporate travel management companies? ",
+        " What makes Risezonic Travel different from other corporate travel management companies? ",
       answer:
-        "Risezonic stands out with its personalized approach, cost-saving strategies, extensive industry connections, and 24/7 customer support, ensuring a seamless and efficient travel experience for corporate clients. ",
+        "Risezonic Travel stands out with its personalized approach, cost-saving strategies, extensive industry connections, and 24/7 customer support, ensuring a seamless and efficient travel experience for corporate clients. ",
     },
     {
       question:
-        " How can I get in touch with Risezonic for corporate travel inquiries? ",
+        " How can I get in touch with Risezonic Travel for corporate travel inquiries? ",
       answer:
-        "You can easily reach Risezonic by phone or email. Their dedicated team of travel experts will be ready to assist you with all your corporate travel inquiries and provide tailored solutions based on your specific needs. ",
+        "You can easily reach Risezonic Travel by phone or email. Their dedicated team of travel experts will be ready to assist you with all your corporate travel inquiries and provide tailored solutions based on your specific needs. ",
     },
   ];
   const [openIndex, setOpenIndex] = useState(0);

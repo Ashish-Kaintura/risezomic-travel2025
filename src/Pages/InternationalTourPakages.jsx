@@ -42,7 +42,7 @@ export default function InternationalTourPakages() {
     `,
         }}
       >
-        <div className="py-6 ">
+        <div className="py-6 max-w-7xl  mx-auto ">
           <h1 className="text-center text-3xl italic sm:pb-12 uppercase font-bold text-blue-700 underline decoration-yellow-500 underline-offset-8">
             International Holiday Packages
           </h1>

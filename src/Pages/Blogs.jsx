@@ -7,13 +7,14 @@ export default function Blogs() {
   return (
     <div>
       <Helmet>
-        <title>Travel and Tourism Blogs | Risezonic Travels</title>
+        <title>Risezonic Travel Blog – Travel Tips, Destinations & Inspiration</title>
         <meta
           name="description"
-          content="Risezonic Travel is Top Rated  corporate travel agency in India, providing innovative solutions for business travel "
+          content="Explore Risezonic Travel’s blog for travel tips, destination guides, holiday ideas, and trip inspiration. Learn from expert insights and real travel stories."
         />
         <link rel="canonical" href="https://www.risezonictravel.com/blogs" />
       </Helmet>
+      {/* Travel Blog & Travel Guides */}
     </div>
   );
 }

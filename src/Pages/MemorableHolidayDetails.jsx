@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Footer from "../layout/Footer";
 import { IoCall } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { Helmet } from "react-helmet";
@@ -49,7 +48,7 @@ export default function MemorableHolidayDetails() {
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-          <h1 className="text-white text-4xl sm:text-6xl font-extrabold uppercase drop-shadow-xl tracking-wide">
+          <h1 className="text-white text-4xl sm:text-6xl font-extrabold uppercase drop-shadow-xl tracking-wide text-center">
             {service.title}
           </h1>
         </div>
@@ -73,14 +72,14 @@ export default function MemorableHolidayDetails() {
             {/* CTA Buttons */}
             <div className="flex gap-4 mt-5">
               <a
-                href="tel:+91XXXXXXXXXX"
+                href="tel:+8178857250"
                 className="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 flex items-center gap-2 shadow-lg transition"
               >
                 <IoCall /> Call Now
               </a>
 
               <a
-                href={`https://wa.me/91XXXXXXXXXX?text=Hi, I'm interested in ${service.title} package`}
+                href={`https://wa.me/8178857250?text=Hi, I'm interested in ${service.title} package`}
                 target="_blank"
                 className="px-6 py-3 rounded-full bg-green-600 text-white font-semibold hover:bg-green-700 flex items-center gap-2 shadow-lg transition"
               >
@@ -110,8 +109,6 @@ export default function MemorableHolidayDetails() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 }

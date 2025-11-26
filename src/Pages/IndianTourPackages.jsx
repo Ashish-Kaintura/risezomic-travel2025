@@ -32,11 +32,7 @@ export default function IndianTourPackages() {
       <section className="relative">
         <InidanHolidayBanner />
         {/* Background Image with Overlay */}
-        <div className="absolute inset-0">
-          {/* Gradient Overlays */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-        </div>
+       
       </section>
       <section
         className="sm:h-[80vh] items-center flex justify-center"
@@ -55,7 +51,7 @@ export default function IndianTourPackages() {
             Affordable Indian Holiday Tour Packages
           </h1>
           <br />
-          <div className="block justify-center px-4 text-gray-800 text-[15px] font-serif">
+          <div className="block justify-center px-4 text-gray-800 text-[15px]  max-w-7xl mx-auto font-body">
             <p className="text-center">
               Where should you travel on your next holiday in India, you ask?
               Have you found yourself spending hours at home searching the
@@ -105,7 +101,7 @@ export default function IndianTourPackages() {
   `,
         }}
       >
-        <div className="px-4 py-8">
+        <div className="px-4 py-8 max-w-7xl mx-auto">
           <h2 className=" text-3xl italic uppercase font-bold text-gray-200 underline decoration-yellow-500 underline-offset-8">
             Why Choose Risezonic Travel For A Domestic Holiday In India?
           </h2>

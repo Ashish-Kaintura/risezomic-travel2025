@@ -10,14 +10,14 @@ const services = [
     title: "Custom Booking",
     description:
       "Embark on a unique journey with custom booking your gateway to unforgettable adventures. As the leading travel agency near you, we look after unparalleled experiences tailored to your wildest dreams. Recognized as the best travel agency in India, and the best travel agency in Delhi, we are proud to offer exceptional service across borders. Unleash the divine serenity of Tirupati with our carefully crafted itineraries, or embrace the breathtaking beauty of Kashmir, where the fabric of nature comes alive. Whether you’re looking for the thrill of exploration or the tranquility of relaxation, our tours and itineraries cater for every craving.",
-    image: feature1,
+    image: "https://i.postimg.cc/zDd1X39t/custom_booking.jpg",
   },
   {
     id: 2,
     title: "Transportation & Accommodation",
     description:
       "Take your travels to the next level with Risezonic Travel’s superior “Transportation and Accommodation” services. The car service rental is a great option for those of you who want to travel without limits. Experience the beauty of the cities of Bangalore, Goa, Hyderabad and Delhi with our car rental services near me where professional drivers will provide you with transportation opportunities. Experience this lifestyle of corporate elegance with our carefully selected hotel corporate relationships. I tried to stay in the luxurious corporate hotels such as Corporate Point Hotel which provide a good combination of comfort and luxury to the businessmen.",
-    image: feature2,
+    image: "https://i.postimg.cc/bY6jNdKL/transportation_accomdation.jpg",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const services = [
     description:
       "“Global Reach” service of Risezonic Travel gives an ability to travel around the world with great easiness and efficiency. With our car rental services near me, you will have access to exciting destinations and explore the adventure of driving yourself or the luxury of driving while someone else takes the wheel. Enjoy the liveliness of Bangalore, Goa, Hyderabad and Delhi with our cars accompanied by service drivers. Corporate hotel residencies such as Hotel Prominent Corporate Residency and Hotel Corporate Point offer excellent corporate travel experience. These addresses provide an ideal mix of luxury and work environment that will enable tired business travelers to find respite after a lengthy bout of business activity.    ",
     image:
-      "https://eadn-wc03-877922.nxedge.io/cdn/wp-content/uploads/2020/01/global-reach.jpg",
+      "https://i.postimg.cc/zDd1X392/global_reach.jpg",
   },
 ];
 

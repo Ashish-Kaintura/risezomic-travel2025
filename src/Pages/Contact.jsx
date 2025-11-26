@@ -24,10 +24,10 @@ export default function Contact() {
   return (
     <div>
       <Helmet>
-        <title>Contact us | Risezonic Travel </title>
+        <title>Contact Risezonic Travel | Speak to Our Team</title>
         <meta
           name="description"
-          content="Risezonic Travels is the leading tour and travel agency in Delhi. We are providing premium India tour packages at affordable prices."
+          content="Get in touch with Risezonic Travel. Our team is ready to help you with holiday planning, business travel, quotes, and customer support anytime."
         />
         <link rel="canonical" href="https://www.risezonictravel.com/contect-us" />
       </Helmet>
@@ -99,7 +99,7 @@ export default function Contact() {
         ></iframe>
         <div className="text-start flex flex-col justify-start">
           <h1 className="text-start sm:text-2xl text-lg font-semibold pb-4 uppercase sm:pt-0 pt-4">
-            Connecting You to Global brCorporate <br /> Destinations
+            Contact Us
           </h1>
           <p>
             In our commitment to providing unparalleled corporate travel <br />

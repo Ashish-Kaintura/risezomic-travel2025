@@ -73,9 +73,9 @@ export default function PremiumYouTubeSlider() {
                         transition={{ delay: 0.2, duration: 0.7 }}
                         className="absolute bottom-16 left-6 md:left-14 text-white"
                     >
-                        <h1 className="text-3xl md:text-6xl font-bold drop-shadow-lg">
+                        <h2 className="text-3xl md:text-6xl font-bold drop-shadow-lg">
                             {slides[index].title}
-                        </h1>
+                        </h2>
                         <p className="text-lg md:text-2xl mt-2 opacity-90">
                             {slides[index].subtitle}
                         </p>

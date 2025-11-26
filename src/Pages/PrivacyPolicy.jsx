@@ -10,10 +10,10 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <Helmet>
-        <title>Privacy Policy | Risezonic Travels</title>
+        <title>Privacy Policy | Risezonic Travel</title>
         <meta
           name="description"
-          content="Risezonic Travel is the Most trusted travel agency in Delhi Ncr . Unlock exclusive holiday package offers."
+          content="Read our Privacy Policy to learn how Risezonic Travel collects, uses, and protects your personal information. Your data privacy matters to us."
         />
         <link rel="canonical" href="https://www.risezonictravel.com/privacy-policy" />
       </Helmet>
@@ -25,9 +25,9 @@ const PrivacyPolicy = () => {
             src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
           />
         </div>
-        <h2 className="text-center text-6xl decoration-yellow-500 uppercase py-8 font-semibold underline underline-offset-8 text-blue-700">
-          Risezonic Travel - Privacy Policy
-        </h2>
+        <h1 className="text-center text-6xl decoration-yellow-500 uppercase py-8 font-semibold underline underline-offset-8 text-blue-700">
+          Privacy Policy
+        </h1>
         <p className="px-4 py-6 font-serif">
           Risezonic Travel values your privacy and understands the need to
           safeguard any personally identifiable information—any piece of

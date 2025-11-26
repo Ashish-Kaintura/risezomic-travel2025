@@ -19,49 +19,70 @@ const Flight = () => {
         <link rel="canonical" href="https://www.risezonictravel.com/flights-booking" />
       </Helmet>
       <HomeNav />
-      <div className="">
-        <div className=" sm:w-full sm:h-[500px] w-full overflow-hidden flex justify-center">
-          <img
-            className="w-full h-full object-cover object-center"
-            src="https://cdn.zeebiz.com/sites/default/files/2023/08/19/256870-air-india-reuters.jpg?im=FitAndFill=(1200,900)"
-            alt="flight booking"
-          />
+      {/* HERO SECTION */}
+      <div className="relative h-[70vh] w-full overflow-hidden">
+        <img
+          src="https://cdn.zeebiz.com/sites/default/files/2023/08/19/256870-air-india-reuters.jpg?im=FitAndFill=(1200,900)"
+
+          alt="Flight Booking & Deals"
+          className="w-full h-full object-cover"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+          <h1 className="text-white text-4xl sm:text-6xl font-extrabold uppercase drop-shadow-xl tracking-wide text-center">
+            Flight Booking & Deals
+          </h1>
         </div>
-        <h1 className="text-center sm:text-6xl text-3xl uppercase py-8 font-semibold underline underline-offset-8">
-          Flight Booking & Deals
-        </h1>
-        <div className="sm:flex block justify-start gap-x-5 sm:mt-12 px-4">
-          <div className="flex sm:ps-5 object-contain  h-96 ">
-            <img
-              src="https://www.shutterstock.com/image-photo/commercial-airplane-flying-above-clouds-600nw-553131187.jpg"
+      </div>
+
+
+      {/* /// */}
+
+
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid sm:grid-cols-2 gap-10 items-start">
+
+          {/* Left Image */}
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img src="https://www.shutterstock.com/image-photo/commercial-airplane-flying-above-clouds-600nw-553131187.jpg"
               loading="lazy"
-              alt="flight booking"
-            />
+              alt="flight booking" className="w-full" />
           </div>
+
+          {/* Right Content */}
           <div>
-            <p className="lex sm:w-[850px]  p-5 px-0 text-gray-600">
-              Preparing to embark on your next grand adventure? Let Risezonic
-              Travel take the stress out of booking your flights. While finding
-              the right flights may prove to be a great challenge, you can rest
-              assured with us that your tour starts on a high note. At
-              Risezonic, instead of arbitrarily providing you with a flight
-              ticket, we help you to create a perfect and affordable trip that
-              is suited for you. Senior travel consultants shall find you the
-              most suitable and affordable flight, whether you are shopping in
-              New Delhi or soaring across the Canadian Rockies. Ready to take
-              flight? Call us today so we can make your traveling be always a
-              great experience that you never wish to end.
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              Preparing to embark on your next grand adventure? Let Risezonic Travel take the stress out of booking your flights. While finding the right flights may prove to be a great challenge, you can rest assured with us that your tour starts on a high note. At Risezonic, instead of arbitrarily providing you with a flight ticket, we help you to create a perfect and affordable trip that is suited for you. Senior travel consultants shall find you the most suitable and affordable flight, whether you are shopping in New Delhi or soaring across the Canadian Rockies. Ready to take flight? Call us today so we can make your traveling be always a great experience that you never wish to end.
             </p>
-            <div className="flex gap-x-5">
-              <button className="px-6 py-2 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 flex items-center gap-x-2 ">
-                Call Now <IoCall />
-              </button>
-              <button className="px-6 py-2 rounded-full bg-green-600 text-white font-semibold hover:bg-green-700 flex items-center gap-x-2  ">
-                Book Now <FaWhatsapp />
-              </button>
+
+            {/* CTA Buttons */}
+            <div className="flex gap-4 mt-5">
+              <a
+                href="tel:+8178857250"
+                className="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 flex items-center gap-2 shadow-lg transition"
+              >
+                <IoCall /> Call Now
+              </a>
+
+              <a
+                href={`https://wa.me/8178857250?text=Hi, I'm interested in Flight Booking & Deals  package`}
+                target="_blank"
+                className="px-6 py-3 rounded-full bg-green-600 text-white font-semibold hover:bg-green-700 flex items-center gap-2 shadow-lg transition"
+              >
+                <FaWhatsapp /> WhatsApp
+              </a>
             </div>
           </div>
         </div>
+
+        {/* IMAGE GALLERY */}
+
+      </section>
+      <div className="">
+
+
+
         <div className="mt-4 py-8">
           <div className="flex justify-evenly bg-white">
             <div className="sm:w-96 w-28 bg-black rounded-2xl overflow-hidden hover:scale-95 transition-transform duration-150 ease-in  shadow-xl">
@@ -98,7 +119,7 @@ const Flight = () => {
           </div>
         </div>
       </div>
-      
+
     </div>
   );
 };

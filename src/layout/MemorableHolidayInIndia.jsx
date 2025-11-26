@@ -47,7 +47,7 @@ export default function MemorableHolidayInIndia() {
     <>
       <section>
         <div className=" sm:p-12 p-5 text-gray-200">
-          <div>
+          <div className="max-w-7xl  mx-auto" >
             <div className="py-6">
               <h2 className="text-center sm:text-3xl text-xl italic uppercase font-bold text-blue-700 underline decoration-yellow-500 underline-offset-8">
                 Top Destinations For A Memorable Holiday In India
