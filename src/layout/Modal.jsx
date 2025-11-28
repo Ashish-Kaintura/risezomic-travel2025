@@ -16,7 +16,8 @@ const Modal = ({ service, onClose }) => {
 
             src={service.image}
             alt={service.title}
-            className="mb-4 rounded "
+              
+            className="mb-4 rounded w-64 h-72 "
           /> */}
         </div>
         <h2 className="text-2xl font-bold mb-4 text-yellow-500">

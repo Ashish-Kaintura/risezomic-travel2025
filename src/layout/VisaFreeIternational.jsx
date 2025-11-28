@@ -30,7 +30,7 @@ const services = [
   },
   {
     id: 4,
-    image: "https://static.wanderon.in/wp-content/uploads/2024/03/maldives.jpg",
+    image: "https://i.postimg.cc/fyzwkqcB/maldiv.jpg",
     title: "Maldives",
     description:
       "The Maldives is another nation that sees a lot of tourism. Upon arrival, you are eligible to get a 30-day valid visa. Why do you wait? Now go through the Maldives tour packages.",
@@ -48,45 +48,87 @@ const VisaFreeIternational = () => {
     setSelectedService(null);
   };
   return (
-    <section className="py-12 sm:px-12 px-5">
-      <div className="py-5 ">
+    <section className="py-12 px-5 sm:px-12 max-w-7xl mx-auto">
+      <div className="py-5">
         <div className="py-6">
           <h2 className="text-start sm:text-3xl text-2xl italic uppercase font-bold text-gray-200 underline decoration-yellow-500 underline-offset-8">
             Hassle-Free Visa International Destinations
           </h2>
           <br />
-          <div className="block justify-center  text-gray-200 text-[15px] font-serif">
+          <div className="block text-gray-200 text-[15px] font-serif">
             <p className="text-start">
-              An international tour can be ruined by attending interviews and
-              worrying about the status of your visa. Fortunately, there are 52
-              countries worldwide that you can visit and include in your package
-              since they provide Indian citizens with a visa on arrival. Lets
-              talk about some of the countries that have the easiest visa
-              requirements that you can select from international tour packages.
+              An international tour can be ruined by attending interviews and worrying about the status of your visa.
+              Fortunately, there are 52 countries worldwide that you can visit and include in your package since they
+              provide Indian citizens with a visa on arrival. Here are a few popular, easy-entry destinations to consider.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="sm:flex block sm:justify-evenly justify-center  flex-wrap gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service) => (
-          <div
+          <article
             key={service.id}
-            style={{
-              backgroundImage: `url(${service.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-            className="h-[350px] sm:mt-0 mt-4 cursor-pointer sm:w-80 bg-slate-400 rounded-lg outline-offset-4 relative hover:scale-105 overflow-hidden transition-all ease-in duration-150"
+            role="button"
+            tabIndex={0}
+            aria-label={`Open details for ${service.title}`}
             onClick={() => openModal(service)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                openModal(service);
+              }
+            }}
+            className="relative h-80 rounded-lg overflow-hidden shadow-lg transform transition-all duration-200 hover:scale-[1.02] focus:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-yellow-400 bg-gray-800"
           >
-            <div className="absolute bottom-0 left-0 p-5 bg-[#0D0C0C] text-white backdrop-blur-[1.4495413303375244px] bg-opacity-65 w-full">
-              <h2 className="text-yellow-500">{service.title}</h2>
-              <h3 className="line-clamp-2">{service.description}</h3>
+            {/* image (lazy) */}
+            <img
+              src={service.image}
+              alt={service.title}
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+
+            {/* gradient overlay to ensure text readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+
+            {/* top-left badge */}
+            <div className="absolute top-4 left-4 z-10">
+              <span className="inline-block bg-yellow-500 text-black text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
+                Visa on Arrival
+              </span>
             </div>
-          </div>
+
+            {/* content */}
+            <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
+              <h3 className="text-yellow-400 text-lg font-bold">{service.title}</h3>
+              <p className="text-sm text-gray-100 mt-1 line-clamp-3 leading-5">
+                {service.description}
+              </p>
+
+              <div className="mt-4 flex items-center justify-between">
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    openModal(service);
+                  }}
+                  className="bg-yellow-500 text-black text-sm font-semibold px-4 py-2 rounded-md shadow hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+                  aria-label={`View more details about ${service.title}`}
+                >
+                  View Details
+                </button>
+
+                <span className="text-xs text-gray-200/80 italic">Popular choice</span>
+              </div>
+            </div>
+
+            {/* subtle animated focus ring for keyboard users */}
+            <span className="sr-only">Press Enter to open details</span>
+          </article>
         ))}
       </div>
+
       <Modal service={selectedService} onClose={closeModal} />
     </section>
   );

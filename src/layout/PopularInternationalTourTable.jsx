@@ -43,7 +43,7 @@ const destinations = [
 
 const PopularInternationalTourTable = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-8">
       <h2 className="text-3xl font-bold mb-4  py-4 uppercase underline decoration-yellow-500 underline-offset-8  italic">
         Most Popular International Tour Packages
       </h2>

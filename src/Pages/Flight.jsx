@@ -20,16 +20,15 @@ const Flight = () => {
       </Helmet>
       <HomeNav />
       {/* HERO SECTION */}
-      <div className="relative h-[70vh] w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden">
         <img
-          src="https://cdn.zeebiz.com/sites/default/files/2023/08/19/256870-air-india-reuters.jpg?im=FitAndFill=(1200,900)"
-
+          src="https://i.postimg.cc/s2gSNsqk/flight_booking_image.jpg"
           alt="Flight Booking & Deals"
           className="w-full h-full object-cover"
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
           <h1 className="text-white text-4xl sm:text-6xl font-extrabold uppercase drop-shadow-xl tracking-wide text-center">
             Flight Booking & Deals
           </h1>
@@ -80,9 +79,6 @@ const Flight = () => {
 
       </section>
       <div className="">
-
-
-
         <div className="mt-4 py-8">
           <div className="flex justify-evenly bg-white">
             <div className="sm:w-96 w-28 bg-black rounded-2xl overflow-hidden hover:scale-95 transition-transform duration-150 ease-in  shadow-xl">

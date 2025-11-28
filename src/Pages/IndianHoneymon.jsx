@@ -138,77 +138,70 @@ export default function IndianHoneymon() {
         <TopDestinationsTable />
       </section>
       <section
-        style={{
-          backgroundImage: `
-    linear-gradient(135deg, transparent 0%, transparent 6%, rgba(71, 71, 71, 0.04) 6%, rgba(71, 71, 71, 0.04) 22%, transparent 22%, transparent 100%),
-    linear-gradient(45deg, transparent 0%, transparent 20%, rgba(71, 71, 71, 0.04) 20%, rgba(71, 71, 71, 0.04) 47%, transparent 47%, transparent 100%),
-    linear-gradient(135deg, transparent 0%, transparent 24%, rgba(71, 71, 71, 0.04) 24%, rgba(71, 71, 71, 0.04) 62%, transparent 62%, transparent 100%),
-    linear-gradient(45deg, transparent 0%, transparent 73%, rgba(71, 71, 71, 0.04) 73%, rgba(71, 71, 71, 0.04) 75%, transparent 75%, transparent 100%),
-    linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255))
-  `,
-        }}
+        className="py-8 mt-8 max-w-7xl mx-auto"
+      //         style={{
+      //           backgroundImage: `
+      //   linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%, rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%, rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),
+      //   linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%, rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%, rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
+      //   linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%, rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%, rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
+      //   linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
+      // `,
+      //         }}
       >
         <div>
-          <h2 className="flex justify-center text-center text-4xl font-semibold py-12">
-            Honeymoon Packages from Delhi: The Gateway to Romance
-          </h2>
-        </div>
-        <p className="text-center px-4">
-          Delhi, the heart of India, serves as the perfect starting point for
-          your honeymoon adventure. In the honeymoon packages from Delhi,
-          couples are presented with different packages they can select from. No
-          matter if you are picturing a peaceful vacation in the mountains or a
-          hot summer on a sunny beach, we are here to help you.
-        </p>
-      </section>
-      <section
-        className="py-8 mt-8"
-        style={{
-          backgroundImage: `
-  linear-gradient(326deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 6%, rgba(157, 157, 157,0.04) 6%, rgba(157, 157, 157,0.04) 29%, rgba(77, 77, 77,0.04) 29%, rgba(77, 77, 77,0.04) 100%),
-  linear-gradient(164deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 36%, rgba(157, 157, 157,0.04) 36%, rgba(157, 157, 157,0.04) 61%, rgba(77, 77, 77,0.04) 61%, rgba(77, 77, 77,0.04) 100%),
-  linear-gradient(336deg, rgba(236, 236, 236,0.04) 0%, rgba(236, 236, 236,0.04) 64%, rgba(157, 157, 157,0.04) 64%, rgba(157, 157, 157,0.04) 69%, rgba(77, 77, 77,0.04) 69%, rgba(77, 77, 77,0.04) 100%),
-  linear-gradient(90deg, rgb(0,0,0), rgb(0,0,0))
-`,
-        }}
-      >
-        <div>
-          <h2 className="flex justify-center text-center text-4xl font-semibold py-12 text-white">
+          <h2 className="flex justify-center text-center text-4xl font-semibold py-12 ">
             Best Honeymoon Packages: Specific for Each Pair
           </h2>
         </div>
-        <p className="text-center px-4 pb-8 text-white ">
+        <p className="text-center px-4 pb-8">
           Our best honeymoon packages are specially designed to create a loving
           atmosphere for the couple. It is always important to remember that
           every couple is also different and therefore comes with a choice or
           budget of their own. Luxury resorts to small and romantic boutiques –
           we guarantee your stay in a hotel is going to be perfect.
         </p>
-        <div className="flex flex-wrap justify-center gap-8 text-white">
-          {packages.map((item, index) => (
-            <div
-              className="border-2 p-4  flex flex-col md:flex-row  items-center w-full md:w-[700px] md:h-[350px] gap-x-4 "
-              key={index}
-            >
-              <div className="h-52 w-full md:w-[50%] overflow-hidden">
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-              <div className="w-full md:w-[50%] mt-4 md:mt-0">
-                <h2 className="text-xl font-bold mb-2">{item.title}</h2>
-                <div>
-                  <p>{item.description}</p>
-                  {/* <p className="text-gray-600 mt-2">
-                    <strong>Duration:</strong> {item.duration}
-                  </p> */}
+        <section id="packages" className="py-12">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex flex-col gap-6">
+              {packages.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col md:flex-row items-stretch gap-6 bg-white/60 backdrop-blur-md rounded-2xl p-6 shadow-xl border border-white/20 hover:scale-[1.01] transition-transform"
+                >
+                  <div className="md:w-1/3 rounded-lg overflow-hidden flex-shrink-0">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-48 md:h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div className="md:w-2/3 flex flex-col justify-between">
+                    <div>
+                      <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                      <p className="text-gray-700 leading-relaxed">{item.description}</p>
+                    </div>
+
+                    <div className="mt-4 flex flex-wrap items-center gap-3">
+                      <span className="inline-block bg-gradient-to-r from-rose-100 to-rose-50 text-rose-700 px-3 py-1 rounded-full text-sm shadow-inner">Romantic</span>
+                      <span className="inline-block bg-gradient-to-r from-indigo-100 to-blue-50 text-indigo-700 px-3 py-1 rounded-full text-sm">All Inclusive</span>
+                      <div className="ml-auto flex gap-3">
+                        <a
+                          href="tel:8178857250"
+                          className="px-4 py-2 rounded-full bg-blue-600 text-white text-sm shadow hover:bg-blue-500 transition"
+                        >
+                          Book Now
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        </section>
       </section>
       <section
         style={{
@@ -222,8 +215,9 @@ linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255))
         }}
       >
         <Honeymoonpacages />
+
       </section>
-      
+
     </div>
   );
 }

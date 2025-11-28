@@ -47,7 +47,7 @@ const ServiceDetail = () => {
       <Homenav />
    
       {/* HERO SECTION */}
-      <div className="relative h-[70vh] w-full overflow-hidden">
+      <div className="relative  w-full overflow-hidden">
         <img
           src={service.bannerImage}
           alt={service.title}

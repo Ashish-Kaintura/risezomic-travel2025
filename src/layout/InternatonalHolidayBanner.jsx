@@ -5,46 +5,46 @@ import { FaPhone, FaPhoneAlt } from 'react-icons/fa';
 
 const destinations = [
   {
-    // https://postimg.cc/gallery/yRV3ZrC
-    image: "https://i.postimg.cc/Y9qh5f2f/Dubai_image.jpg",
-    location: "Duabai",
-    tagline: "God's Own Country",
-    description: "Serene backwaters, lush greenery, and pristine beaches",
-    highlights: ["Houseboat Cruises", "Ayurvedic Spas", "Tea Plantations"],
+    image: "https://i.postimg.cc/bryzdVxx/dubai.jpg",
+    location: "Dubai",
+    tagline: "City of Gold",
+    description: "A futuristic oasis known for luxury shopping, stunning skyscrapers, and desert adventures.",
+    highlights: ["Burj Khalifa", "Desert Safari", "Dubai Marina"],
     rating: "4.9"
   },
   {
-    image: "https://i.postimg.cc/SsNJB7Qv/egypt_image.jpg",
-    location: "Shimla",
-    tagline: "Queen of Hills",
-    description: "Colonial charm meets Himalayan beauty",
-    highlights: ["Mall Road", "Kufri Adventures", "Ridge Views"],
+    image: "https://i.postimg.cc/hjbDDRdL/egypt.jpg",
+    location: "Egypt",
+    tagline: "Land of Pharaohs",
+    description: "Home to ancient wonders, vibrant culture, and breathtaking desert landscapes.",
+    highlights: ["Pyramids of Giza", "Nile Cruise", "Luxor Temples"],
     rating: "4.8"
   },
   {
-    image: "https://i.postimg.cc/26cVrb3T/maldives.jpg",
-    location: "Uttarakhand",
-    tagline: "Land of Gods",
-    description: "Sacred temples, yoga capital, and mountain majesty",
-    highlights: ["Rishikesh Rafting", "Valley of Flowers", "Spiritual Retreats"],
+    image: "https://i.postimg.cc/fyzwkqcB/maldiv.jpg",
+    location: "Maldives",
+    tagline: "Tropical Paradise",
+    description: "Crystal-clear waters, luxurious villas, and world-famous diving spots.",
+    highlights: ["Water Villas", "Snorkeling", "Beach Resorts"],
     rating: "4.9"
   },
   {
-    image: "https://i.postimg.cc/ydQksgWj/Thailand_image.jpg",
-    location: "North East India",
-    tagline: "Nature's Paradise",
-    description: "Untouched beauty, diverse cultures, and pristine landscapes",
-    highlights: ["Living Root Bridges", "Kaziranga Safari", "Tawang Monastery"],
+    image: "https://i.postimg.cc/Y0rpjD6R/thailand.jpg",
+    location: "Thailand",
+    tagline: "Land of Smiles",
+    description: "A vibrant mix of beaches, nightlife, temples, and mouthwatering cuisine.",
+    highlights: ["Phuket Beaches", "Floating Markets", "Chiang Mai Temples"],
     rating: "4.7"
   },
   {
-    image: "https://i.postimg.cc/bvRZVFPX/Turkey_image.jpg",
-    location: "Rajasthan",
-    tagline: "Land of Royals",
-    description: "Majestic forts, golden deserts, and royal heritage",
-    highlights: ["Desert Safari", "Palace Hotels", "Cultural Shows"],
+    image: "https://i.postimg.cc/j5rqYSLb/turky.jpg",
+    location: "Turkey",
+    tagline: "Where East Meets West",
+    description: "A cultural melting pot offering historic wonders, scenic landscapes, and rich cuisine.",
+    highlights: ["Cappadocia", "Blue Mosque", "Pamukkale"],
     rating: "4.8"
   }
+
 ];
 
 export default function PremiumIndianHolidayBanner() {
@@ -113,7 +113,7 @@ export default function PremiumIndianHolidayBanner() {
         ))}
 
         {/* Multi-layer Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/60 to-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-black/40" />
         {/* <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40" /> */}
       </div>
 

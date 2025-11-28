@@ -22,49 +22,62 @@ const MeetingAndEvent = () => {
         />
       </Helmet>
       <HomeNav />
-      <div className="">
-        <div className=" object-center object-contain">
-          <img
-            className="h-[500px] w-full"
-            src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
-          />
+      <div className="relative w-full overflow-hidden">
+        <img
+          src="https://i.postimg.cc/mgwCjtpW/Corporate_Event_Booking_Planning.jpg"
+          alt="Corporate Event Booking & Planning"
+          className="w-full h-full object-cover"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+          <h1 className="text-white text-4xl sm:text-6xl font-extrabold uppercase drop-shadow-xl tracking-wide text-center">
+            Corporate Event Booking & Planning
+          </h1>
         </div>
-        <h1 className="text-center text-6xl uppercase py-8 font-semibold underline underline-offset-8">
-          Corporate Event Booking & Planning
-        </h1>
-        <div className="flex justify-start gap-x-5 sm: mt-12">
-          <div className=" flex ps-5 object-contain w-[500px] ">
-            <img
-              src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+      </div>
+
+      <section className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid sm:grid-cols-2 gap-10 items-start">
+
+          {/* Left Image */}
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img src="https://i.postimg.cc/mgwCjtpW/Corporate_Event_Booking_Planning.jpg"
               loading="lazy"
-            />
+              alt="flight booking" className="w-full" />
           </div>
+
+          {/* Right Content */}
           <div>
-            {/* <h2 className="text-4xl uppercase font-semibold flex items-center gap-x-2">
-              {service.title}
-            </h2> */}
-            <p className="flex sm:w-[850px]  p-5 px-0 text-gray-600">
-              Besides, offering you best travel insurance solutions, Risezonic
-              Travel is also happy to help you organize meetings and events.
-              Whether you are planning an exquisite corporate event or casual
-              team-building day, our devoted event planners, will ensure your
-              exclusive event comes to life with perfect execution. Take your
-              next event up a notch with Risezonic Travel’s professional skills
-              and commitment to perfection. We will coordinate and manage all
-              the small features of the events with regards to venue, meals,
-              transportation services as well as event technology to make it an
-              ideal event.
-            </p>
-            <div className="flex gap-x-5">
-              <button className="px-6 py-2 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 flex items-center gap-x-2 ">
-                Call Now <IoCall />
-              </button>
-              <button className="px-6 py-2 rounded-full bg-green-600 text-white font-semibold hover:bg-green-700 flex items-center gap-x-2  ">
-                Book Now <FaWhatsapp />
-              </button>
+            <p className="text-gray-700 text-lg leading-relaxed mb-6">
+              Besides, offering you best travel insurance solutions, Risezonic Travel is also happy to help you organize meetings and events. Whether you are planning an exquisite corporate event or casual team-building day, our devoted event planners, will ensure your exclusive event comes to life with perfect execution. Take your next event up a notch with Risezonic Travel’s professional skills and commitment to perfection. We will coordinate and manage all the small features of the events with regards to venue, meals, transportation services as well as event technology to make it an ideal event.
+             </p>
+
+            {/* CTA Buttons */}
+            <div className="flex gap-4 mt-5">
+              <a
+                href="tel:+8178857250"
+                className="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 flex items-center gap-2 shadow-lg transition"
+              >
+                <IoCall /> Call Now
+              </a>
+
+              <a
+                href={`https://wa.me/8178857250?text=Hi, I'm interested in Flight Booking & Deals  package`}
+                target="_blank"
+                className="px-6 py-3 rounded-full bg-green-600 text-white font-semibold hover:bg-green-700 flex items-center gap-2 shadow-lg transition"
+              >
+                <FaWhatsapp /> WhatsApp
+              </a>
             </div>
           </div>
         </div>
+
+        {/* IMAGE GALLERY */}
+
+      </section>
+
+      <div className="">
         <div className="mt-4 py-8">
           <div className="flex justify-evenly bg-white">
             <div className="w-96 h-96 bg-black overflow-hidden">

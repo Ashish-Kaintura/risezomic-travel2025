@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import InternatonalHolidayBanner from "../layout/InternatonalHolidayBanner";
 import YouTubeShortsGallery from "../layout/YouTubeShortsGallery";
 import MiceImageGallery from "../layout/MiceImageGallery";
+import MiceBanner from "../components/MiceBanner";
 const MICE = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -20,7 +21,7 @@ const MICE = () => {
         <link rel="canonical" href="https://www.risezonictravel.com/mice" />
       </Helmet>
       <HomeNav />
-      <InternatonalHolidayBanner />
+      <MiceBanner/>
 
       <div
         className=" mx-auto shadow-lg rounded-lg p-6"

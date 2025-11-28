@@ -14,8 +14,8 @@ const services = [
   {
     id: 2,
     image:
-      "https://res.cloudinary.com/dwzmsvp7f/image/fetch/q_75,f_auto,w_1316/https%3A%2F%2Fmedia.insider.in%2Fimage%2Fupload%2Fc_crop%2Cg_custom%2Fv1683808405%2Fvktpxatyzyphl4v1lpml.jpg",
-    title: " Stay the Night at Purushwadi Under the Light of the Fireflies",
+      "https://i.postimg.cc/qBCcTDYT/14371356196_dbb2465402_b.jpg",
+    title: "Stay the Night at Purushwadi Under the Light of the Fireflies",
     description:
       " Stay the Night at Purushwadi Under the Light of the Fireflies The Purushwadi village in Maharashtra hosts one of the most exquisite and organic light festivals. Situated 180 kilometers from Mumbai, this grassroots town has seen the incredible display of spectacular light effects in May and June, when soaring herds of fireflies take to the air at dawn. This may be the lesson you learn from your India tour packages.",
   },
@@ -44,7 +44,7 @@ const services = [
   {
     id: 6,
     image:
-      "https://wp-assets.rooftopapp.com/wp-content/uploads/2023/07/3ebb500c-440a-11eb-be92-09cd005df0bf_image_hires_105956.jpg",
+      "https://i.postimg.cc/XNyKb1PP/fe.jpg",
     title: "Take In The Ajanta Caves' Ancient Art",
     description:
       "In 1983, Maharashtra's Ajanta Caves were inducted into the UNESCO World Heritage List. The rock-cut caves include elaborate patterns that date back over 2,200 years. The Buddhist religious art and temple building found in Ajanta's thirty caves.",
@@ -63,50 +63,88 @@ const ActivityVariousLoaction = () => {
   };
 
   return (
-    <section className="sm:p-12 p-4 max-w-7xl mx-auto">
-      <div className="py-5 ">
-        <div className="py-6">
-          <h2 className="text-start text-3xl italic uppercase font-bold text-blue-700 underline decoration-yellow-500 underline-offset-8">
-            Activities in Various Locations In the Indian
-          </h2>
-          <br />
-          <div className="block justify-center  text-gray-800 text-[15px] font-serif">
-            <p className="text-start">
+    <section
+      className="sm:p-12 p-4 max-w-7xl mx-auto"
+      aria-label="Activities in various locations in India"
+    >
+      <div className="py-5">
+        <div className="py-6 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+          <div>
+            <h2 className="text-start text-3xl italic uppercase font-extrabold text-blue-700 underline decoration-yellow-500 underline-offset-8">
+              Activities in Various Locations in India
+            </h2>
+            <p className="mt-3 text-gray-700 text-[15px] font-serif max-w-3xl">
               When it comes to activities, India truly has no rivals. There is
               something to do for individuals of all ages in practically every
-              destination in the nation. You will also have a plethora of
-              options if you decide to visit one of the popular tour
-              destinations in India. The following list of activities can be
-              enjoyed in the most popular places in India:
+              destination in the nation. Explore curated experiences below and
+              tap any card to learn more.
             </p>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <span className="text-sm text-gray-500 italic">Tip:</span>
+            <div className="text-sm px-3 py-2 bg-yellow-50 text-yellow-800 rounded-md shadow-sm border border-yellow-100">
+              Click or press Enter on a card to view details
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="sm:flex block  justify-evenly flex-wrap gap-4 sm:px-0 px-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:px-0 px-2">
         {services.map((service) => (
-          <div
+          <article
             key={service.id}
-            style={{
-              backgroundImage: `url(${service.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-            className="sm:mt-0 mt-4 h-[350px] cursor-pointer sm:w-80 bg-slate-400 rounded-lg outline-offset-4 relative hover:scale-105 overflow-hidden transition-all ease-in duration-150"
+            role="button"
+            tabIndex={0}
+            aria-label={`Open details for ${service.title}`}
             onClick={() => openModal(service)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                openModal(service);
+              }
+            }}
+            className="relative h-64 rounded-lg overflow-hidden cursor-pointer transform transition will-change-transform hover:scale-105 hover:shadow-2xl focus:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-200"
           >
-            <div className="absolute bottom-0 left-0 p-5 bg-[#0D0C0C] text-white backdrop-blur-[1.4495413303375244px] bg-opacity-65 w-full">
-              <h2 className="text-yellow-500">{service.title}</h2>
-              <h3 className="line-clamp-2">{service.description}</h3>
+            <img
+              src={service.image}
+              alt={service.title}
+              className="absolute inset-0 w-full h-full object-cover brightness-90"
+              loading="lazy"
+            />
+            {/* Gradient overlay for readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/30 to-transparent"></div>
+
+            <div className="absolute bottom-0 left-0 right-0 p-4">
+              <h3 className="text-lg font-semibold text-yellow-400 drop-shadow-sm line-clamp-2">
+                {service.title}
+              </h3>
+              <p className="mt-1 text-sm text-gray-100 line-clamp-3">
+                {service.description}
+              </p>
+
+              <div className="mt-3 flex items-center justify-between">
+                <span className="text-xs text-gray-200/90 bg-black/20 px-2 py-1 rounded-md">
+                  {service.id} of {services.length}
+                </span>
+
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    openModal(service);
+                  }}
+                  className="text-sm bg-yellow-500 hover:bg-yellow-600 text-black px-3 py-1 rounded-md font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300"
+                >
+                  View details
+                </button>
+              </div>
             </div>
-          </div>
+          </article>
         ))}
       </div>
 
       <Modal service={selectedService} onClose={closeModal} />
-
-
-      
     </section>
   );
 };

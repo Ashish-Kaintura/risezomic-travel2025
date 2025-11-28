@@ -77,7 +77,7 @@ export default function InternationalTourPakages() {
   `,
         }}
       >
-        <div className="px-4 py-8">
+        <div className="px-4 py-8 max-w-7xl mx-auto">
           <h2 className=" text-3xl italic uppercase font-bold text-gray-200 underline decoration-yellow-500 underline-offset-8">
             Why Risezonic Travel For International Trip?
           </h2>
