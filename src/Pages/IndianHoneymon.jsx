@@ -5,6 +5,7 @@ import TopDestinationsTable from "../layout/TopDestinationsTable";
 import Footer from "../layout/Footer";
 import Honeymoonpacages from "../layout/HoneymoonPacakges";
 import { useEffect } from "react";
+import IndianHoneymoonBanner from "../components/IndianHoneymoonBanner";
 const packages = [
   {
     title: "Darjeeling Honeymoon Package",
@@ -97,7 +98,7 @@ export default function IndianHoneymon() {
         />
       </Helmet>
       <HomeNav />
-      <InidanHolidayBanner />
+      <IndianHoneymoonBanner />
       <div
         className="flex justify-center text-center text-4xl font-semibold py-12"
         style={{

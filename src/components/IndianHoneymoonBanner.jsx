@@ -4,49 +4,50 @@ import { Link } from 'react-router-dom';
 import { FaPhone, FaPhoneAlt } from 'react-icons/fa';
 
 const destinations = [
-  {
-    image: "https://i.postimg.cc/FRbqpHVW/01.jpg",
-    location: "Kerala",
-    tagline: "God's Own Country",
-    description: "Serene backwaters, lush greenery, and pristine beaches",
-    highlights: ["Houseboat Cruises", "Ayurvedic Spas", "Tea Plantations"],
-    rating: "4.9"
-  },
-  {
-    image: "https://i.postimg.cc/d14fgtLm/Explore_the_Most_Important_Places_to_Visit_near_Shimla.avif",
-    location: "Shimla",
-    tagline: "Queen of Hills",
-    description: "Colonial charm meets Himalayan beauty",
-    highlights: ["Mall Road", "Kufri Adventures", "Ridge Views"],
-    rating: "4.8"
-  },
-  {
-    image: "https://i.postimg.cc/DfCVM5Gh/Uttrakhand_DE.jpg",
-    location: "Uttarakhand",
-    tagline: "Land of Gods",
-    description: "Sacred temples, yoga capital, and mountain majesty",
-    highlights: ["Rishikesh Rafting", "Valley of Flowers", "Spiritual Retreats"],
-    rating: "4.9"
-  },
-  {
-    image: "https://i.postimg.cc/HxpKS7sX/Natures_Paradise_Discover_the_Best_Places_To_Visit_in_North_East_India.avif",
-    location: "North East India",
-    tagline: "Nature's Paradise",
-    description: "Untouched beauty, diverse cultures, and pristine landscapes",
-    highlights: ["Living Root Bridges", "Kaziranga Safari", "Tawang Monastery"],
-    rating: "4.7"
-  },
-  {
-    image: "https://i.postimg.cc/vBhRMtS4/rajasthan_thar_desert_jaiselmer.jpg",
-    location: "Rajasthan",
-    tagline: "Land of Royals",
-    description: "Majestic forts, golden deserts, and royal heritage",
-    highlights: ["Desert Safari", "Palace Hotels", "Cultural Shows"],
-    rating: "4.8"
-  }
+    {
+        image: "https://i.postimg.cc/8c4XVfq4/darjeeling.jpg",
+        location: "Darjeeling",
+        tagline: "Queen of the Eastern Himalayas",
+        description: "A serene hill station famous for tea gardens, toy train rides, and breathtaking views of Kanchenjunga.",
+        highlights: ["Tiger Hill Sunrise", "Tea Gardens", "Darjeeling Toy Train"],
+        rating: "4.9"
+    },
+    {
+        image: "https://img.veenaworld.com/wp-content/uploads/2023/05/Explore-the-Most-Important-Places-to-Visit-near-Shimla.jpg",
+        location: "Shimla",
+        tagline: "Queen of Hills",
+        description: "Colonial charm meets Himalayan beauty",
+        highlights: ["Mall Road", "Kufri Adventures", "Ridge Views"],
+        rating: "4.8"
+    },
+    {
+        image: "https://i.postimg.cc/wjGPvJ3S/Kashmir.jpg",
+        location: "Kashmir",
+        tagline: "Paradise on Earth",
+        description: "A breathtaking destination known for snow-capped mountains, serene lakes, and lush valleys.",
+        highlights: ["Dal Lake Shikara", "Gulmarg Snow", "Pahalgam Valley"],
+        rating: "4.9"
+    },
+    {
+        image: "https://i.postimg.cc/d1MxRY26/udaipur.jpg",
+        location: "Udaipur",
+        tagline: "City of Lakes",
+        description: "A romantic city filled with shimmering lakes, royal palaces, and a vibrant Rajasthani culture.",
+        highlights: ["City Palace", "Lake Pichola", "Boat Rides"],
+        rating: "4.7"
+    },
+    {
+        image: "https://www.andbeyond.com/wp-content/uploads/sites/5/rajasthan-thar-desert-jaiselmer.jpg",
+        location: "Rajasthan",
+        tagline: "Land of Royals",
+        description: "Majestic forts, golden deserts, and royal heritage",
+        highlights: ["Desert Safari", "Palace Hotels", "Cultural Shows"],
+        rating: "4.8"
+    }
+
 ];
 
-export default function PremiumIndianHolidayBanner() {
+export default function IndianHoneymoonBanner() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(false);

@@ -32,7 +32,22 @@ export default function Contact() {
         <link rel="canonical" href="https://www.risezonictravel.com/contect-us" />
       </Helmet>
       <div>
-     <HomeNav/>
+        <HomeNav />
+      </div>
+
+      <div className="relative w-full overflow-hidden">
+        <img
+          src="https://i.postimg.cc/XYX8qYZz/contact-us.png"
+          alt="Insurance by Risezonic Travel"
+          className="w-full h-full object-cover"
+        />
+
+        {/* Overlay */}
+        {/* <div className="absolute inset-0 bg-black/10 flex items-center justify-center">
+          <h1 className="text-white text-4xl sm:text-6xl font-extrabold uppercase drop-shadow-xl tracking-wide text-center">
+           Contact US
+          </h1>
+        </div> */}
       </div>
       <div className="pt-28">
         {/* <div
@@ -120,7 +135,7 @@ export default function Contact() {
         </div>
       </div>
       <section>
-        
+
       </section>
     </div>
   );

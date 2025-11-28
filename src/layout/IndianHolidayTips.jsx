@@ -6,7 +6,7 @@ import Modal from "../layout/Modal"; // Ensure the correct import path
 const services = [
   {
     id: 1,
-    image: "https://miro.medium.com/v2/resize:fit:696/0*X5Yx8FuCfe0muXee.jpg",
+    image: "https://i.postimg.cc/NMB6m6Gz/0_X5Yx8Fu_Cfe0mu_Xee.jpg",
     title: "Choose your travel destination",
     description:
       "Choosing your destination is perhaps one of the most crucial steps because it will determine what to do next. Half of the issues can be resolved if you know which location you wish to visit. Therefore, you must first pick where you wish to travel before selecting from the India tour packages.",
@@ -14,7 +14,7 @@ const services = [
   {
     id: 2,
     image:
-      "https://cdn.britannica.com/34/1634-050-BC7E72FA/map-India-Physical-locator.jpg",
+      "https://i.postimg.cc/vBbrfr8C/map_India_Physical_locator.jpg",
     title: "Reserve a tour package to India",
     description:
       "This is something you ought to do. This will resolve a lot of issues. Choosing an India tour package will relieve you of all worries regarding transportation, lodging, food, and even sightseeing activities.",
@@ -22,7 +22,7 @@ const services = [
   {
     id: 3,
     image:
-      "https://images.news18.com/ibnlive/uploads/2020/09/1601540372_credit_card.jpg?im=Resize,width=640,aspect=fit,type=normal",
+      "https://i.postimg.cc/tTp3W3RD/1601540372_credit_card.jpg",
     title:
       "Bring cash, even though most tour places in India accept digital payments",
     description:
@@ -30,7 +30,7 @@ const services = [
   },
   {
     id: 4,
-    image: "https://cdn01.buxtonco.com/news/2661/istock-665028882__large.jpg",
+    image: "https://i.postimg.cc/vBbrfr8p/istock_665028882_large.jpg",
     title:
       "Completing your investigation regarding the destination will help you cover all the attractions of the area.",
     description:

@@ -44,7 +44,7 @@ const Insurance = () => {
 
           {/* Left Image */}
           <div className="rounded-2xl overflow-hidden shadow-xl">
-            <img src="https://www.shutterstock.com/image-photo/commercial-airplane-flying-above-clouds-600nw-553131187.jpg"
+            <img src="https://i.postimg.cc/VN7hJV4s/600_by_405.jpg"
               loading="lazy"
               alt="flight booking" className="w-full" />
           </div>
@@ -83,7 +83,7 @@ const Insurance = () => {
             <div className="w-96 h-96 bg-black overflow-hidden">
               <img
                 src={
-                  "https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+                  "https://i.postimg.cc/Gp3NhCPm/384_by_384_jpg_01.jpg"
                 }
                 alt="flight"
                 loading="lazy"
@@ -94,7 +94,7 @@ const Insurance = () => {
             <div className="w-96 bg-black overflow-hidden ">
               <img
                 src={
-                  "https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+                  "https://i.postimg.cc/6QHP8mzW/384_by_384_jpg_02.jpg"
                 }
                 loading="lazy"
                 alt="flight"
@@ -104,7 +104,7 @@ const Insurance = () => {
             <div className="w-96 bg-black overflow-hidden ">
               <img
                 src={
-                  "https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+                  "https://i.postimg.cc/ZqfQWMjK/384_by_384_jpg_03.jpg"
                 }
                 loading="lazy"
                 alt="flight"

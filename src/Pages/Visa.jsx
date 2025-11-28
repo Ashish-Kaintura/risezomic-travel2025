@@ -40,7 +40,7 @@ const VIsa = () => {
 
           {/* Left Image */}
           <div className="rounded-2xl overflow-hidden shadow-xl">
-            <img src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+            <img src="https://i.postimg.cc/4dr0XhN7/600_by_405.jpg"
               loading="lazy"
               alt="visa free" className="w-full" />
           </div>
@@ -80,7 +80,7 @@ const VIsa = () => {
             <div className="w-96 h-96 bg-black overflow-hidden">
               <img
                 src={
-                  "https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+                  "https://i.postimg.cc/k4kH7tXW/384_by_384_jpg_01.jpg"
                 }
                 alt="flight"
                 loading="lazy"
@@ -91,7 +91,7 @@ const VIsa = () => {
             <div className="w-96 bg-black overflow-hidden ">
               <img
                 src={
-                  "https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+                  "https://i.postimg.cc/d1zfJTtr/384_by_384_jpg_02.jpg"
                 }
                 loading="lazy"
                 alt="flight"
@@ -101,7 +101,7 @@ const VIsa = () => {
             <div className="w-96 bg-black overflow-hidden ">
               <img
                 src={
-                  "https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+                  "https://i.postimg.cc/DZtN7bys/384_by_384_jpg_03.jpg"
                 }
                 loading="lazy"
                 alt="flight"

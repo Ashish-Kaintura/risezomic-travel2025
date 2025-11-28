@@ -5,7 +5,7 @@ import { FaPhone, FaPhoneAlt } from 'react-icons/fa';
 
 const destinations = [
     {
-        image: "https://i.postimg.cc/QCCfGvCk/mice_1.jpg",
+        image: "https://i.postimg.cc/qvfM3fPG/mice_banner_jpg_01.jpg",
         location: "Bali",
         tagline: "Island of Gods",
         description: "Experience Bali’s serene beaches, lush rice terraces, ancient temples, and world-famous sunsets—perfect for honeymooners and adventure seekers.",
@@ -13,7 +13,7 @@ const destinations = [
         rating: "4.9"
     },
     {
-        image: "https://i.postimg.cc/8ccZQxcH/mice_2.jpg",
+        image: "https://i.postimg.cc/QdpNg4D6/mice_banner_jpg_02.jpg",
         location: "Italy",
         tagline: "Mediterranean Dreamscape",
         description: "Discover Italy’s iconic Amalfi Coast, known for its cliffside villages, turquoise waters, romantic scenery, and luxury coastal experiences.",
@@ -21,7 +21,7 @@ const destinations = [
         rating: "4.8"
     },
     {
-        image: "https://i.postimg.cc/x886DB85/mice_3.jpg",
+        image: "https://i.postimg.cc/0yp5GWvf/mice_banner_jpg_03.jpg",
         location: "Maldives",
         tagline: "Heaven on Earth",
         description: "The Maldives offers crystal-clear lagoons, private water villas, coral reefs, and premium island luxury—ideal for honeymoons and relaxation.",
@@ -29,7 +29,7 @@ const destinations = [
         rating: "4.9"
     },
     {
-        image: "https://i.postimg.cc/Hnn6DFnt/mice_4.jpg",
+        image: "https://i.postimg.cc/3xgrjShS/mice_banner_jpg_04.jpg",
         location: "Santorini, Greece",
         tagline: "The Aegean Gem",
         description: "Explore Santorini’s whitewashed villages, blue-domed churches, volcanic beaches, and magical sunset views overlooking the caldera.",
@@ -37,7 +37,7 @@ const destinations = [
         rating: "4.7"
     },
     {
-        image: "https://i.postimg.cc/4y0BJwHB/mice_5.jpg",
+        image: "https://i.postimg.cc/bwQY0CPV/mice_banner_jpg_05.jpg",
         location: "Thailand",
         tagline: "Land of Smiles",
         description: "Thailand offers stunning tropical beaches, vibrant city life, rich culture, and unforgettable food—perfect for budget and luxury travelers alike.",
@@ -192,7 +192,7 @@ export default function MiceBanner() {
 
                             </span>
                         </button>
-                        <Link to="mailto:info.risezonic.com">   <button className="px-8 py-4 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all hover:scale-105">
+                        <Link to="mailto:info@risezonic.com">   <button className="px-8 py-4 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all hover:scale-105">
                             Explore More
                         </button>
 

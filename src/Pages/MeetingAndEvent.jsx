@@ -42,7 +42,7 @@ const MeetingAndEvent = () => {
 
           {/* Left Image */}
           <div className="rounded-2xl overflow-hidden shadow-xl">
-            <img src="https://i.postimg.cc/mgwCjtpW/Corporate_Event_Booking_Planning.jpg"
+            <img src="https://i.postimg.cc/65SF0gNh/corporate_event_booking_600_by_405.jpg"
               loading="lazy"
               alt="flight booking" className="w-full" />
           </div>
@@ -83,7 +83,7 @@ const MeetingAndEvent = () => {
             <div className="w-96 h-96 bg-black overflow-hidden">
               <img
                 src={
-                  "https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+                  "https://i.postimg.cc/15TbH2Zc/384_by_384.jpg"
                 }
                 alt="flight"
                 loading="lazy"
@@ -94,7 +94,7 @@ const MeetingAndEvent = () => {
             <div className="w-96 bg-black overflow-hidden ">
               <img
                 src={
-                  "https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+                  "https://i.postimg.cc/L67GTwMk/384_by_384_jpg_02_(2).jpg"
                 }
                 loading="lazy"
                 alt="flight"
@@ -104,7 +104,7 @@ const MeetingAndEvent = () => {
             <div className="w-96 bg-black overflow-hidden ">
               <img
                 src={
-                  "https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+                  "https://i.postimg.cc/J4gSqvW4/384_by_384_jpg_03_(2).jpg"
                 }
                 loading="lazy"
                 alt="flight"

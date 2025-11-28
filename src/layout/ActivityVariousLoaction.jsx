@@ -6,7 +6,7 @@ import Modal from "../layout/Modal"; // Ensure the correct import path
 const services = [
   {
     id: 1,
-    image: "https://ychef.files.bbci.co.uk/1280x720/p02rmhgr.jpg",
+    image: "https://i.postimg.cc/wvgXLXTz/p02rmhgr.jpg",
     title: "Take in the ceremony of the nation's guard At the Wagah Border",
     description:
       "Take in the ceremony of the nation's guard At the Wagah Border This ceremony, called the Beating Retreat, consists of lowering the flags, a drill, a demonstration of boot stamping, and quick dance-like movements. Every day at six o'clock in the evening, India and Pakistan demonstrate their fraternity and cooperation at the Wagah Border through this act. If you would love to witness patriotism at its height, this could be an exciting experience to include in your India holiday packages.",
@@ -22,14 +22,14 @@ const services = [
   {
     id: 3,
     image:
-      "https://akm-img-a-in.tosshub.com/indiatoday/images/bodyeditor/201810/roopkund-lake1-x525.jpg?scFdzoxD7vv31ZyTb9hN1ijd74gNQZGF",
+      "https://i.postimg.cc/HxdwXwsG/roopkund_lake1_x525.jpg",
     title: "Go to Chamoli's Skeleton Lake at Roopkund.",
     description:
       "Its mere reason for being is what makes this one among the spookiest places to be around—not any ghosts or demons hiding out. More than 200 human skeleton remains, dated from 850 AD, were discovered in this lake. According to the remains, they had perished identically, from strikes to the head that were subsequently determined to have been caused by an intense hailstorm that struck suddenly. To get to the lake, you must journey for three to four days. Your holiday packages to India shouldn't even include this location if you enjoy excitement",
   },
   {
     id: 4,
-    image: "https://i.ytimg.com/vi/i9Iw3mTJueQ/maxresdefault.jpg",
+    image: "https://i.postimg.cc/tTp3W3RK/maxresdefault.jpg",
     title: "Enjoy A Filling Lunch At Amritsar's Golden Temple",
     description:
       "The Golden Temple, which is located in the center of Amritsar, Punjab, is well-known for being a temporal and spiritual hub of religion and spirituality as well as for the tranquil atmosphere of its communal kitchen, or langar. Up to 50,000 complimentary meals are served daily to visitors of the Gurudwara from all over the world at this shrine. Because of its peace, the Golden Temple is one of the most revered holy pilgrimages for Sikhs and should not be missed on any India tour packages.",
