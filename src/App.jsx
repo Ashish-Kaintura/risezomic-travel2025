@@ -70,7 +70,7 @@ export default function App() {
           />
           <Route path="/Deals/:UrlTitle" element={<DealsDetail />} />
           <Route
-            path="/Indian-Tour-Packages"
+            path="/indian-Tour-Packages"
             element={<IndianTourPackages />}
           />
           <Route

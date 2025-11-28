@@ -78,7 +78,8 @@ const Footer = () => {
           <ul className="space-y-3 text-gray-300 text-sm">
             {[
               { name: "Home", link: "/" },
-              { name: "Holiday Packages", link: "/packages" },
+              { name: "Indian Holiday Packages", link: "/indian-Tour-Packages" },
+              { name: "International Holiday Packages", link: "/international-holiday-packages" },
               { name: "About Us", link: "/about" },
               { name: "Flight", link: "/flights-booking" },
               { name: "Cruise", link: "/cruise-booking" },

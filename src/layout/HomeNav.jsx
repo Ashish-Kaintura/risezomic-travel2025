@@ -56,7 +56,7 @@ export default function HomeNav() {
 
             <div className="absolute top-6 left-0 hidden group-hover:block bg-white text-black shadow-xl rounded-xl py-4 w-60">
               <NavLink
-                to="/Indian-Tour-Packages"
+                to="/indian-Tour-Packages"
                 className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md"
               >
                 Indian Holiday
@@ -180,7 +180,7 @@ export default function HomeNav() {
               className={`ml-3 mt-2 space-y-3 text-gray-300 overflow-hidden transition-all duration-300
         ${activeDropdown === "packages" ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
             >
-              <NavLink to="/Indian-Tour-Packages" onClick={toggleMenu}>Indian Holiday</NavLink> <br />
+              <NavLink to="/indian-Tour-Packages" onClick={toggleMenu}>Indian Holiday</NavLink> <br />
               <NavLink to="/international-holiday-packages" onClick={toggleMenu}>International Holiday</NavLink> <br />
               <NavLink to="/international-honeymoon-tour-packages" onClick={toggleMenu}>Int. Honeymoon</NavLink> <br />
               <NavLink to="/indian-honeymoon-tour-packages" onClick={toggleMenu}>Indian Honeymoon</NavLink> <br />

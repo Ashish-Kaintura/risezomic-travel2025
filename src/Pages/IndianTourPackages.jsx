@@ -25,7 +25,7 @@ export default function IndianTourPackages() {
         />
         <link
           rel="canonical"
-          href="https://www.risezonictravel.com/Indian-Tour-Packages"
+          href="https://www.risezonictravel.com/indian-Tour-Packages"
         />
       </Helmet>
       <HomeNav />
