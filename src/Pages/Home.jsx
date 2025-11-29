@@ -208,7 +208,7 @@ function Home() {
             Videos
           </h2>
         </div>
-        <div className="py-[1px] bg-gray-100 mb-8"></div>
+        {/* <div className="py-[1px] bg-gray-100 mb-8"></div> */}
         {/* <div className="flex flex-wrap sm:justify-evenly justify-center gap-y-4">
           <div className=" border border-white   bg-white rounded-lg outline-offset-4 relative hover:scale-105  overflow-hidden transition-all ease-in duration-150">
             <iframe

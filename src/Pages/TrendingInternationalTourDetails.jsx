@@ -49,7 +49,7 @@ const TrendingInternationalTourDetails = () => {
       <HomeNav />
      
            {/* HERO SECTION */}
-           <div className="relative h-[70vh] w-full overflow-hidden">
+           <div className="relative  w-full overflow-hidden">
              <img
                src={service.bannerImage}
                alt={service.title}
@@ -82,7 +82,7 @@ const TrendingInternationalTourDetails = () => {
                  {/* CTA Buttons */}
                  <div className="flex gap-4 mt-5">
                    <a
-                     href="tel:+91XXXXXXXXXX"
+                     href="tel:+8178857250"
                      className="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 flex items-center gap-2 shadow-lg transition"
                    >
                      <IoCall /> Call Now

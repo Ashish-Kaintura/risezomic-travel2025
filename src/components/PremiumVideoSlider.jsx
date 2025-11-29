@@ -57,7 +57,7 @@ export default function PremiumVideoSlider() {
     };
 
     return (
-        <div className="relative w-full h-screen bg-black overflow-hidden">
+        <div className="relative w-full sm:h-screen bg-black overflow-hidden">
             {/* Video Background */}
             <div className="absolute inset-0">
                 {videos.map((video, idx) => (
@@ -81,7 +81,7 @@ export default function PremiumVideoSlider() {
 
             {/* Content Overlay */}
             <div
-                className="relative z-20 h-full flex flex-col justify-end pb-20 px-8 md:px-16"
+                className="relative z-20 h-full flex flex-col justify-end pb-20 sm:px-8 md:px-16 sm:top-0 top-10"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
@@ -89,13 +89,13 @@ export default function PremiumVideoSlider() {
                 <div className="max-w-3xl space-y-4 mb-8">
                     <h4
                         key={`title-${current}`}
-                        className="text-5xl md:text-7xl font-bold text-white tracking-tight animate-fade-in"
+                        className="md:text-7xl font-bold text-white tracking-tight animate-fade-in"
                     >
                         {videos[current].title}
                     </h4>
                     <p
                         key={`subtitle-${current}`}
-                        className="text-xl md:text-2xl text-gray-200 animate-fade-in-delay"
+                        className="sm:text-2xl text-gray-200 animate-fade-in-delay"
                     >
                         {videos[current].subtitle}
                     </p>
