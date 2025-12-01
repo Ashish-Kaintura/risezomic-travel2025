@@ -29,7 +29,7 @@ export default function Contact() {
           name="description"
           content="Get in touch with Risezonic Travel. Our team is ready to help you with holiday planning, business travel, quotes, and customer support anytime."
         />
-        <link rel="canonical" href="https://www.risezonictravel.com/contect-us" />
+        <link rel="canonical" href="https://www.risezonictravel.com/contact-us" />
       </Helmet>
       <div>
         <HomeNav />

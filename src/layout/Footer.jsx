@@ -80,10 +80,10 @@ const Footer = () => {
               { name: "Home", link: "/" },
               { name: "Indian Holiday Packages", link: "/indian-Tour-Packages" },
               { name: "International Holiday Packages", link: "/international-holiday-packages" },
-              { name: "About Us", link: "/about" },
+              { name: "About Us", link: "/about-us" },
               { name: "Flight", link: "/flights-booking" },
               { name: "Cruise", link: "/cruise-booking" },
-              { name: "Contact", link: "/contact" },
+              { name: "Contact", link: "/contact-us" },
             ].map((item, i) => (
               <li key={i}>
                 <Link
@@ -163,7 +163,7 @@ const Footer = () => {
 
       {/* Divider */}
       <div className="border-t border-white/10 mt-12 pt-6 text-center text-gray-400 text-sm relative z-10">
-        © 2025 RiseZonic Travel • All Rights Reserved
+        © 2025 Risezonic Travel • All Rights Reserved
       </div>
 
       {/* Footer Bottom Links */}

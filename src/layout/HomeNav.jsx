@@ -88,8 +88,8 @@ export default function HomeNav() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/cruise-booking" className="hover:text-yellow-400 transition">
-              Cruise
+            <NavLink to="/mice" className="hover:text-yellow-400 transition">
+              Mice
             </NavLink>
           </li>
           <li>
@@ -105,8 +105,8 @@ export default function HomeNav() {
             </button>
 
             <div className="absolute top-6 left-0 hidden group-hover:block bg-white text-black shadow-xl rounded-xl py-4 w-52">
-              <NavLink to="/mice" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
-                MICE
+              <NavLink to="/cruise-booking" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
+                Cruise
               </NavLink>
               <NavLink to="/visa" className="block px-5 py-2 hover:bg-gray-900 hover:text-white rounded-md">
                 Visa
@@ -121,7 +121,7 @@ export default function HomeNav() {
           </li>
 
           {/* Contact Button */}
-          <Link to="/contect-us">
+          <Link to="/contact-us">
             <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-5 py-2 rounded-lg shadow-md transition font-semibold">
               Contact Us
             </button>
@@ -191,9 +191,8 @@ export default function HomeNav() {
           <li onClick={toggleMenu}>
             <NavLink className="block py-2" to="/flights-booking">Flights</NavLink>
           </li>
-
           <li onClick={toggleMenu}>
-            <NavLink className="block py-2" to="/cruise-booking">Cruise</NavLink>
+            <NavLink className="block py-2" to="/mice">Mice</NavLink>
           </li>
 
           <li onClick={toggleMenu}>
@@ -216,7 +215,7 @@ export default function HomeNav() {
               className={`ml-3 mt-2 space-y-3 text-gray-300 overflow-hidden transition-all duration-300
         ${activeDropdown === "more" ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
             >
-              <NavLink to="/mice" onClick={toggleMenu}>MICE</NavLink> <br />
+              <NavLink to="/cruise-booking" onClick={toggleMenu}>Cruise</NavLink> <br />
               <NavLink to="/visa" onClick={toggleMenu}>Visa</NavLink> <br />
               <NavLink to="/corporate-event-booking" onClick={toggleMenu}>Events</NavLink> <br/>
               <NavLink to="/Insurance" onClick={toggleMenu}>Insurance</NavLink> <br/>
