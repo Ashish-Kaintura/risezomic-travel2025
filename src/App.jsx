@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
@@ -44,63 +44,64 @@ export default function App() {
   return (
     <>
       {/* <MagneticCursor> */}
-        <BrowserRouter>
-          {/* <AirlineCursor {...cursor} /> */}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about-us" element={<About />} />
-            <Route path="/contact-us" element={<Contact />} />
-            <Route path="/services/:UrlTitle" element={<ServiceDetail />} />
-            <Route path="/indian-holiday-packages/:UrlTitle" element={<MemorableHolidayDetails />} />
-            <Route
-              path="/indian-honeymoon-tour-packages/:UrlTitle"
-              element={<HoneymoonIndiaDetails />}
-            />
-            <Route
-              path="/indian-honeymoon-tour-packages"
-              element={<IndianHoneymon />}
-            />
-            <Route
-              path="/international-honeymoon-tour-packages/:UrlTitle"
-              element={<InternationalHoneymoonDetails />}
-            />
-            <Route
-              path="/international-honeymoon-tour-packages"
-              element={<InternationalHoneymon />}
-            />
-            <Route
-              path="/international-holiday-packages/:UrlTitle"
-              element={<TrendingInternationalTourDetails />}
-            />
-            <Route path="/Deals/:UrlTitle" element={<DealsDetail />} />
-            <Route
-              path="/indian-Tour-Packages"
-              element={<IndianTourPackages />}
-            />
-            <Route
-              path="/international-holiday-packages"
-              element={<InternationalTourPakages />}
-            />
-            <Route path="/mice" element={<MICE />} />
-            <Route path="/Sustainability" element={<Sustainability />} />
-            <Route path="/flights-booking" element={<Flight />} />
-            <Route path="/cruise-booking" element={<Cruise />} />
-            <Route path="/Insurance" element={<Insurance />} />
-            <Route path="/corporate-event-booking" element={<MeetingAndEvent />} />
-            <Route path="/visa" element={<VIsa />} />
-            <Route path="/Career" element={<Career />} />
-            <Route path="/blogs" element={<Blogs />} />
-            <Route path="/News-And-Media" element={<NewsAndMedia />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/offers" element={<TravelOffers />} />
-            <Route path="/Business-Growth" element={<BusinessGrowth />} />
-            <Route path="/Business-success" element={<BusinessSuccess />} />
-            <Route path="*" element={<ErrorPage/>} />
+      <BrowserRouter>
+        {/* <AirlineCursor {...cursor} /> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/contact-us" element={<Contact />} />
+          <Route path="/services/:UrlTitle" element={<ServiceDetail />} />
+          <Route path="/indian-holiday-packages/:UrlTitle" element={<MemorableHolidayDetails />} />
+          <Route
+            path="/indian-honeymoon-tour-packages/:UrlTitle"
+            element={<HoneymoonIndiaDetails />}
+          />
+          <Route
+            path="/indian-honeymoon-tour-packages"
+            element={<IndianHoneymon />}
+          />
+          <Route
+            path="/international-honeymoon-tour-packages/:UrlTitle"
+            element={<InternationalHoneymoonDetails />}
+          />
+          <Route
+            path="/international-honeymoon-tour-packages"
+            element={<InternationalHoneymon />}
+          />
+          <Route
+            path="/international-holiday-packages/:UrlTitle"
+            element={<TrendingInternationalTourDetails />}
+          />
+          <Route path="/Deals/:UrlTitle" element={<DealsDetail />} />
+          <Route
+            path="/indian-Tour-Packages"
+            element={<IndianTourPackages />}
+          />
+          <Route
+            path="/international-holiday-packages"
+            element={<InternationalTourPakages />}
+          />
+          <Route path="/mice" element={<MICE />} />
+          <Route path="/Sustainability" element={<Sustainability />} />
+          <Route path="/flights-booking" element={<Flight />} />
+          <Route path="/cruise-booking" element={<Cruise />} />
+          <Route path="/Insurance" element={<Insurance />} />
+          <Route path="/corporate-event-booking" element={<MeetingAndEvent />} />
+          <Route path="/visa" element={<VIsa />} />
+          <Route path="/Career" element={<Career />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/News-And-Media" element={<NewsAndMedia />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/offers" element={<TravelOffers />} />
+          <Route path="/Business-Growth" element={<BusinessGrowth />} />
+          <Route path="/Business-success" element={<BusinessSuccess />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
 
-          </Routes>
-          <SideLinks />
-          <Footer />
-        </BrowserRouter>
+
+        </Routes>
+        <SideLinks />
+        <Footer />
+      </BrowserRouter>
       {/* </MagneticCursor> */}
     </>
   );

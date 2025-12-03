@@ -60,7 +60,7 @@ export default function Testimonials() {
                 />
               </svg>
               <blockquote>
-                <p className="sm:text-2xl text-normal font-medium text-gray-900 dark:text-white">
+                <p className="sm:text-2xl text-normal font-medium text-gray-900 ">
                   Risezonic Travel Agency is the agency of my trust for all my
                   travel requirements, both domestic and international. Their
                   team is full of professional knowledge, always works fast and
@@ -75,7 +75,7 @@ export default function Testimonials() {
                   alt="profile picture"
                 />
                 <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                  <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                  <div className="pr-3 font-medium text-gray-900 ">
                     Amit Sharma
                   </div>
                   <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
@@ -115,7 +115,7 @@ export default function Testimonials() {
                 />
               </svg>
               <blockquote>
-                <p className="sm:text-2xl text-normal font-medium text-gray-900 dark:text-white">
+                <p className="sm:text-2xl text-normal font-medium text-gray-900 ">
                   “I made bookings for our family trip to the USA easy when I
                   met Risezonic Travel Agency and I cannot thank them enough.” I
                   and my wife Priya can never thank them enough because of
@@ -131,7 +131,7 @@ export default function Testimonials() {
                   alt="profile picture"
                 />
                 <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                  <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                  <div className="pr-3 font-medium text-gray-900 ">
                     Rahul Mehta
                   </div>
                   <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
@@ -171,7 +171,7 @@ export default function Testimonials() {
                 />
               </svg>
               <blockquote>
-                <p className="sm:text-2xl text-normal font-medium text-gray-900 dark:text-white">
+                <p className="sm:text-2xl text-normal font-medium text-gray-900 ">
                   Risezonic is my go-to online travel agency for all domestic
                   flight bookings in India during my frequent business travel
                   from Sydney, Australia. Their efforts to hunt for the most
@@ -187,7 +187,7 @@ export default function Testimonials() {
                   alt="profile picture"
                 />
                 <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-                  <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                  <div className="pr-3 font-medium text-gray-900 ">
                     Abhay SIngh
                   </div>
                   <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">

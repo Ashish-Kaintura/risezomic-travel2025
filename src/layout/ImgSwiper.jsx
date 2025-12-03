@@ -52,8 +52,9 @@ export default function ImgSwiper() {
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
           </div>
           <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
-            <span className="text-white"> Corpotate</span> Travel{" "}
+            <span className="text-white"> Corporate</span> Travel
             <span className="text-white"> Redefined </span> Beyond Limits
+
           </h2>
         </SwiperSlide>
         <SwiperSlide
@@ -71,8 +72,9 @@ export default function ImgSwiper() {
             {/* <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" /> */}
           </div>
           <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
-            <span className="text-white"> Efficincy</span> Comfort Reliabilty{" "}
+            <span className="text-white"> Efficiency</span> Comfort Reliability
             <span className="text-white"> Your </span> Corporate Transport
+
           </h2>
         </SwiperSlide>
         <SwiperSlide
@@ -90,8 +92,9 @@ export default function ImgSwiper() {
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
           </div>
           <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
-            <span className="text-white"> Include in Opulence</span> Corporate
-            Confort
+            <span className="text-white"> Indulge in Opulence</span> Corporate
+            Comfort
+
           </h2>
         </SwiperSlide>
         <SwiperSlide
@@ -109,9 +112,10 @@ export default function ImgSwiper() {
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
           </div>
           <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
-            <span className="text-white"> Visa Solution :</span> Tailored{" "}
-            <span className="text-white"> To</span> Your{" "}
-            <span className="text-white">Need</span>
+            <span className="text-white"> Visa Solutions :</span> Tailored
+            <span className="text-white"> To</span> Your
+            <span className="text-white"> Needs</span>
+
           </h2>
         </SwiperSlide>
         <SwiperSlide
@@ -131,6 +135,7 @@ export default function ImgSwiper() {
           <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
             <span className="text-white"> Seamless Corporate </span> Event
             Execution
+
           </h2>
         </SwiperSlide>
         <SwiperSlide
@@ -148,7 +153,7 @@ export default function ImgSwiper() {
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
           </div>
           <h2 className="absolute inset-y-0  sm:w-[950px] w-[350px]  text-3xl sm:text-7xl sm:top-[40%] top-[50%] left-[10%] text-yellow-500 font-semibold font-sans">
-            <span className="text-white"> Provide </span>
+            <span className="text-white"> Providing </span>
             <br /> Travel Insurance
           </h2>
         </SwiperSlide>

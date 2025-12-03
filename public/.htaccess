@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Allow direct access to index.html
+  RewriteRule ^index\.html$ - [L]
+
+  # If the file or folder doesn't exist → redirect to index.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^.*$ /index.html [L]
+
+  # Force 404 errors to go to home
+  ErrorDocument 404 /index.html
+
+</IfModule>
