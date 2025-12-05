@@ -40,7 +40,7 @@ const Career = () => {
           to foster an inclusive and accessible environment for all candidates.
           If you require reasonable accommodation during the application or
           recruitment process, please contact your recruiter or contact our team
-          at info@risezonic.com.
+          at info@risezonictravel.com.
         </p>
         <HomeForm />
       </div>

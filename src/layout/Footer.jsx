@@ -141,7 +141,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-3 mt-3 text-gray-300 text-sm">
             <FiMail className="text-lg text-blue-400" />
-            <p>info@risezonic.com</p>
+            <p>info@risezonictravel.com</p>
           </div>
 
           {/* Newsletter */}

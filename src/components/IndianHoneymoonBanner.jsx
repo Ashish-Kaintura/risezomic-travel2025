@@ -191,7 +191,7 @@ export default function IndianHoneymoonBanner() {
 
               </span>
             </button>
-            <Link to="mailto:info@risezonic.com">   <button className="px-8 py-4 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all hover:scale-105">
+            <Link to="mailto:info@risezonictravel.com">   <button className="px-8 py-4 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/20 transition-all hover:scale-105">
               Explore More
             </button>
           
