@@ -34,7 +34,7 @@ export default function HomeNav() {
         <Link to="/" className="flex items-center">
           <img
             src={Logo}
-            alt="RiseZonic Logo"
+            alt="Logo"
             className={`transition-all duration-300 ${isScrolled ? "w-24" : "w-28"
               }`}
           />
