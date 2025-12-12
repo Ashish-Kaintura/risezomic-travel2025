@@ -21,8 +21,9 @@ const PrivacyPolicy = () => {
       <div className="">
         <div className=" object-center object-contain">
           <img
-            className="h-[500px] w-full"
-            src="https://img.etimg.com/thumb/width-1600,height-900,imgsize-72604,resizemode-75,msid-104591505/news/international/us/no-ship-for-three-year-cruise-life-at-sea-voyage-delayed-as-company-changes-itinerary-check-new-dates.jpg"
+            className="h-full w-full"
+            src="https://i.postimg.cc/d1zvPbBM/privacy-policy.png"
+            alt="Privacy Policy Banner"
           />
         </div>
         <h1 className="text-center text-6xl decoration-yellow-500 uppercase py-8 font-semibold underline underline-offset-8 text-blue-700">
