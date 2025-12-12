@@ -169,7 +169,7 @@ const Footer = () => {
       {/* Footer Bottom Links */}
       <div className="mt-4 text-center">
         <div className="flex justify-center gap-6 text-gray-500 text-xs">
-          <Link to="/privacy" className="hover:text-blue-400 transition">Privacy Policy</Link>
+          <Link to="/privacy-policy" className="hover:text-blue-400 transition">Privacy Policy</Link>
           <Link to="/terms" className="hover:text-blue-400 transition">Terms & Conditions</Link>
           <Link to="/refund" className="hover:text-blue-400 transition">Refund Policy</Link>
         </div>
