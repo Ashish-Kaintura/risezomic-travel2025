@@ -270,7 +270,7 @@ const MICE = () => {
 
         <div className="text-start">
           <p className="text-lg font-bold">Risezonic Travel</p>
-          <p className="text-lg">+918178857250</p>
+          <p className="text-lg">+91+918588809690</p>
           <p className="text-lg">Info@risezonictravel.com</p>
         </div>
       </div>

@@ -217,8 +217,8 @@ export default function HomeNav() {
             >
               <NavLink to="/cruise-booking" onClick={toggleMenu}>Cruise</NavLink> <br />
               <NavLink to="/visa" onClick={toggleMenu}>Visa</NavLink> <br />
-              <NavLink to="/corporate-event-booking" onClick={toggleMenu}>Events</NavLink> <br/>
-              <NavLink to="/Insurance" onClick={toggleMenu}>Insurance</NavLink> <br/>
+              <NavLink to="/corporate-event-booking" onClick={toggleMenu}>Events</NavLink> <br />
+              <NavLink to="/Insurance" onClick={toggleMenu}>Insurance</NavLink> <br />
             </div>
           </li>
 

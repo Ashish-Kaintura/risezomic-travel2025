@@ -177,7 +177,7 @@ export default function PremiumSlider() {
                                         }`}
                                     style={{ transitionDelay: '1200ms' }}
                                 >
-                                    <Link to="tel:8178857250"  >   <span className="relative z-10">Discover More</span> </Link>
+                                    <Link to="tel:+918588809690"  >   <span className="relative z-10">Discover More</span> </Link>
                                     <div className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />
                                 </button>
                             </div>

@@ -66,9 +66,9 @@ export default function Contact() {
             </div>
             <div>
               <h2 className="text-xl pt-5 font-bold uppercase">Call Us</h2>
-              <Link to="tel:8178857250">
+              <Link to="tel:+918588809690">
                 <h2 className="text-2xl pt-1 font-bold uppercase p-2 rounded">
-                  8178857250
+                  8588809690
                 </h2>
               </Link>
             </div>

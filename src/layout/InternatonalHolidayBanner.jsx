@@ -187,7 +187,7 @@ export default function PremiumIndianHolidayBanner() {
             <button className="group relative px-8 py-4 bg-yellow-500 text-white font-semibold rounded-full overflow-hidden hover:bg-yellow-600 transition-all hover:scale-105">
               <span className="relative z-10 flex items-center gap-2">
                 <FaPhoneAlt className="w-5 h-5" />
-                <Link to="tel:+ 8178857250" >Book Your Trip </Link>
+                <Link to="tel:+ +918588809690" >Book Your Trip </Link>
 
               </span>
             </button>

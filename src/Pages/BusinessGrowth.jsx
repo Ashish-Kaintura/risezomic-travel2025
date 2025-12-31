@@ -173,7 +173,7 @@ export default function BusinessGrowth() {
               </div>
               <div className="mt-4">
                 <p className="pt-5 text-gray-700 list-disc">
-                  Contact Us: 8178857250
+                  Contact Us: +918588809690
                 </p>
               </div>
             </div>

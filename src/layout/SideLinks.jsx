@@ -324,7 +324,7 @@ export default function SideLinks() {
         </div> */}
         <a
           className="whats-app"
-          href="https://wa.me/8178857250"
+          href="https://wa.me/+918588809690"
           target="_blank"
         >
           <FaWhatsapp className=" animate-bounce my-float text-3xl" />

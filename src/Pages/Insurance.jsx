@@ -57,14 +57,14 @@ const Insurance = () => {
             {/* CTA Buttons */}
             <div className="flex gap-4 mt-5">
               <a
-                href="tel:+8178857250"
+                href="tel:++918588809690"
                 className="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 flex items-center gap-2 shadow-lg transition"
               >
                 <IoCall /> Call Now
               </a>
 
               <a
-                href={`https://wa.me/8178857250?text=Hi, I'm interested in Insurance by Risezonic Travel  package`}
+                href={`https://wa.me/+918588809690?text=Hi, I'm interested in Insurance by Risezonic Travel  package`}
                 target="_blank"
                 className="px-6 py-3 rounded-full bg-green-600 text-white font-semibold hover:bg-green-700 flex items-center gap-2 shadow-lg transition"
               >

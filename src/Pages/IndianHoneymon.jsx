@@ -189,7 +189,7 @@ export default function IndianHoneymon() {
                       <span className="inline-block bg-gradient-to-r from-indigo-100 to-blue-50 text-indigo-700 px-3 py-1 rounded-full text-sm">All Inclusive</span>
                       <div className="ml-auto flex gap-3">
                         <a
-                          href="tel:8178857250"
+                          href="tel:+918588809690"
                           className="px-4 py-2 rounded-full bg-blue-600 text-white text-sm shadow hover:bg-blue-500 transition"
                         >
                           Book Now
