@@ -18,11 +18,11 @@ const Footer = () => {
         <div>
           <h2 className="text-3xl font-extrabold tracking-wide">
             Risezonic <span className="text-blue-400">Travel</span>
-           
-           
+
+
           </h2>
           <span className="text-sm font-normal">
-          A Venture of Krad Global Exim (India) Pvt. Ltd.
+            A Venture of Krad Global Exim (India) Pvt. Ltd.
           </span>
           <p className="mt-4 text-gray-400 leading-relaxed text-sm">
             Discover premium curated travel packages, luxury destinations,
@@ -138,6 +138,10 @@ const Footer = () => {
           </div>
 
 
+          <div className="flex items-center gap-3 mt-3 text-gray-300 text-sm">
+            <p>Risezonic: <br /> 272 GF Sce 38, Gurugram, Haryana 122001,
+              India</p>
+          </div>
           <div className="flex items-center gap-3 mt-3 text-gray-300 text-sm">
             <FiPhoneCall className="text-lg text-blue-400" />
             <p>+91 8588809690</p>

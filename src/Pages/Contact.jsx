@@ -45,7 +45,7 @@ export default function Contact() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/10 flex items-center justify-center">
           <h1 className="text-white text-4xl sm:text-6xl font-extrabold uppercase drop-shadow-xl tracking-wide text-center">
-           Contact US
+            Contact US
           </h1>
         </div>
       </div>
@@ -96,6 +96,10 @@ export default function Contact() {
                 <h2 className=" text-xs pt-1 font-bold uppercase p-2 rounded">
                   07th Floor, Gate No. 03 & Gate No. 04, Ambience Island, NH 48,
                   Gurugram, 122002
+                  <br />
+                  <br />
+                  272 GF Sce 38, Gurugram, Haryana 122001,
+                  India
                 </h2>
               </Link>
             </div>
