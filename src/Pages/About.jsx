@@ -81,7 +81,7 @@ export default function About() {
             </h1>
 
             <p className="text-gray-600 leading-7 text-lg mb-8">
-              Risezonic Travel is Proudly operate as a venture of krad Global  Exim (India) Pvt. Ltd., combining global expertise with trusted travel solutions.
+              Risezonic Travel is Proudly operate as a venture of Exim (India) Pvt. Ltd., combining global expertise with trusted travel solutions.
             </p>
             <p className="text-gray-600 leading-7 text-lg mb-8">
               Risezonic Travel is one of the leading business travel agencies,

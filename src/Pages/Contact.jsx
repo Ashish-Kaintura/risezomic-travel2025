@@ -98,8 +98,8 @@ export default function Contact() {
                   Gurugram, 122002
                   <br />
                   <br />
-                  272 GF Sce 38, Gurugram, Haryana 122001,
-                  India
+                  {/* 272 GF Sce 38, Gurugram, Haryana 122001,
+                  India */}
                 </h2>
               </Link>
             </div>
