@@ -170,7 +170,7 @@ const Footer = () => {
       {/* Divider */}
       <div className="border-t border-white/10 mt-12 pt-6 text-center text-gray-400 text-sm relative z-10">
         {/* © 2025 Risezonic Travel Krad Global Exim (India) Pvt. Ltd.• All Rights Reserved */}
-        © 2025 Risezonic Travel  Exim (India) Pvt. Ltd.• All Rights Reserved
+        © 2021 Risezonic Travel All Rights Reserved
       </div>
 
       {/* Footer Bottom Links */}
